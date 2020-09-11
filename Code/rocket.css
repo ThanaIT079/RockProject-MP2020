@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    scroll-behavior:smooth
+}
+#page0,#page1,#page2,#page3,#page4,#page5,#page6,#page7,#page8,#page9,#page10{
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+#main{
+    position:initial;
+    width:100%;
+    height:100%;
+    background:red;
+}
+div#content{
+    position:initial;
+    width:100%;
+    height:100%;
+}
+.c1{ background:orangered;}
+.c2{ background:yellow;}
+.c3{ background:greenyellow;}
+.c4{ background:green;}
+.c5{ background:skyblue;}
+.c6{ background:blue;}
+.c7{ background:blueviolet;}
+.c8{ background:purple;}
+.c9{ background:violet;}
+.c10{ background:palevioletred;}
+
