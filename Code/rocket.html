@@ -1,119 +1,210 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>เครื่องเล่นเกมเเละเกมคอนโซลน่าคิดถึง</title>
-	<link rel="stylesheet" type="text/css" href="rocket.css">
-</head>
-<body>
-	<!-- 1024*1366 -->
-	<section id="page0">
-		<div id="main">
-			<a href="#page10">Next page</a>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>เครื่องเล่นเกมเเละเกมคอนโซลน่าคิดถึง</title>
+		<link rel="stylesheet" type="text/css" href="rocket.css">
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+	</head>
+	<body>
+		<!-- 1024*1366 -->
+		<section id="page0">
+			<div id="main">
+				<a href="#page10">Next page</a>
+				
+				
+			</div>
 			
-		</div>
+		</section>
 		
-	</section>
-	
-	<section id="page1">
-		<div id="content" class="c1">
-			<a href="#page0">Home page</a>
-			<a href="#page2">Previous page</a>
-			Next gen console
+		<section id="page1">
+			<div id="content" class="c1">
+				<a href="#page0">Home page</a>
+				<a href="#page2">Previous page</a>
+				Next gen console
 
-		</div>
-	</section>
+			</div>
+		</section>
 
-	<section id="page2">
-		<div id="content" class="c2">
-			<a href="#page1">Next page</a>
-			<a href="#page0">Home page</a>
-			<a href="#page3">Previous page</a>
-			Eighth Generation
+		<section id="page2">
+			<div id="content" class="c2">
+				<a href="#page1">Next page</a>
+				<a href="#page0">Home page</a>
+				<a href="#page3">Previous page</a>
+				Eighth Generation
+			
+			</div>
+		</section>
+
+		<section id="page3">
+			<div id="content" class="c3">
+				<a href="#page2">Next page</a>
+				<a href="#page0">Home page</a>
+				<a href="#page4">Previous page</a>
+				Seventh Generation
+			
+			</div>
+		</section>
+
+		<section id="page4">
+			<div id="content" class="c4">
+				<a href="#page3">Next page</a>
+				<a href="#page0">Home page</a>
+				<a href="#page5">Previous page</a>
+				Sixth Generation
+			
+			</div>
+		</section>
+
+		<section id="page5">
+			<div id="content" class="c5">
+				<a href="#page4">Next page</a>
+				<a href="#page0">Home page</a>
+				<a href="#page6">Previous page</a>
+				Fifth Generation
+			
+			</div>
+		</section>
+
+		<section id="page6">
+			<div id="content" class="c6">
+				<a href="#page5">Next page</a>
+				<a href="#page0">Home page</a>
+				<a href="#page7">Previous page</a>
+				Fourth Generation
+			
+			</div>
+		</section>
+
+		<section id="page7">
+			<div id="content" class="c7">
+				<a href="#page6">Next page</a>
+				<a href="#page0">Home page</a>
+				<a href="#page8">Previous page</a>
+				Third Generation
+			
+			</div>
+		</section>
+
+		<section id="page8">
+			<div id="content" class="c8">
+				<a href="#page7">Next page</a>
+				<a href="#page0">Home page</a>
+				<a href="#page9">Previous page</a>
+				Second Generation
+			
+			</div>
+		</section>
+
+		<!-- First Generation -->
+		<section id="page9">
+			<div id="content" class="c9">
+				<div id="sec9-0"></div>
+				<div id="sec9-1">
+					<div id="tabshow">
+						<div class="tabbar">
+							<button class="tablinks" onclick="opentabs(event, 'intro')">Introduction</button>
+							<button class="tablinks" onclick="opentabs(event, 'plas')">Plastic overlays</button>
+							<button class="tablinks" onclick="opentabs(event, 'tennis')">Tennis</button>
+							<button class="tablinks" onclick="opentabs(event, 'cat')">Cat and Mouse</button>
+						</div>
+					
+						<div id="intro" class="tabcontent">
+							<h3>Introduction</h3>
+							<p>	The Magnavox Odyssey released by Magnavox in the United States in September 1972
+							connects to a television set, and two rectangular controllers attached by wires.
+							The Odyssey lacks sound capability and can only display monochrome white shapes on a blank
+							black screen. </p>
+						</div>
+					
+						<div id="plas" class="tabcontent">
+							<h3>Plastic overlays</h3>
+							<p>The games include plastic overlays which stick to the television via static cling, to create
+							visuals for the game. Different games that use the same game card can have different overlays.</p> 
+						</div>
+					
+						<div id="tennis" class="tabcontent">
+							<div id="game1"></div>
+						</div>
+
+						<div id="cat" class="tabcontent">
+							<div id="game2"></div>
+						</div>
+						
+					</div>
+				</div>
+
+				<div id="sec9-2">
+					First Generation
+					<a href="#page8">Next page</a>
+					<a href="#page0">Home page</a>
+					<a href="#page10">Previous page</a>
+					
+				</div>
+			</div>
+			
+			</div>
+		</section>
+
+		<!-- Game Console & Handheld Vs Console game -->
+		<section id="page10">
+			<div id="content" class="c10">
+				<div id="sec10-1">
+					<div id="handheld">
+
+						<div id="hh1">
+							<div id="hh1-image" onClick="show(1)"></div>
+						</div>
+
+						<div id="hh2"></div>
+						<div id="hh3"></div>
+					</div>
+				</div>
+				<div id="sec10-2">
+					<div id="console">
+						<div id="cs1"></div>
+
+						<div id="cs2">
+							<div id="cs2-image" onClick="show(2)"></div>
+						</div>
+						<div id="page-bar">
+							Game Console & Handheld Vs Console game
+							<a href="#page9">Next page</a>
+							<a href="#page0">Home page</a>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</section>
 		
-		</div>
-	</section>
-
-	<section id="page3">
-		<div id="content" class="c3">
-			<a href="#page2">Next page</a>
-			<a href="#page0">Home page</a>
-			<a href="#page4">Previous page</a>
-			Seventh Generation
+		<script>
+			function show(number){
+					switch(number) {
+						case 1:
+							document.getElementById('hh2').style.visibility = 'visible';
+							break;
+						case 2:
+							document.getElementById('cs1').style.visibility = 'visible';
+							break;
+						// default:
+						//   	document.getElementById('hh2').style.visibility = 'hidden';
+						//   	document.getElementById('cs2').style.visibility = 'hidden';
+					}
+			}
 		
-		</div>
-	</section>
-
-	<section id="page4">
-		<div id="content" class="c4">
-			<a href="#page3">Next page</a>
-			<a href="#page0">Home page</a>
-			<a href="#page5">Previous page</a>
-			Sixth Generation
-		
-		</div>
-	</section>
-
-	<section id="page5">
-		<div id="content" class="c5">
-			<a href="#page4">Next page</a>
-			<a href="#page0">Home page</a>
-			<a href="#page6">Previous page</a>
-			Fifth Generation
-		
-		</div>
-	</section>
-
-	<section id="page6">
-		<div id="content" class="c6">
-			<a href="#page5">Next page</a>
-			<a href="#page0">Home page</a>
-			<a href="#page7">Previous page</a>
-			Fourth Generation
-		
-		</div>
-	</section>
-
-	<section id="page7">
-		<div id="content" class="c7">
-			<a href="#page6">Next page</a>
-			<a href="#page0">Home page</a>
-			<a href="#page8">Previous page</a>
-			Third Generation
-		
-		</div>
-	</section>
-
-	<section id="page8">
-		<div id="content" class="c8">
-			<a href="#page7">Next page</a>
-			<a href="#page0">Home page</a>
-			<a href="#page9">Previous page</a>
-			Second Generation
-		
-		</div>
-	</section>
-
-	<section id="page9">
-		<div id="content" class="c9">
-			<a href="#page8">Next page</a>
-			<a href="#page0">Home page</a>
-			<a href="#page10">Previous page</a>
-			First Generation
-		
-		</div>
-	</section>
-
-	<section id="page10">
-		<div id="content" class="c10">
-			<a href="#page9">Next page</a>
-			<a href="#page0">Home page</a>
-			Game Console & Handheld Vs Console game
-		
-		</div>
-	</section>
-	
-	<script>
-
-	</script>
-</body>
-</html>
+			function opentabs(evt, tabsName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(tabsName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+	</body>
+	</html>
