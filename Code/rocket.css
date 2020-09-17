@@ -16,19 +16,19 @@ body, html {
     width:100%;
     height:100%;
     /* background:black; */
-    background-image: url('Image/Page_main.png');
+    background-image: url('../Image/Page_main.png');
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-size:100% 100%;
 }
   
-div#content{
+div.content{
     position: relative;
     width:100%;
     height:100%;
 }
 .c10{
-    background-image: url('Image/background_10.png');
+    background-image: url('../Image/background_10.png');
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-size:100% 100%;
@@ -54,7 +54,7 @@ div#content{
     position: relative;
     width:70%;
     height: 100%;
-    background-image: url('Image/001_handheld.png');
+    background-image: url('../Image/001_handheld.png');
     background-size:100% 100%;
     margin-left: 10%;
     margin-top: 5%;
@@ -74,7 +74,7 @@ div#content{
     position: relative;
     width:40%;
     height: 90%;
-    background-image: url('Image/002_console.png');
+    background-image: url('../Image/002_console.png');
     background-size:100% 100%;
     margin: auto;
     transition: transform .2s;
@@ -87,7 +87,7 @@ div#content{
     position: relative;
     width: 50%;
     margin-left: 15%;
-    background-image: url('Image/emptycontent.png');
+    background-image: url('../Image/emptycontent.png');
     background-size:100% 100%;
 }
 #cs1{
@@ -97,11 +97,10 @@ div#content{
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 30%;
-    background-image: url('Image/emptycontent.png');
+    background-image: url('../Image/emptycontent.png');
     background-size:100% 100%;
 }
 
-.c9{ background:violet;}
 #sec9-0{
     position: relative;
     width:100%;
@@ -123,7 +122,7 @@ div#content{
     position: relative;
     width:100%;
     height:100%;
-    background-image: url('Image/emptycontent.png');
+    background-image: url('../Image/emptycontent.png');
     background-size:100% 100%;
 }
 
@@ -131,7 +130,7 @@ div#content{
     position: relative;
     width:100%;
     height:100%;
-    background-image: url('Image/emptycontent.png');
+    background-image: url('../Image/emptycontent.png');
     background-size:100% 100%;
 }
 
@@ -189,19 +188,4 @@ div#content{
     margin-top: 1vh;
 }
 
-
-
-
-
-
-.c1{ background:orangered;}
-.c2{ background:yellow;}
-.c3{ background:greenyellow;}
-.c4{ background:green;}
-.c5{ background:skyblue;}
-.c6{ background:blue;}
-.c7{ background:blueviolet;}
-.c8{ background:purple;}
-/* .c9{ background:violet;} */
-/* .c10{ background:palevioletred;} */
 
