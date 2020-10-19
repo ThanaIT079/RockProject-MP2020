@@ -148,10 +148,10 @@ body, html {
     transition: 1s;
     transform: translateX(202px);
 }
-#ct13:hover{
+/* #ct13:hover{
     animation: shake 1.5s;
-    /* animation-iteration-count: infinite; */
-}
+    animation-iteration-count: infinite;
+} */
 #ct14{
     position: relative;
     opacity: 0;
@@ -300,6 +300,141 @@ body, html {
     display: none;
 }
 
+/* Page 8 : Sixth Gen*/
+#grid2ct2{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    position: relative;
+    top: 50px;
+}
+#ct63{
+    background-image: url('image/console/imagefor1024/008.png');
+    background-size:100% 100%;
+    position: relative;
+    opacity: 0;
+    width: 472px;
+    height: 310px;
+    left: 35px;
+    top: 0px;
+    transition: 1s;
+}
+#ct64{
+    position: relative;
+    opacity: 0;
+    width: 366px;
+    height: 255px;
+    left: 20px;
+    top: 35px;
+    transition: 1s;
+}
+#game6{
+    position: relative;
+    background-image: url('image/test_1024.png');
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+/* Page 9 : Seventh gen */
+#grid2ct3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    top: 10px;
+}
+#ct73{
+    background-image: url('image/console/imagefor1024/011.png');
+    background-size:100% 100%;
+    position: relative;
+    opacity: 0;
+    width: 426px;
+    height: 426px;
+    left: 50px;
+    top: 0px;
+    transition: 1s;
+}
+#ct74{
+    position: relative;
+    opacity: 0;
+    width: 366px;
+    height: 255px;
+    left: 20px;
+    top: 55px;
+    transition: 1s;
+}
+#game7{
+    position: relative;
+    background-image: url('image/test_1024.png');
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+/* Page 10 : Eighth Gen */
+#grid2ct4{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    top: 10px;
+    width: 920px;
+    height: 470px;
+}
+#ct83{
+    background-image: url('image/console/imagefor1024/012.png');
+    background-size:100% 100%;
+    position: relative;
+    opacity: 0;
+    width: 356px;
+    height: 356px;
+    left: 60px;
+    top: 40px;
+    transition: 1s;
+}
+#ct84{
+    position: relative;
+    opacity: 0;
+    width: 366px;
+    height: 255px;
+    left: 50px;
+    top: 55px;
+    transition: 1s;
+}
+#grid1ct4{
+    display: grid;
+    grid-template-columns: 100%;
+    position: relative; 
+}
+#grid3ct4{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    position: relative; 
+}
+.gicon{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    left: 20px;
+}
+#ps4{
+    background-image: url('image/console/imagefor1024/logo001.png');
+    background-size:100% 100%;
+}
+#xbox1{
+    background-image: url('image/console/imagefor1024/logo002.png');
+    background-size:100% 100%;
+}
+#nds{
+    background-image: url('image/console/imagefor1024/logo003.png');
+    background-size:100% 100%;
+}
+#game8{
+    position: relative;
+    background-image: url('image/test_1024.png');
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
 
 /* Page Layout*/
 .top{
@@ -337,7 +472,7 @@ body, html {
 .btn:hover{
     transform: scale(1.3);
 }
-#bbtn1, #bbtn2, #bbtn3, #bbtn4,  #bbtn5,  #bbtn6,  #bbtn7,  #bbtn8,  #bbtn9{
+#bbtn1, #bbtn2, #bbtn3, #bbtn4, #bbtn5, #bbtn6, #bbtn7, #bbtn8, #bbtn9{
     display: none;
     position: relative;
     top: 10px;
@@ -383,7 +518,7 @@ body, html {
 }
 
 /* Progressbar */
-.progressbar1, .progressbar2, .progressbar3, .progressbar4, .progressbar5, .progressbar6, .progressbar7, .progressbar8{
+.progressbar1, .progressbar2, .progressbar3, .progressbar4, .progressbar5, .progressbar6, .progressbar7, .progressbar8, .progressbar9{
     position: relative;
     background-color: white;
     left: 27px;
@@ -392,7 +527,7 @@ body, html {
     height: 47px;
     border-radius: 10px;
 }
-#progress1, #progress2, #progress3, #progress4, #progress5, #progress6, #progress7, #progress8{
+#progress1, #progress2, #progress3, #progress4, #progress5, #progress6, #progress7, #progress8, #progress9{
     position: relative;
     height: 100%;
     width: 0px;
