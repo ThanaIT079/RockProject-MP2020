@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="indexrp.css">
+        <link rel="shortcut icon" href="image/rp-icon.png"/>
+        <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+
+        <title>Consoles's Travel</title>
+
+    </head>
+    <body onload="location.href='#page0';ctOn(0);">
+
+        <!-- Page 0 : Main page -->
+        <section id="page0" class="p0" onclick="location.href='#page1'; clearInterval(txt); ctOff(0); ctintro(2); ctintro(0);">
+            <div class="content-main1">
+                <p class="font-SL font-CW" id="txt0_1">Consoles's</p>
+                <p class="font-SL font-CW" id="txt0_2">Travel</p>
+                <p class="font-SM font-CW" id="txtlight1">คลิก !</p>
+            </div>
+        </section>
+
+        <!-- Page 1 : Intro page -->
+        <section id="page1" class="p1" onclick="ctintro(1);">
+            <div class="content-intro1" id="cttext1">
+                <p class="font-SM font-CW">
+                    &emsp;&emsp;&emsp;ถ้าพูดถึงการเล่นเกมหลาย ๆคนที่เป็นผู้เล่นสายเครื่องคอนโซล
+                    ก็จะมีเครื่องเล่นเกมของตัวเองอยู่หลายเครื่องเเต่ทุก ๆคนยังจำได้ไหมว่าเครื่องเล่นเกมคอนโซลเครื่องเเรกของคุณคือเครื่องอะไร ?
+                </p>
+            </div>
+            <div class="content-intro2" id="cttext2">
+                <p class="font-SM font-CW">
+                    &emsp;&emsp;&emsp;หลาย ๆคนน่าจะมีคำตอบอยู่ในใจทั้งนี้เรามาเริ่มย้อนไปยังคอนโซลเครื่องเเรกของโลกจนถึงปัจจุบันกันว่ามีอะไรเกิดขึ้นบ้าง
+                    ในการเดินทางของเครื่องเล่นเกม เเละเกมคอนโซล
+                </p>
+            </div>
+            <div class="content-intro3" id="cttext3">
+                <p class="font-SL font-CW">
+                    เริ่มการเดินทาง!!!
+                </p>
+            </div>
+        </section>
+
+        <!-- Page 2 : Console vs Handheld -->
+        <section id="page2" class="p2"> <!-- onclick="location.href='#page1'; ctintro(2); ctintro(0);" -->
+            <div class="page-grid">
+                <div class="grid1">
+                    <div class="pagebtn" id="link0" onclick="location.href='#page0'; ctOn(0); txt = setInterval(txtlight, 100);">
+                        <p class="font-Ss font-center font-CW">Home</p>
+                    </div>
+                    <div class="pagebtn" id="link1" onclick="location.href='#page3';content(1)">
+                        <p class="font-SS font-center font-CW">I</p>
+                    </div>
+                    <div class="pagebtn" id="link2" onclick="location.href='#page4';content(2)">
+                        <p class="font-SS font-center font-CW">II</p>
+                    </div>
+                    <div class="pagebtn" id="link3" onclick="location.href='#page5';content(3)">
+                        <p class="font-SS font-center font-CW">III</p>
+                    </div>
+                    <div class="pagebtn" id="link4" onclick="location.href='#page6';content(4)">
+                        <p class="font-SS font-center font-CW">IV</p>
+                    </div>
+                    <div class="pagebtn" id="link5" onclick="location.href='#page7';content(5)">
+                        <p class="font-SS font-center font-CW">V</p>
+                    </div>
+                    <div class="pagebtn" id="link6" onclick="location.href='#page8';content(6)">
+                        <p class="font-SS font-center font-CW">VI</p>
+                    </div>
+                    <div class="pagebtn" id="link7" onclick="location.href='#page9';content(7)">
+                        <p class="font-SS font-center font-CW">VII</p>
+                    </div>
+                    <div class="pagebtn" id="link8" onclick="location.href='#page10';content(8)">
+                        <p class="font-SS font-center font-CW">VIII</p>
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div class="top"></div>
+                    <div class="mid-grid">
+                        <div class="g2-1">
+                            <div class="content-p2-1" id="txt2_1">
+                                <p class="font-SS font-CW">
+                                    &emsp;&emsp;เครื่องพกพา จะมีขนาดเล็กประกอบไปด้วย หน้าจอ ลำโพง เเละส่วนควมคุม
+                                    โดยผู้ใช้งานจะสามารถพกพา เเละเล่นได้ทุกที่ทีต้องการ
+                                </p>
+                            </div>
+                            <div class="content-p2-2" id="img1" onclick="ctclick(1); getProgress(1)"></div>
+                        </div>
+                        <div class="g2-2">
+                            <div class="content-p2-3" id="img2" onclick="ctclick(2); getProgress(2)"></div>
+                            <div class="content-p2-4" id="txt2_2">
+                                <p class="font-SS font-CW">
+                                    &emsp;&emsp;เครื่องคอนโซล อุปกรณ์สำหรับประมวลผลเกมจากสื่อบันทึกอย่าง 
+                                    ตลับเเผ่นเพื่อส่งต่อไปยังอุปกรณ์เเสดงผล
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bot-grid">
+                        <div class="progressbar1">
+                            <div id="progress1"></div>
+                        </div>
+                        <div>
+                            <div class="bbtn font-SM font-CW" id="bbtn1" onclick="location.href='#page3';content(1)"><p class="btn">ไปต่อ</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Page 3 : First Gen -->
+        <section id="page3" class="p3">
+            <div class="page-grid">
+                <div class="grid1">
+                    <div class="pagebtn" id="link0" onclick="location.href='#page0'; ctOn(0); txt = setInterval(txtlight, 100);">
+                        <p class="font-Ss font-center font-CW">Home</p>
+                    </div>
+                    <div class="pagebtn" id="link1" onclick="location.href='#page3';content(1)">
+                        <p class="font-SS font-center font-CW">I</p>
+                    </div>
+                    <div class="pagebtn" id="link2" onclick="location.href='#page4';content(2)">
+                        <p class="font-SS font-center font-CW">II</p>
+                    </div>
+                    <div class="pagebtn" id="link3" onclick="location.href='#page5';content(3)">
+                        <p class="font-SS font-center font-CW">III</p>
+                    </div>
+                    <div class="pagebtn" id="link4" onclick="location.href='#page6';content(4)">
+                        <p class="font-SS font-center font-CW">IV</p>
+                    </div>
+                    <div class="pagebtn" id="link5" onclick="location.href='#page7';content(5)">
+                        <p class="font-SS font-center font-CW">V</p>
+                    </div>
+                    <div class="pagebtn" id="link6" onclick="location.href='#page8';content(6)">
+                        <p class="font-SS font-center font-CW">VI</p>
+                    </div>
+                    <div class="pagebtn" id="link7" onclick="location.href='#page9';content(7)">
+                        <p class="font-SS font-center font-CW">VII</p>
+                    </div>
+                    <div class="pagebtn" id="link8" onclick="location.href='#page10';content(8)">
+                        <p class="font-SS font-center font-CW">VIII</p>
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div class="top"></div>
+                    <div class="mid">
+                        <p class="font-SM font-CW" id="ct11">First Generation</p>
+                        <p class="font-SL font-CW" id="ct12">Magnavox Odyssey</p>
+                        <div class="content-p3-1" id="ct13" onclick="getProgress(3); location.href='#game1'; showgame(1); ctOff(1)"></div>
+                        <div class="content-p3-2" id="ct14">
+                            <p class="font-SS font-CW">
+                                &emsp;&emsp;เครื่องเล่นเกมคอนโซลเครื่องเเรกของโลก ตั้งเเต่สมัยจอภาพขาวดำ ปี 1972 
+                                ถูกพัฒนาโดยทีมเล็ก ๆ ที่นำทีมโดยคุณ Ralph H. Baer 
+                                นักประดิษฐ์นักพัฒนาเกมและวิศวกรชาวอเมริกันเชื้อสายเยอรมันเชื้อสายยิว
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bot-grid">
+                        <div class="progressbar2">
+                            <div id="progress2"></div>
+                        </div>
+                        <div>
+                            <div class="bbtn font-SM font-CW" id="bbtn2" onclick="location.href='#page4';content(2)"><p class="btn">ไปต่อ</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 3.5 : Game infor -->
+        <section id="game1" onclick="showgame(0);location.href='#page3';ctOn(1)">
+        </section>
+
+        <!-- Page 4 : Second Gen -->
+        <section id="page4" class="p4">
+            <div class="page-grid">
+                <div class="grid1">
+                    <div class="pagebtn" id="link0" onclick="location.href='#page0'; ctOn(0); txt = setInterval(txtlight, 100);">
+                        <p class="font-Ss font-center font-CW">Home</p>
+                    </div>
+                    <div class="pagebtn" id="link1" onclick="location.href='#page3';content(1)">
+                        <p class="font-SS font-center font-CW">I</p>
+                    </div>
+                    <div class="pagebtn" id="link2" onclick="location.href='#page4';content(2)">
+                        <p class="font-SS font-center font-CW">II</p>
+                    </div>
+                    <div class="pagebtn" id="link3" onclick="location.href='#page5';content(3)">
+                        <p class="font-SS font-center font-CW">III</p>
+                    </div>
+                    <div class="pagebtn" id="link4" onclick="location.href='#page6';content(4)">
+                        <p class="font-SS font-center font-CW">IV</p>
+                    </div>
+                    <div class="pagebtn" id="link5" onclick="location.href='#page7';content(5)">
+                        <p class="font-SS font-center font-CW">V</p>
+                    </div>
+                    <div class="pagebtn" id="link6" onclick="location.href='#page8';content(6)">
+                        <p class="font-SS font-center font-CW">VI</p>
+                    </div>
+                    <div class="pagebtn" id="link7" onclick="location.href='#page9';content(7)">
+                        <p class="font-SS font-center font-CW">VII</p>
+                    </div>
+                    <div class="pagebtn" id="link8" onclick="location.href='#page10';content(8)">
+                        <p class="font-SS font-center font-CW">VIII</p>
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div class="top"></div>
+                    <div class="mid">
+                        <p class="font-SM font-CW" id="ct21">Second Generation</p>
+                        <p class="font-SL font-CW" id="ct22">Atari 2600</p>
+                        <div class="content-p3-1" id="ct23" onclick="getProgress(4); location.href='#game2'; showgame(3); ctOff(2)"></div>
+                        <div class="content-p3-2" id="ct24">
+                            <p class="font-SS font-CW">
+                                &emsp;&emsp;เครื่องเล่นเกมที่ประสบความสำเร็จมากที่สุดในของบริษัท
+                                อาตาริ เเต่ด้วยการเเข่งขันในตลาดเกมที่สูง จึงทำให้ต้องขายสิทธิตัวเกมให้กับบริษัท นัมโค
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bot-grid">
+                        <div class="progressbar3">
+                            <div id="progress3"></div>
+                        </div>
+                        <div>
+                            <div class="bbtn font-SM font-CW" id="bbtn3" onclick="location.href='#page5';content(3)"><p class="btn">ไปต่อ</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 4.5 : Game infor -->
+        <section id="game2" onclick="showgame(2);location.href='#page4';ctOn(2)">
+        </section>
+
+        <!-- Page 5 : Third Gen -->
+        <section id="page5" class="p5">
+            <div class="page-grid">
+                <div class="grid1">
+                    <div class="pagebtn" id="link0" onclick="location.href='#page0'; ctOn(0); txt = setInterval(txtlight, 100);">
+                        <p class="font-Ss font-center font-CW">Home</p>
+                    </div>
+                    <div class="pagebtn" id="link1" onclick="location.href='#page3';content(1)">
+                        <p class="font-SS font-center font-CW">I</p>
+                    </div>
+                    <div class="pagebtn" id="link2" onclick="location.href='#page4';content(2)">
+                        <p class="font-SS font-center font-CW">II</p>
+                    </div>
+                    <div class="pagebtn" id="link3" onclick="location.href='#page5';content(3)">
+                        <p class="font-SS font-center font-CW">III</p>
+                    </div>
+                    <div class="pagebtn" id="link4" onclick="location.href='#page6';content(4)">
+                        <p class="font-SS font-center font-CW">IV</p>
+                    </div>
+                    <div class="pagebtn" id="link5" onclick="location.href='#page7';content(5)">
+                        <p class="font-SS font-center font-CW">V</p>
+                    </div>
+                    <div class="pagebtn" id="link6" onclick="location.href='#page8';content(6)">
+                        <p class="font-SS font-center font-CW">VI</p>
+                    </div>
+                    <div class="pagebtn" id="link7" onclick="location.href='#page9';content(7)">
+                        <p class="font-SS font-center font-CW">VII</p>
+                    </div>
+                    <div class="pagebtn" id="link8" onclick="location.href='#page10';content(8)">
+                        <p class="font-SS font-center font-CW">VIII</p>
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div class="top"></div>
+                    <div class="mid">
+                        <p class="font-SM font-CW" id="ct31">Third Generation</p>
+                        <p class="font-SL font-CW" id="ct32">NES</p>
+
+                        <div id="grid2ct1">
+                            <div class="content-p4-1" id="ct33" onclick="getProgress(5); location.href='#game3'; showgame(5); ctOff(3)"></div>
+                            <div class="content-p4-2" id="ct34">
+                            <p class="font-SS font-CW">
+                                &emsp;&emsp;คำเรียกที่คุ้นชินคือ เเฟมมิคอมเเละเป็นหนึ่งเสียงสำคัญในการประกาศให้โลกได้รู้จักเกมคอนโซลมากขึ้น 
+                                จนกลายเป็นปรากฎการเกมคอนโซล ขนาดที่ว่า NES เเทบจะป็นเครื่องใช้สามัญประจำบ้านของคนในปี 1983
+                            </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bot-grid">
+                        <div class="progressbar4">
+                            <div id="progress4"></div>
+                        </div>
+                        <div>
+                            <div class="bbtn font-SM font-CW" id="bbtn4" onclick="location.href='#page6';content(4)"><p class="btn">ไปต่อ</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 5.5 : Game infor -->
+        <section id="game3" onclick="showgame(4);location.href='#page5';ctOn(3)">
+        </section>
+
+        <!-- Page 6 : fourth Gen -->
+        <section id="page6" class="p6">
+            <div class="page-grid">
+                <div class="grid1">
+                    <div class="pagebtn" id="link0" onclick="location.href='#page0'; ctOn(0); txt = setInterval(txtlight, 100);">
+                        <p class="font-Ss font-center font-CW">Home</p>
+                    </div>
+                    <div class="pagebtn" id="link1" onclick="location.href='#page3';content(1)">
+                        <p class="font-SS font-center font-CW">I</p>
+                    </div>
+                    <div class="pagebtn" id="link2" onclick="location.href='#page4';content(2)">
+                        <p class="font-SS font-center font-CW">II</p>
+                    </div>
+                    <div class="pagebtn" id="link3" onclick="location.href='#page5';content(3)">
+                        <p class="font-SS font-center font-CW">III</p>
+                    </div>
+                    <div class="pagebtn" id="link4" onclick="location.href='#page6';content(4)">
+                        <p class="font-SS font-center font-CW">IV</p>
+                    </div>
+                    <div class="pagebtn" id="link5" onclick="location.href='#page7';content(5)">
+                        <p class="font-SS font-center font-CW">V</p>
+                    </div>
+                    <div class="pagebtn" id="link6" onclick="location.href='#page8';content(6)">
+                        <p class="font-SS font-center font-CW">VI</p>
+                    </div>
+                    <div class="pagebtn" id="link7" onclick="location.href='#page9';content(7)">
+                        <p class="font-SS font-center font-CW">VII</p>
+                    </div>
+                    <div class="pagebtn" id="link8" onclick="location.href='#page10';content(8)">
+                        <p class="font-SS font-center font-CW">VIII</p>
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div class="top"></div>
+                    <div class="mid">
+                        <p class="font-SM font-CW" id="ct41">Fourth Generation</p>
+                        <p class="font-SL font-CW" id="ct42">SNES</p>
+                        <div class="content-p5-1" id="ct43" onclick="getProgress(6); location.href='#game4'; showgame(7); ctOff(4)"></div>
+                        <div class="content-p5-2" id="ct44">
+                            <p class="font-SS font-CW">
+                                &emsp;&emsp;เริ่มสู่ยุค 16 บิต เเม้จะมีการเเข่งขั้นที่สูงขึ้นเเต่ 
+                                นินเทนโดก็ยังสามารถครองตำเเหน่งเครื่องเกมคอนโซลยอดนิยมเเห่งยุคเเม้จะออกมากที่หลังก็ตาม
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bot-grid">
+                        <div class="progressbar5">
+                            <div id="progress5"></div>
+                        </div>
+                        <div>
+                            <div class="bbtn font-SM font-CW" id="bbtn5" onclick="location.href='#page7';content(5)"><p class="btn">ไปต่อ</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 6.5 : Game infor -->
+        <section id="game4" onclick="showgame(6);location.href='#page6';ctOn(4)">
+        </section>
+
+        <!-- Page 7 : fifth Gen -->
+        <section id="page7" class="p7">
+            <div class="page-grid">
+                <div class="grid1">
+                    <div class="pagebtn" id="link0" onclick="location.href='#page0'; ctOn(0); txt = setInterval(txtlight, 100);">
+                        <p class="font-Ss font-center font-CW">Home</p>
+                    </div>
+                    <div class="pagebtn" id="link1" onclick="location.href='#page3';content(1)">
+                        <p class="font-SS font-center font-CW">I</p>
+                    </div>
+                    <div class="pagebtn" id="link2" onclick="location.href='#page4';content(2)">
+                        <p class="font-SS font-center font-CW">II</p>
+                    </div>
+                    <div class="pagebtn" id="link3" onclick="location.href='#page5';content(3)">
+                        <p class="font-SS font-center font-CW">III</p>
+                    </div>
+                    <div class="pagebtn" id="link4" onclick="location.href='#page6';content(4)">
+                        <p class="font-SS font-center font-CW">IV</p>
+                    </div>
+                    <div class="pagebtn" id="link5" onclick="location.href='#page7';content(5)">
+                        <p class="font-SS font-center font-CW">V</p>
+                    </div>
+                    <div class="pagebtn" id="link6" onclick="location.href='#page8';content(6)">
+                        <p class="font-SS font-center font-CW">VI</p>
+                    </div>
+                    <div class="pagebtn" id="link7" onclick="location.href='#page9';content(7)">
+                        <p class="font-SS font-center font-CW">VII</p>
+                    </div>
+                    <div class="pagebtn" id="link8" onclick="location.href='#page10';content(8)">
+                        <p class="font-SS font-center font-CW">VIII</p>
+                    </div>
+                </div>
+                <div class="grid2">
+                    <div class="top"></div>
+                    <div class="mid">
+                        <p class="font-SM font-CW" id="ct51">Fourth Generation</p>
+                        <p class="font-SL font-CW" id="ct52">SNES</p>
+                        <div class="content-p6-1" id="ct53" onclick="getProgress(7); location.href='#game5'; showgame(9); ctOff(5)"></div>
+                        <div class="content-p6-2" id="ct54">
+                            <p class="font-SS font-CW">
+                                &emsp;&emsp;เริ่มสู่ยุค 16 บิต เเม้จะมีการเเข่งขั้นที่สูงขึ้นเเต่ 
+                                นินเทนโดก็ยังสามารถครองตำเเหน่งเครื่องเกมคอนโซลยอดนิยมเเห่งยุคเเม้จะออกมากที่หลังก็ตาม
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bot-grid">
+                        <div class="progressbar6">
+                            <div id="progress6"></div>
+                        </div>
+                        <div>
+                            <div class="bbtn font-SM font-CW" id="bbtn6" onclick="location.href='#page8';content(6)"><p class="btn">ไปต่อ</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 7.5 : Game infor -->
+        <section id="game5" onclick="showgame(8); location.href='#page7'; ctOn(5)">
+        </section>
+
+
+    </body>
+    <script>
+        /* Page 0 : Main page */
+        var txt = setInterval(txtlight, 100);
+        var x1 = 10;
+        var y1 = 0;
+        var t = 1;
+        function txtlight(){
+            if (x1 > 0){
+                x1--;
+                document.getElementById('txtlight1').style.opacity = (x1/10);
+            }
+            else if (x1 == 0 & y1 < 10){
+                y1++;
+                document.getElementById('txtlight1').style.opacity = (y1/10);
+            }
+            else if (x1 == 0 & y1 == 10) {
+                x1 = 10;
+                y1 = 0;
+            }    
+        }
+        
+        function ctintro(number){
+            switch(number){
+                case 0:
+                    cttext1.style.transform = 'translateY(0px)';
+                    break;
+                case 1:
+                    if (cttext3.style.opacity == '1'){
+                        location.href='#page2';
+                    }
+                    if (cttext2.style.opacity == '1'){
+                        cttext3.style.transform = 'translateY(-100px)';
+                        cttext3.style.opacity = '1';
+                    }
+                    cttext1.style.transform = 'translateY(-100px)';
+                    cttext1.style.opacity = '0';
+                    cttext2.style.transform = 'translateY(-200px)';
+                    cttext2.style.opacity = '1';
+
+                    if (cttext3.style.opacity == '1'){
+                        cttext2.style.transform = 'translateY(-200px)';
+                        cttext2.style.opacity = '0';
+                    }
+                    break;
+                case 2:
+                    cttext1.style.opacity = '1';
+                    cttext2.style.opacity = '0';
+                    cttext3.style.opacity = '0';
+                    cttext1.style.transform = 'translateY(200px)';
+                    cttext2.style.transform = 'translateY(100px)';
+                    cttext3.style.transform = 'translateY(100px)';
+                    break;
+            }      
+        }
+
+        /* On Start Section */
+        function ctOn(number){
+            switch(number){
+                case 0: // Home Page
+                    txt0_1.style.transform = 'translateX(0px)';
+                    txt0_2.style.transform = 'translateX(0px)';
+                    break;
+                case 1: // First Gen
+                    ct11.style.transform = 'translateX(70px)';
+                    ct11.style.opacity = '1';
+                    ct12.style.transform = 'translateX(140px)';
+                    ct12.style.opacity = '1';
+                    ct13.style.transform = 'translateX(0px)';
+                    ct13.style.opacity = '1';
+                    ct14.style.transform = 'translateX(-165px)';
+                    ct14.style.opacity = '1';
+                    break;
+                case 2: // Second Gen
+                    ct21.style.transform = 'translateX(70px)';
+                    ct21.style.opacity = '1';
+                    ct22.style.transform = 'translateX(140px)';
+                    ct22.style.opacity = '1';
+                    ct23.style.transform = 'translateX(0px)';
+                    ct23.style.opacity = '1';
+                    ct24.style.transform = 'translateX(-162px)';
+                    ct24.style.opacity = '1';
+                    break;
+                case 3: // Third Gen
+                    ct31.style.transform = 'translateX(70px)';
+                    ct31.style.opacity = '1';
+                    ct32.style.transform = 'translateX(140px)';
+                    ct32.style.opacity = '1';
+                    ct33.style.transform = 'translateY(0px)';
+                    ct33.style.opacity = '1';
+                    ct34.style.transform = 'translateY(0px)';
+                    ct34.style.opacity = '1';
+                    break;
+                case 4: // Fourth Gen
+                    ct41.style.transform = 'translateX(70px)';
+                    ct41.style.opacity = '1';
+                    ct42.style.transform = 'translateX(140px)';
+                    ct42.style.opacity = '1';
+                    ct43.style.transform = 'translateX(0px)';
+                    ct43.style.opacity = '1';
+                    ct44.style.transform = 'translateX(-162px)';
+                    ct44.style.opacity = '1';
+                    break;
+                case 5: // Fifth Gen
+                    ct51.style.transform = 'translateX(70px)';
+                    ct51.style.opacity = '1';
+                    ct52.style.transform = 'translateX(140px)';
+                    ct52.style.opacity = '1';
+                    ct53.style.transform = 'translateX(0px)';
+                    ct53.style.opacity = '1';
+                    ct54.style.transform = 'translateX(-162px)';
+                    ct54.style.opacity = '1';
+                    break;
+            }
+        }
+        
+        /* On End Section */
+        function ctOff(number){
+            switch(number){
+                case 0: // Home Page
+                    txt0_1.style.transform = 'translateX(-100px)';
+                    txt0_2.style.transform = 'translateX(100px)';
+                    break;
+                case 1: // First Gen
+                    ct11.style.transform = 'translateX(0px)';
+                    ct11.style.opacity = '0';
+                    ct12.style.transform = 'translateX(0px)';
+                    ct12.style.opacity = '0';
+                    ct13.style.transform = 'translateX(202px)';
+                    ct13.style.opacity = '0';
+                    ct14.style.transform = 'translateX(0px)';
+                    ct14.style.opacity = '0';
+                    break;
+                case 2: // Second Gen
+                    ct21.style.transform = 'translateX(0px)';
+                    ct21.style.opacity = '0';
+                    ct22.style.transform = 'translateX(0px)';
+                    ct22.style.opacity = '0';
+                    ct23.style.transform = 'translateX(204px)';
+                    ct23.style.opacity = '0';
+                    ct24.style.transform = 'translateX(0px)';
+                    ct24.style.opacity = '0';
+                    break;
+                case 3: // Third Gen
+                    ct31.style.transform = 'translateX(0px)';
+                    ct31.style.opacity = '0';
+                    ct32.style.transform = 'translateX(0px)';
+                    ct32.style.opacity = '0';
+                    ct33.style.transform = 'translateY(250px)';
+                    ct33.style.opacity = '0';
+                    ct34.style.transform = 'translateY(250px)';
+                    ct34.style.opacity = '0';
+                    break;
+                case 4: // Foutth Gen
+                    ct41.style.transform = 'translateX(0px)';
+                    ct41.style.opacity = '0';
+                    ct42.style.transform = 'translateX(0px)';
+                    ct42.style.opacity = '0';
+                    ct43.style.transform = 'translateX(125px)';
+                    ct43.style.opacity = '0';
+                    ct44.style.transform = 'translateX(0px)';
+                    ct44.style.opacity = '0';
+                    break;
+                case 5: // Fifth Gen
+                    ct51.style.transform = 'translateX(0px)';
+                    ct51.style.opacity = '0';
+                    ct52.style.transform = 'translateX(0px)';
+                    ct52.style.opacity = '0';
+                    ct53.style.transform = 'translateX(197px)';
+                    ct53.style.opacity = '0';
+                    ct54.style.transform = 'translateX(0px)';
+                    ct54.style.opacity = '0';
+                    break;
+            }
+        }
+        
+        /* all End */
+        function content(number){
+            switch(number){
+                case 1:
+                    ctOn(1);
+                    ctOff(2);
+                    ctOff(3);
+                    ctOff(4);
+                    ctOff(5);
+                    ctOff(6);
+                    ctOff(7);
+                    ctOff(8);
+                    break;
+                case 2:
+                    ctOn(2);
+                    ctOff(1);
+                    ctOff(3);
+                    ctOff(4);
+                    ctOff(5);
+                    ctOff(6);
+                    ctOff(7);
+                    ctOff(8);
+                    break;
+                case 3:
+                    ctOn(3);
+                    ctOff(1);
+                    ctOff(2);
+                    ctOff(4);
+                    ctOff(5);
+                    ctOff(6);
+                    ctOff(7);
+                    ctOff(8);
+                    break;
+                case 4:
+                    ctOn(4);
+                    ctOff(1);
+                    ctOff(2);
+                    ctOff(3);
+                    ctOff(5);
+                    ctOff(6);
+                    ctOff(7);
+                    ctOff(8);
+                    break;
+                case 5:
+                    ctOn(5);
+                    ctOff(1);
+                    ctOff(2);
+                    ctOff(3);
+                    ctOff(4);
+                    ctOff(6);
+                    ctOff(7);
+                    ctOff(8);
+                    break;
+                case 6:
+                    ctOn(6);
+                    ctOff(1);
+                    ctOff(2);
+                    ctOff(3);
+                    ctOff(4);
+                    ctOff(5);
+                    ctOff(7);
+                    ctOff(8);
+                    break;
+                case 7:
+                    ctOn(7);
+                    ctOff(1);
+                    ctOff(2);
+                    ctOff(3);
+                    ctOff(4);
+                    ctOff(5);
+                    ctOff(6);
+                    ctOff(8);
+                    break;
+                case 8:
+                    ctOn(8);
+                    ctOff(1);
+                    ctOff(2);
+                    ctOff(3);
+                    ctOff(4);
+                    ctOff(5);
+                    ctOff(6);
+                    ctOff(7);
+                    break;
+            }
+        }
+
+        /* On Click */
+        function ctclick(number){
+            switch(number){
+                case 1:
+                    img1.style.transform = 'translateY(100px)';
+                    txt2_1.style.opacity = '1';
+                    break;
+                case 2:
+                    img2.style.transform = 'translateY(-100px)';
+                    txt2_2.style.opacity = '1';
+                    break;
+            }
+        }
+        
+        /* */
+        function showgame(number){
+            switch(number){
+                case 0:
+                    setTimeout(function(){ game1.style.display = 'none'; }, 400);
+                    break;
+                case 1:
+                    game1.style.display = 'block';
+                    break;
+                case 2:
+                    setTimeout(function(){ game2.style.display = 'none'; }, 500);
+                    break;
+                case 3:
+                    game2.style.display = 'block';
+                    break;
+                case 4:
+                    setTimeout(function(){ game3.style.display = 'none'; }, 500);
+                    break;
+                case 5:
+                    game3.style.display = 'block';
+                    break;
+                case 6:
+                    setTimeout(function(){ game4.style.display = 'none'; }, 500);
+                    break;
+                case 7:
+                    game4.style.display = 'block';
+                    break;
+                case 8:
+                    setTimeout(function(){ game5.style.display = 'none'; }, 500);
+                    break;
+                case 9:
+                    game5.style.display = 'block';
+                    break;
+            }
+        }
+
+        /* Progressbar */
+        var cg1 = 0;
+        var cg1_1 = 220;
+        var cg1_2 = 220;
+
+        var cg2 = 0;
+        var cg2_1 = 440;
+
+        var cg3 = 0;
+        var cg3_1 = 440;
+
+        var cg4 = 0;
+        var cg4_1 = 440;
+
+        var cg5 = 0;
+        var cg5_1 = 440;
+
+        var cg6 = 0;
+        var cg6_1 = 440;
+
+        var cg7 = 0;
+        var cg7_1 = 440;
+
+        var cg8 = 0;
+        var cg8_1 = 220;
+        var cg8_2 = 220;
+
+        function getProgress(x){
+            switch(x){
+                case 1:/* console vs handheld */
+                    if(cg1_1 == 220){
+                        cg1+= cg1_1;
+                        cg1_1 = 0;
+                    }
+                    progress1.style.width = cg1 + 'px';
+                    if(cg1 == 440){
+                        bbtn1.style.display = 'block';
+                    }
+                    break;
+                case 2:/* console vs handheld */
+                    if(cg1_2 == 220){
+                        cg1+= cg1_2;
+                        cg1_2 = 0;
+                    }
+                    progress1.style.width = cg1 + 'px';
+                    if(cg1 == 440){
+                        bbtn1.style.display = 'block';
+                    }
+                    break;
+                case 3: /* gen 1 */
+                    if(cg3_1 == 440){
+                        cg3+= cg3_1;
+                        cg3_1 = 0;
+                    }
+                    progress2.style.width = cg3 + 'px';
+                    if(cg3 == 440){
+                        bbtn2.style.display = 'block';
+                    }
+                    break;     
+                case 4: /* gen 2 */
+                    if(cg4_1 == 440){
+                        cg4+= cg4_1;
+                        cg4_1 = 0;
+                    }
+                    progress3.style.width = cg4 + 'px';
+                    if(cg4 == 440){
+                        bbtn3.style.display = 'block';
+                    }
+                    break;
+                case 5: /* gen 3 */
+                    if(cg5_1 == 440){
+                        cg5+= cg5_1;
+                        cg5_1 = 0;
+                    }
+                    progress4.style.width = cg5 + 'px';
+                    if(cg5 == 440){
+                        bbtn4.style.display = 'block';
+                    }
+                    break;
+                case 6: /* gen 4 */
+                    if(cg6_1 == 440){
+                        cg6+= cg6_1;
+                        cg6_1 = 0;
+                    }
+                    progress5.style.width = cg6 + 'px';
+                    if(cg6 == 440){
+                        bbtn5.style.display = 'block';
+                    }
+                    break;
+                case 7: /* gen 5 */
+                    if(cg7_1 == 440){
+                        cg7+= cg7_1;
+                        cg7_1 = 0;
+                    }
+                    progress6.style.width = cg7 + 'px';
+                    if(cg6 == 440){
+                        bbtn6.style.display = 'block';
+                    }
+                    break;
+                case 8: /* gen 6 */
+                    if(cg8_1 == 220){
+                        cg8+= cg8_1;
+                        cg8_1 = 0;
+                    }
+                    progress7.style.width = cg8 + 'px';
+                    if(cg8 == 440){
+                        bbtn6.style.display = 'block';
+                    }
+                    break;
+                case 9: /* gen 6 */
+                    if(cg8_2 == 220){
+                        cg8+= cg8_2;
+                        cg8_2 = 0;
+                    }
+                    progress7.style.width = cg8 + 'px';
+                    if(cg8 == 440){
+                        bbtn6.style.display = 'block';
+                    }
+                    break;
+            } 
+        }
+    
+    </script>
+</html>
