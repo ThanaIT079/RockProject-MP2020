@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="image/rp-icon.png"/>
+
+        <link rel="stylesheet" href="indexauto.css">
+        <script src="indexauto.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+
+        <title>Consoles's Travel</title>
+
+    </head>
+    <body onload="location.href='#home'; navigatorOff();">
+        <!-- Navigatorbar -->
+        <div id="navigator">
+            <div class="pagebtn" onclick="location.href='#home'; navigatorOff(); resett()">
+                <p class="font SS CW">Home</p>
+            </div>
+            <div id="link0" class="pagebtn" onclick="location.href='#page0'; imHere(0)">
+                <p class="font SS CW">Console</p>
+            </div>
+            <div id="link1" class="pagebtn" onclick="location.href='#page1'; imHere(1)">
+                <p class="font SS CW">I</p>
+            </div>
+            <div id="link2" class="pagebtn" onclick="location.href='#page2'; imHere(2)">
+                <p class="font SS CW">II</p>
+            </div>
+            <div id="link3" class="pagebtn" onclick="location.href='#page3'; imHere(3)">
+                <p class="font SS CW">III</p>
+            </div>
+            <div id="link4" class="pagebtn" onclick="location.href='#page4'; imHere(4)">
+                <p class="font SS CW">IV</p>
+            </div>
+            <div id="link5" class="pagebtn" onclick="location.href='#page5'; imHere(5)">
+                <p class="font SS CW">V</p>
+            </div>
+            <div id="link6" class="pagebtn" onclick="location.href='#page6'; imHere(6)">
+                <p class="font SS CW">VI</p>
+            </div>
+            <div id="link7" class="pagebtn" onclick="location.href='#page7'; imHere(7)">
+                <p class="font SS CW">VII</p>
+            </div>
+            <div id="link8" class="pagebtn" onclick="location.href='#page8'; imHere(8)">
+                <p class="font SS CW">VIII</p>
+            </div>
+            <div id="link9" class="pagebtn" onclick="location.href='#page9'; getresult(); imHere(9)">
+                <p class="font SS CW">Trophy</p>
+            </div>
+            <div class="pagebtn" onclick="location.reload();">
+                <p class="font SS CW">Reset</p>
+            </div>
+        </div>
+
+        <!-- Home Page -->
+        <div id="home" class="home">
+                <div id="homebtn" onclick="location.href='#page0'; navigatorOn(); imHere(0)"></div>
+        </div>
+        
+        <!-- Console & Handhel -->
+        <div id="page0" class="p0">
+            
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="text0_1" class="abc font LL CW">Console</p>
+                <p id="text0_2" class="abc font LL CW">Handheld</p>
+                <div id="img0_1" class="abc" onclick="openPopUp(0, 0); navigatorOff();"></div>
+                <div id="img0_2" class="abc" onclick="openPopUp(1, 0); navigatorOff();"></div>
+                
+                <!-- Popup -->
+                <div id="back0" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop01" class="detailP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop02" class="detailP" onclick="closePopUp(); navigatorOn();"></div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress0"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation 1 -->
+        <div id="page1" class="p1">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt1" class="abc font Ll CW">1st Generation 1972 - 1976</p>
+                <div id="img1_1" class="abc" onclick="openPopUp(2, 1); navigatorOff(); btnOff(1)"></div>
+
+                <!-- Popup -->
+                <div id="back1" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop11" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(1)"></div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress1"></div>
+                </div>
+                <div id="morebtn1" class="morebtn" onclick="">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation 2 -->
+        <div id="page2" class="p2">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt2" class="abc font Ll CW">2nd generation 1977 - 1982</p>
+                <div id="img2_1" class="abc" onclick="openPopUp(3, 2); navigatorOff(); btnOff(2)"></div>
+
+                <!-- Popup -->
+                <div id="back2" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop21" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(2)"></div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress2"></div>
+                </div>
+                <div id="morebtn2" class="morebtn" onclick="">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation 3 -->
+        <div id="page3" class="p3">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt3" class="abc font Ll CW">3rd generation 1983 - 1989</p>
+                <div id="img3_1" class="abc"onclick="openPopUp(4, 3); navigatorOff(); btnOff(3)"></div>
+
+                <!-- Popup -->
+                <div id="back3" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop31" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(3)"></div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress3"></div>
+                </div>
+                <div id="morebtn3" class="morebtn" onclick="">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation 4 -->
+        <div id="page4" class="p4">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt4" class="abc font Ll CW">4th generation 1989 - 1992</p>
+                <div id="img4_1" class="abc"onclick="openPopUp(5, 4); navigatorOff(); btnOff(4)"></div>
+                <div id="img4_2" class="abc"onclick="openPopUp(6, 4); navigatorOff(); btnOff(4)"></div>
+                <div id="img4_3" class="abc"onclick="openPopUp(7, 4); navigatorOff(); btnOff(4)"></div>
+
+                <!-- Popup -->
+                <div id="back4" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop41" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(4)"></div>
+                <div id="pop42" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(4)"></div>
+                <div id="pop43" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(4)"></div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress4"></div>
+                </div>
+                <div id="morebtn4" class="morebtn" onclick="">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation 5 -->
+        <div id="page5" class="p5">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt5" class="abc font Ll CW">5th generation 1993 - 1996</p>
+                <div id="img5_1" class="abc"onclick="openPopUp(8, 5); navigatorOff(); btnOff(5)"></div>
+                <div id="img5_2" class="abc"onclick="openPopUp(9, 5); navigatorOff(); btnOff(5)"></div>
+                <div id="img5_3" class="abc"onclick="openPopUp(10, 5); navigatorOff(); btnOff(5)"></div>
+
+                <!-- Popup -->
+                <div id="back5" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop51" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(5)"></div>
+                <div id="pop52" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(5)"></div>
+                <div id="pop53" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(5)"></div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress5"></div>
+                </div>
+                <div id="morebtn5" class="morebtn" onclick="">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation 6 -->
+        <div id="page6" class="p6">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt6" class="abc font Ll CW">6th generation 1999 - 2001</p>
+                <div id="img6_1" class="abc"onclick="openPopUp(11, 6); navigatorOff(); btnOff(6)"></div>
+                <div id="img6_2" class="abc"onclick="openPopUp(12, 6); navigatorOff(); btnOff(6)"></div>
+                <div id="img6_3" class="abc"onclick="openPopUp(13, 6); navigatorOff(); btnOff(6)"></div>
+                <div id="img6_4" class="abc"onclick="openPopUp(14, 6); navigatorOff(); btnOff(6)"></div>
+
+                <!-- Popup -->
+                <div id="back6" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop61" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)"></div>
+                <div id="pop62" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)"></div>
+                <div id="pop63" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)"></div>
+                <div id="pop64" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)"></div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress6"></div>
+                </div>
+                <div id="morebtn6" class="morebtn" onclick="">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation 7 -->
+        <div id="page7" class="p7">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt7" class="abc font Ll CW">7th generation 2004- 2006</p>
+                <div id="img7_1" class="abc"onclick="openPopUp(15, 7); navigatorOff(); btnOff(7)"></div>
+                <div id="img7_2" class="abc"onclick="openPopUp(16, 7); navigatorOff(); btnOff(7)"></div>
+                <div id="img7_3" class="abc"onclick="openPopUp(17, 7); navigatorOff(); btnOff(7)"></div>
+
+                <!-- Popup -->
+                <div id="back7" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop71" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(7)"></div>
+                <div id="pop72" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(7)"></div>
+                <div id="pop73" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(7)"></div>
+                
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress7"></div>
+                </div>
+                <div id="morebtn7" class="morebtn" onclick="">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation 8 -->
+        <div id="page8" class="p8">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt8" class="abc font Ll CW">8th generation 2011 - 2017</p>
+                <div id="img8_1" class="abc"onclick="openPopUp(18, 8); navigatorOff(); btnOff(8)"></div>
+                <div id="img8_2" class="abc"onclick="openPopUp(19, 8); navigatorOff(); btnOff(8)"></div>
+                <div id="img8_3" class="abc"onclick="openPopUp(20, 8); navigatorOff(); btnOff(8)"></div>
+
+                <!-- Popup -->
+                <div id="back8" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop81" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(8)"></div>
+                <div id="pop82" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(8)"></div>
+                <div id="pop83" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(8)"></div>
+                
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress8"></div>
+                </div>
+                <!-- <div id="morebtn8" class="morebtn" onclick="">
+                    <p class="font MM CW">Fin !</p>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Generation 8 -->
+        <div id="page9" class="p9">
+            <div id="result"><p id="resultxt" class="abs font Ll CW">Can you try. Would you kindly?</p></div>
+            
+            <div id="total"><p id="totaltxt" class="abs font Ll CW">0%</p></div>
+            <div class="progressbar-result">
+                <div id="progress9"></div>
+            </div>
+            <div id="img9" class="abc" onclick="openPopUp(21, 9); navigatorOff(); btnOff(9)"> </div>
+
+            <!-- Mini Progerss -->
+            <div class="mn pro0"><div id="minipro0"></div></div>
+            <div class="mn pro1"><div id="minipro1"></div></div>
+            <div class="mn pro2"><div id="minipro2"></div></div>
+            <div class="mn pro3"><div id="minipro3"></div></div>
+            <div class="mn pro4"><div id="minipro4"></div></div>
+            <div class="mn pro5"><div id="minipro5"></div></div>
+            <div class="mn pro6"><div id="minipro6"></div></div>
+            <div class="mn pro7"><div id="minipro7"></div></div>
+            <div class="mn pro8"><div id="minipro8"></div></div>
+
+            <p class="abc font SS CW mitxt0">Console</p>
+            <p class="abc font SS CW mitxt1">Gen I</p>
+            <p class="abc font SS CW mitxt2">Gen II</p>
+            <p class="abc font SS CW mitxt3">Gen III</p>
+            <p class="abc font SS CW mitxt4">Gen IV</p>
+            <p class="abc font SS CW mitxt5">Gen V</p>
+            <p class="abc font SS CW mitxt6">Gen VI</p>
+            <p class="abc font SS CW mitxt7">Gen VII</p>
+            <p class="abc font SS CW mitxt8">Gen VIII</p>
+
+            <!-- Popup -->
+            <div id="back9" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+            <div id="pop9" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(9)"></div>
+        </div>
+    </body>
+    <script>
+        // alert( window.innerWidth);
+        function navigatorOff(){
+            document.getElementById('navigator').style.visibility = 'hidden';     
+        }
+        function navigatorOn(){
+            setTimeout(function(){ 
+                document.getElementById('navigator').style.visibility = 'visible';
+            }, 300);
+        }
+
+        function btnOff(x){
+            switch(x){
+                case 1:
+                    document.getElementById('morebtn1').style.visibility = 'hidden';
+                    break;
+                case 2:
+                    document.getElementById('morebtn2').style.visibility = 'hidden';
+                    break;
+                case 3:
+                    document.getElementById('morebtn3').style.visibility = 'hidden';
+                    break;
+                case 4:
+                    document.getElementById('morebtn4').style.visibility = 'hidden';
+                    break;
+                case 5:
+                    document.getElementById('morebtn5').style.visibility = 'hidden';
+                    break;
+                case 6:
+                    document.getElementById('morebtn6').style.visibility = 'hidden';
+                    break;
+                case 7:
+                    document.getElementById('morebtn7').style.visibility = 'hidden';
+                    break;
+                // case 8:
+                //     document.getElementById('morebtn8').style.visibility = 'hidden';
+                //     break;
+            }       
+        }
+        
+        function btnOn(x){
+            switch(x){
+                case 1:
+                    document.getElementById('morebtn1').style.visibility = 'visible';
+                    break;
+                case 2:
+                    document.getElementById('morebtn2').style.visibility = 'visible';
+                    break;
+                case 3:
+                    document.getElementById('morebtn3').style.visibility = 'visible';
+                    break;
+                case 4:
+                    document.getElementById('morebtn4').style.visibility = 'visible';
+                    break;
+                case 5:
+                    document.getElementById('morebtn5').style.visibility = 'visible';
+                    break;
+                case 6:
+                    document.getElementById('morebtn6').style.visibility = 'visible';
+                    break;
+                case 7:
+                    document.getElementById('morebtn7').style.visibility = 'visible';
+                    break;
+                // case 8:
+                //     document.getElementById('morebtn8').style.visibility = 'visible';
+                //     break;
+            }
+        }
+
+        function imHere(z){
+            for (let i = 0; i < 10; i++){
+                if (i != z){
+                    document.getElementById('link' + i).style.opacity = 0.5;
+                    document.getElementById('link' + i).style.transform = 'scale(1)';
+                }
+                document.getElementById('link' + z).style.opacity = 1;
+                document.getElementById('link' + z).style.transform = 'scale(1.2)';
+            }
+        }
+        
+        function resett(){
+            for (let i = 0; i < 10; i++){
+                document.getElementById('link' + i).style.opacity = 0.5;
+                document.getElementById('link' + i).style.transform = 'scale(1)';
+            }
+        }
+
+        function getresult(){
+
+        }
+    </script>
+</html>
