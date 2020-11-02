@@ -23,40 +23,40 @@
         <title>Consoles's Travel</title>
 
     </head>
-    <body onload="location.href='#home'; navigatorOff();">
+    <body onload="location.href='#home'; navigatorOff(); homeOn()">
         <!-- Navigatorbar -->
         <div id="navigator">
-            <div class="pagebtn" onclick="location.href='#home'; navigatorOff(); resett()">
+            <div class="pagebtn" onclick="location.href='#home'; navigatorOff(); resett(); homeOn()">
                 <p class="font SS CW">Home</p>
             </div>
-            <div id="link0" class="pagebtn" onclick="location.href='#page0'; imHere(0)">
+            <div id="link0" class="pagebtn" onclick="location.href='#page0'; imHere(0);">
                 <p class="font SS CW">Console</p>
             </div>
-            <div id="link1" class="pagebtn" onclick="location.href='#page1'; imHere(1)">
+            <div id="link1" class="pagebtn" onclick="location.href='#page1'; imHere(1);">
                 <p class="font SS CW">I</p>
             </div>
-            <div id="link2" class="pagebtn" onclick="location.href='#page2'; imHere(2)">
+            <div id="link2" class="pagebtn" onclick="location.href='#page2'; imHere(2);">
                 <p class="font SS CW">II</p>
             </div>
-            <div id="link3" class="pagebtn" onclick="location.href='#page3'; imHere(3)">
+            <div id="link3" class="pagebtn" onclick="location.href='#page3'; imHere(3);">
                 <p class="font SS CW">III</p>
             </div>
-            <div id="link4" class="pagebtn" onclick="location.href='#page4'; imHere(4)">
+            <div id="link4" class="pagebtn" onclick="location.href='#page4'; imHere(4);">
                 <p class="font SS CW">IV</p>
             </div>
-            <div id="link5" class="pagebtn" onclick="location.href='#page5'; imHere(5)">
+            <div id="link5" class="pagebtn" onclick="location.href='#page5'; imHere(5);">
                 <p class="font SS CW">V</p>
             </div>
-            <div id="link6" class="pagebtn" onclick="location.href='#page6'; imHere(6)">
+            <div id="link6" class="pagebtn" onclick="location.href='#page6'; imHere(6);">
                 <p class="font SS CW">VI</p>
             </div>
-            <div id="link7" class="pagebtn" onclick="location.href='#page7'; imHere(7)">
+            <div id="link7" class="pagebtn" onclick="location.href='#page7'; imHere(7);">
                 <p class="font SS CW">VII</p>
             </div>
-            <div id="link8" class="pagebtn" onclick="location.href='#page8'; imHere(8)">
+            <div id="link8" class="pagebtn" onclick="location.href='#page8'; imHere(8);">
                 <p class="font SS CW">VIII</p>
             </div>
-            <div id="link9" class="pagebtn" onclick="location.href='#page9'; getresult(); imHere(9); ">
+            <div id="link9" class="pagebtn" onclick="location.href='#page9'; getresult(); imHere(9);">
                 <p class="font SS CW">Trophy</p>
             </div>
             <div class="pagebtn" onclick="location.reload();">
@@ -66,12 +66,15 @@
 
         <!-- Home Page -->
         <div id="home" class="home">
-                <div id="homebtn" onclick="location.href='#page0'; navigatorOn(); imHere(0)"></div>
+            <div id="hpimg1"></div>
+            <div id="hpimg2"></div>
+            <div id="hpimg3"></div>
+            <div id="hpimg4"></div>
+            <div id="homebtn" onclick="location.href='#page0'; navigatorOn(); imHere(0); homeOff()"></div>
         </div>
         
         <!-- Console & Handhel -->
         <div id="page0" class="p0">
-            
             <div class="layout top"></div>
             <div class="layout mid">
                 <p id="text0_1" class="abc font LL CW">Console</p>
@@ -114,11 +117,11 @@
             <div class="layout top"></div>
             <div class="layout mid">
                 <p id="gentxt1" class="abc font Ll CW">1st Generation 1972 - 1976</p>
-                <div id="img1_1" class="abc" onclick="openPopUp(2, 1); navigatorOff(); btnOff(1); getprogress(1, 1)"></div>
+                <div id="img1_1" class="abc" onclick="openPopUp(2, 1); navigatorOff(); getprogress(1, 1);"></div>
 
                 <!-- Popup -->
-                <div id="back1" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(1)"></div>
-                <div id="pop11" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(1)">
+                <div id="back1" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop11" class="detailG1" onclick="closePopUp(); navigatorOn();">
                     <div id="imgp11"></div>
                     <div id="txtpbox11">
                         <p class="abc font SS CW">
@@ -142,9 +145,9 @@
                 <div class="progressbar">
                     <div id="progress1"></div>
                 </div>
-                <div id="morebtn1" class="morebtn" onclick="showMore(1); location.href='#more1';">
+                <!-- <div id="morebtn1" class="morebtn" onclick="showMore(1); location.href='#more1';">
                     <p class="font MM CW">More!</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -160,11 +163,11 @@
             <div class="layout top"></div>
             <div class="layout mid">
                 <p id="gentxt2" class="abc font Ll CW">2nd generation 1977 - 1982</p>
-                <div id="img2_1" class="abc" onclick="openPopUp(3, 2); navigatorOff(); btnOff(2); getprogress(2, 1)"></div>
+                <div id="img2_1" class="abc" onclick="openPopUp(3, 2); navigatorOff(); getprogress(2, 1)"></div>
 
                 <!-- Popup -->
-                <div id="back2" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(2)"></div>
-                <div id="pop21" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(2)">
+                <div id="back2" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop21" class="detailG2" onclick="closePopUp(); navigatorOn();">
                     <div id="txtpbox21">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Atari 2600 <br>
@@ -187,9 +190,9 @@
                 <div class="progressbar">
                     <div id="progress2"></div>
                 </div>
-                <div id="morebtn2" class="morebtn" onclick="showMore(2); location.href='#more2';">
+                <!-- <div id="morebtn2" class="morebtn" onclick="showMore(2); location.href='#more2';">
                     <p class="font MM CW">More!</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -210,7 +213,7 @@
 
                 <!-- Popup -->
                 <div id="back3" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(3)"></div>
-                <div id="pop31" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(3)">
+                <div id="pop31" class="detailG3" onclick="closePopUp(); navigatorOn(); btnOn(3)">
                     <div id="txtpbox31">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Nintendo Entertainment System หรือ NES หรือ Famicom <br>
@@ -235,7 +238,7 @@
                 <div class="progressbar">
                     <div id="progress3"></div>
                 </div>
-                <div id="morebtn3" class="morebtn" onclick="showMore(3); location.href='#more3'; firstViewSFX()">
+                <div id="morebtn3" class="morebtn3" onclick="showMore(3); location.href='#more3'; firstViewSFX(); getprogress(3, 2)">
                     <p class="font MM CW">More!</p>
                 </div>
             </div>
@@ -243,7 +246,7 @@
 
          <!-- More 3 -->
          <div id="more3" class="m03">
-            <div id="cmbtn3" class="cmbtn" onclick="closeMore(3); location.href='#page3';">
+            <div id="cmbtn3" class="cmbtn" onclick="closeMore(3); location.href='#page3'; closeGame();">
                 <p class="font MM CW">Back</p>
             </div>
             <div id="viewgame1">
@@ -269,13 +272,13 @@
             <div class="layout top"></div>
             <div class="layout mid">
                 <p id="gentxt4" class="abc font Ll CW">4th generation 1989 - 1992</p>
-                <div id="img4_1" class="abc"onclick="openPopUp(5, 4); navigatorOff(); btnOff(4); getprogress(4, 1)"></div>
-                <div id="img4_2" class="abc"onclick="openPopUp(6, 4); navigatorOff(); btnOff(4); getprogress(4, 2)"></div>
-                <div id="img4_3" class="abc"onclick="openPopUp(7, 4); navigatorOff(); btnOff(4); getprogress(4, 3)"></div>
+                <div id="img4_1" class="abc"onclick="openPopUp(5, 4); navigatorOff(); getprogress(4, 1); changeBg(4,1)"></div>
+                <div id="img4_2" class="abc"onclick="openPopUp(6, 4); navigatorOff(); getprogress(4, 2); changeBg(4,2)"></div>
+                <div id="img4_3" class="abc"onclick="openPopUp(7, 4); navigatorOff(); getprogress(4, 3); changeBg(4,3)"></div>
 
                 <!-- Popup -->
-                <div id="back4" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(4)"></div>
-                <div id="pop41" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(4)">
+                <div id="back4" class="backP" onclick="closePopUp(); navigatorOn(); changeBg(4,4)"></div>
+                <div id="pop41" class="detailG4" onclick="closePopUp(); navigatorOn(); changeBg(4,4)">
                     <div id="imgp41"></div>
                     <div id="txtpbox41">
                         <p class="abc font SS CW">
@@ -293,7 +296,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop42" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(4)">
+                <div id="pop42" class="detailG4" onclick="closePopUp(); navigatorOn(); changeBg(4,4)">
                     <div id="imgp42"></div>
                     <div id="txtpbox43">
                         <p class="abc font SS CW">
@@ -310,7 +313,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop43" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(4)">
+                <div id="pop43" class="detailG4" onclick="closePopUp(); navigatorOn(); changeBg(4,4)">
                     <div id="imgp43"></div>
                     <div id="txtpbox45">
                         <p class="abc font SS CW">
@@ -334,9 +337,9 @@
                 <div class="progressbar">
                     <div id="progress4"></div>
                 </div>
-                <div id="morebtn4" class="morebtn" onclick="showMore(4); location.href='#more4';">
+                <!-- <div id="morebtn4" class="morebtn" onclick="showMore(4); location.href='#more4';">
                     <p class="font MM CW">More!</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -352,13 +355,13 @@
             <div class="layout top"></div>
             <div class="layout mid">
                 <p id="gentxt5" class="abc font Ll CW">5th generation 1993 - 1996</p>
-                <div id="img5_1" class="abc"onclick="openPopUp(8, 5); navigatorOff(); btnOff(5); getprogress(5, 1)"></div>
-                <div id="img5_2" class="abc"onclick="openPopUp(9, 5); navigatorOff(); btnOff(5); getprogress(5, 2)"></div>
-                <div id="img5_3" class="abc"onclick="openPopUp(10, 5); navigatorOff(); btnOff(5); getprogress(5, 3)"></div>
+                <div id="img5_1" class="abc"onclick="openPopUp(8, 5); navigatorOff(); getprogress(5, 1); changeBg(5,1)"></div>
+                <div id="img5_2" class="abc"onclick="openPopUp(9, 5); navigatorOff(); getprogress(5, 2); changeBg(5,2)"></div>
+                <div id="img5_3" class="abc"onclick="openPopUp(10, 5); navigatorOff(); getprogress(5, 3); changeBg(5,3)"></div>
 
                 <!-- Popup -->
-                <div id="back5" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(5)"></div>
-                <div id="pop51" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(5)">
+                <div id="back5" class="backP" onclick="closePopUp(); navigatorOn(); changeBg(5,4)"></div>
+                <div id="pop51" class="detailG5" onclick="closePopUp(); navigatorOn(); changeBg(5,4)">
                     <div id="txtpbox51">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> PlayStation <br>
@@ -377,7 +380,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop52" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(5)">
+                <div id="pop52" class="detailG5" onclick="closePopUp(); navigatorOn(); changeBg(5,4)">
                     <div id="txtpbox53">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Nintendo 64 <br>
@@ -395,7 +398,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop53" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(5)">
+                <div id="pop53" class="detailG5" onclick="closePopUp(); navigatorOn(); changeBg(5,4)">
                     <div id="txtpbox55">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> 3DO REAL <br>
@@ -418,9 +421,9 @@
                 <div class="progressbar">
                     <div id="progress5"></div>
                 </div>
-                <div id="morebtn5" class="morebtn" onclick="showMore(5); location.href='#more5';">
+                <!-- <div id="morebtn5" class="morebtn" onclick="showMore(5); location.href='#more5';">
                     <p class="font MM CW">More!</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -436,14 +439,14 @@
             <div class="layout top"></div>
             <div class="layout mid">
                 <p id="gentxt6" class="abc font Ll CW">6th generation 1999 - 2001</p>
-                <div id="img6_1" class="abc"onclick="openPopUp(11, 6); navigatorOff(); btnOff(6); getprogress(6, 1)"></div>
-                <div id="img6_2" class="abc"onclick="openPopUp(12, 6); navigatorOff(); btnOff(6); getprogress(6, 2)"></div>
-                <div id="img6_3" class="abc"onclick="openPopUp(13, 6); navigatorOff(); btnOff(6); getprogress(6, 3)"></div>
-                <div id="img6_4" class="abc"onclick="openPopUp(14, 6); navigatorOff(); btnOff(6); getprogress(6, 4)"></div>
+                <div id="img6_1" class="abc"onclick="openPopUp(11, 6); navigatorOff(); getprogress(6, 1); changeBg(6,1)"></div>
+                <div id="img6_2" class="abc"onclick="openPopUp(12, 6); navigatorOff(); getprogress(6, 2); changeBg(6,2)"></div>
+                <div id="img6_3" class="abc"onclick="openPopUp(13, 6); navigatorOff(); getprogress(6, 3); changeBg(6,3)"></div>
+                <div id="img6_4" class="abc"onclick="openPopUp(14, 6); navigatorOff(); getprogress(6, 4); changeBg(6,4)"></div>
 
                 <!-- Popup -->
-                <div id="back6" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(6)"></div>
-                <div id="pop61" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)">
+                <div id="back6" class="backP" onclick="closePopUp(); navigatorOn(); changeBg(6,5)"></div>
+                <div id="pop61" class="detailG6" onclick="closePopUp(); navigatorOn(); changeBg(6,5)">
                     <div id="txtpbox61">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Playstation2 <br>
@@ -462,7 +465,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop62" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)">
+                <div id="pop62" class="detailG6" onclick="closePopUp(); navigatorOn(); changeBg(6,5)">
                     <div id="txtpbox63">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Xbox <br>
@@ -479,7 +482,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop63" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)">
+                <div id="pop63" class="detailG6" onclick="closePopUp(); navigatorOn(); changeBg(6,5)">
                     <div id="txtpbox65">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Dream Cast <br>
@@ -495,7 +498,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop64" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)">
+                <div id="pop64" class="detailG6" onclick="closePopUp(); navigatorOn(); changeBg(6,5)">
                     <div id="txtpbox67">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> GameCube <br>
@@ -518,9 +521,9 @@
                 <div class="progressbar">
                     <div id="progress6"></div>
                 </div>
-                <div id="morebtn6" class="morebtn" onclick="showMore(6); location.href='#more6';">
+                <!-- <div id="morebtn6" class="morebtn" onclick="showMore(6); location.href='#more6';">
                     <p class="font MM CW">More!</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -536,13 +539,13 @@
             <div class="layout top"></div>
             <div class="layout mid">
                 <p id="gentxt7" class="abc font Ll CW">7th generation 2004- 2006</p>
-                <div id="img7_1" class="abc"onclick="openPopUp(15, 7); navigatorOff(); btnOff(7); getprogress(7, 1)"></div>
-                <div id="img7_2" class="abc"onclick="openPopUp(16, 7); navigatorOff(); btnOff(7); getprogress(7, 2)"></div>
-                <div id="img7_3" class="abc"onclick="openPopUp(17, 7); navigatorOff(); btnOff(7); getprogress(7, 3)"></div>
+                <div id="img7_1" class="abc"onclick="openPopUp(15, 7); navigatorOff(); getprogress(7, 1); changeBg(7,1)"></div>
+                <div id="img7_2" class="abc"onclick="openPopUp(16, 7); navigatorOff(); getprogress(7, 2); changeBg(7,2)"></div>
+                <div id="img7_3" class="abc"onclick="openPopUp(17, 7); navigatorOff(); getprogress(7, 3); changeBg(7,3)"></div>
 
                 <!-- Popup -->
-                <div id="back7" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(7)"></div>
-                <div id="pop71" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(7)">
+                <div id="back7" class="backP" onclick="closePopUp(); navigatorOn(); changeBg(7,4)"></div>
+                <div id="pop71" class="detailG7" onclick="closePopUp(); navigatorOn(); changeBg(7,4)">
                     <div id="txtpbox71">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Wii <br>
@@ -560,7 +563,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop72" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(7)">
+                <div id="pop72" class="detailG7" onclick="closePopUp(); navigatorOn(); changeBg(7,4)">
                     <div id="txtpbox73">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Playstation 3 <br>
@@ -576,7 +579,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop73" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(7)">
+                <div id="pop73" class="detailG7" onclick="closePopUp(); navigatorOn(); changeBg(7,4)">
                     <div id="txtpbox75">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Xbox 360 <br>
@@ -600,9 +603,9 @@
                 <div class="progressbar">
                     <div id="progress7"></div>
                 </div>
-                <div id="morebtn7" class="morebtn" onclick="showMore(7); location.href='#more7';">
+                <!-- <div id="morebtn7" class="morebtn" onclick="showMore(7); location.href='#more7';">
                     <p class="font MM CW">More!</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -618,13 +621,13 @@
             <div class="layout top"></div>
             <div class="layout mid">
                 <p id="gentxt8" class="abc font Ll CW">8th generation 2011 - 2017</p>
-                <div id="img8_1" class="abc"onclick="openPopUp(18, 8); navigatorOff(); btnOff(8); getprogress(8, 1)"></div>
-                <div id="img8_2" class="abc"onclick="openPopUp(19, 8); navigatorOff(); btnOff(8); getprogress(8, 2)"></div>
-                <div id="img8_3" class="abc"onclick="openPopUp(20, 8); navigatorOff(); btnOff(8); getprogress(8, 3)"></div>
+                <div id="img8_1" class="abc"onclick="openPopUp(18, 8); navigatorOff(); getprogress(8, 1); changeBg(8,1)"></div>
+                <div id="img8_2" class="abc"onclick="openPopUp(19, 8); navigatorOff(); getprogress(8, 2); changeBg(8,2)"></div>
+                <div id="img8_3" class="abc"onclick="openPopUp(20, 8); navigatorOff(); getprogress(8, 3); changeBg(8,3)"></div>
 
                 <!-- Popup -->
-                <div id="back8" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(8)"></div>
-                <div id="pop81" class="detailG81" onclick="closePopUp(); navigatorOn(); btnOn(8)">
+                <div id="back8" class="backP" onclick="closePopUp(); navigatorOn(); changeBg(8,4)"></div>
+                <div id="pop81" class="detailG81" onclick="closePopUp(); navigatorOn(); changeBg(8,4)">
                     <div id="txtpbox81">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Playstation 4 <br>
@@ -634,7 +637,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop82" class="detailG81" onclick="closePopUp(); navigatorOn(); btnOn(8)">
+                <div id="pop82" class="detailG81" onclick="closePopUp(); navigatorOn(); changeBg(8,4)">
                     <div id="txtpbox82">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Xbox one <br>
@@ -644,7 +647,7 @@
                         </p>
                     </div>
                 </div>
-                <div id="pop83" class="detailG82" onclick="closePopUp(); navigatorOn(); btnOn(8)">
+                <div id="pop83" class="detailG82" onclick="closePopUp(); navigatorOn(); changeBg(8,4)">
                     <div id="txtpbox83">
                         <p class="abc font SS CW">
                             <b>เครื่อง</b> Nintendo Switch <br>
@@ -716,6 +719,20 @@
     <script>
         // alert('Iner Width'+ window.innerWidth);
         // alert('Iner Height'+ window.innerHeight);
+
+        function homeOn(){
+            document.getElementById('hpimg1').style.transform = 'translateY(0px)';
+            document.getElementById('hpimg2').style.transform = 'translateY(0px)';
+            document.getElementById('hpimg3').style.transform = 'translateY(0px)';
+            document.getElementById('hpimg4').style.transform = 'translateY(0px)';
+        }
+        
+        function homeOff(){
+            document.getElementById('hpimg1').style.transform = 'translateY(-150px)';
+            document.getElementById('hpimg2').style.transform = 'translateY(100px)';
+            document.getElementById('hpimg3').style.transform = 'translateY(-150px)';
+            document.getElementById('hpimg4').style.transform = 'translateY(100px)';
+        }
 
         function navigatorOff(){
             document.getElementById('navigator').style.visibility = 'hidden';     

@@ -17,6 +17,9 @@ let actFly = 0;
 let birdsStack = new Array;
 let score = 0;
 
+//Status sound
+let statusSound = true;
+let menuFirstChk = true;
 
 //Graphic
 let imgBirdsR = ["BGR.gif", "BRR.gif", "BBR.gif"];
@@ -93,7 +96,7 @@ function loopGame() {
             StageSFX(3);
         }
         else {
-            document.getElementById('nextStG1').innerHTML = "Next Stage ->";
+            document.getElementById('nextStG1').innerHTML = "Next Stage >>";
             //Play Sound
             StageSFX(2);
         }
@@ -102,7 +105,7 @@ function loopGame() {
         statusPlay = false;
     }
     // Wait to spawn bird
-    if (timechk >= secSpawn) {
+    if (timechk >= secSpawn && statusPlay) {
         birdsStack[actFly].fly = true;
         //Play Sound Spanw Bird
         if (actFly != birdsStack.length - 1) {
@@ -252,6 +255,8 @@ function clickToP() {
     document.getElementsByClassName('game1HUD')[0].style.visibility = "visible";
     document.getElementsByClassName('game1HUD')[1].style.visibility = "visible";
     document.getElementsByClassName('game1HUD')[2].style.visibility = "visible";
+    
+    menuFirstChk = false;
     pauseAudio(sfxFirst);
     playGame1();
 }
@@ -277,7 +282,9 @@ function randomInt(min, max) {
 
 //Play sound
 function playAudio(sfx) {
-    sfx.play();
+    if (statusSound) {
+        sfx.play();
+    }
 }
 
 function pauseAudio(sfx) {
@@ -285,11 +292,13 @@ function pauseAudio(sfx) {
     sfx.pause();
 }
 
+
 let gameSound;
 let sfxFirst;
 let onStageSFX;
 
 function firstViewSFX() {
+    statusSound = true;
     gameSound = document.getElementById("viewgame1");
     sfxFirst = document.createElement('AUDIO');
     sfxFirst.setAttribute("src", "sfx/game1/start.mp3");
@@ -355,4 +364,49 @@ function DropBirdSFX(bird) {
     bird.appendChild(dpBirdSFX);
     pauseAudio(dpBirdSFX);
     playAudio(dpBirdSFX);
+}
+
+function soundSwitch() {
+    if (statusSound) {
+        try {
+            statusSound = false;
+            pauseAudio(sfxFirst);
+            pauseAudio(onStageSFX);
+        }
+        catch (err) {
+        }
+    }
+    else {
+        statusSound = true;
+        if (menuFirstChk) {
+            firstViewSFX();
+        }
+    }
+}
+
+function closeGame() {
+    statusPlay = false;
+    menuFirstChk = true;
+    document.getElementById('menu1').style.visibility = "visible";
+    document.getElementsByClassName('game1HUD')[0].style.visibility = "hidden";
+    document.getElementsByClassName('game1HUD')[1].style.visibility = "hidden";
+    document.getElementsByClassName('game1HUD')[2].style.visibility = "hidden";
+    //Reset Game
+    stageShow = 1;
+    countBird = 6; // n-1
+    limitTime = 20;
+    nextStage = 2;
+    score = 0;
+    speedY = -3;
+    speedX = 2;
+    speedVX = -2;
+    clearInterval(frameGame);
+    clearInterval(timeCheck);
+    try {
+        statusSound = false;
+        pauseAudio(sfxFirst);
+        pauseAudio(onStageSFX);
+    }
+    catch (err) {
+    }
 }

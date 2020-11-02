@@ -10,6 +10,7 @@ function openPopUp(x, y) {
     bgpop = document.getElementById(backpop[y]);
     pop.style.animation = "opElAni .25s linear";
     bgpop.style.visibility = "visible";
+
 }
 
 function closePopUp() {
@@ -20,41 +21,42 @@ function closePopUp() {
     }, 200);
 }
 
-var maxVar0 = 0;
+let maxVar0 = 0;
 let var01 = 220;
 let var02 = 220;
 
-var maxVar1 = 0;
+let maxVar1 = 0;
 let var11 = 440;
 
-var maxVar2 = 0;
+let maxVar2 = 0;
 let var21 = 440;
 
-var maxVar3 = 0;
-let var31 = 440;
+let maxVar3 = 0;
+let var31 = 220;
+let var32 = 220;
 
-var maxVar4 = 0;
+let maxVar4 = 0;
 let var41 = 220;
 let var42 = 110;
 let var43 = 110;
 
-var maxVar5 = 0;
+let maxVar5 = 0;
 let var51 = 220;
 let var52 = 110;
 let var53 = 110;
 
-var maxVar6 = 0;
+let maxVar6 = 0;
 let var61 = 110;
 let var62 = 110;
 let var63 = 110;
 let var64 = 110;
 
-var maxVar7 = 0;
+let maxVar7 = 0;
 let var71 = 220;
 let var72 = 110;
 let var73 = 110;
 
-var maxVar8 = 0;
+let maxVar8 = 0;
 let var81 = 220;
 let var82 = 110;
 let var83 = 110;
@@ -87,9 +89,13 @@ function getprogress(a, b) {
             document.getElementById('progress2').style.width = maxVar2 + 'px';
             break;
         case 3:
-            if (b == 1 & var31 == 440) {
+            if (b == 1 & var31 == 220) {
                 maxVar3 += var31;
                 var31 = 0;
+            }
+            else if (b == 2 & var32 == 220) {
+                maxVar3 += var32;
+                var32 = 0;
             }
             document.getElementById('progress3').style.width = maxVar3 + 'px';
             break;
@@ -178,7 +184,7 @@ function getprogress(a, b) {
 function getresult() {
     let total = maxVar0 + maxVar1 + maxVar2 + maxVar3 + maxVar4 + maxVar5 + maxVar6 + maxVar7 + maxVar8;
     getper(total);
-    document.getElementById('progress9').style.width = (total/ 9) + 'px';
+    document.getElementById('progress9').style.width = (total / 9) + 'px';
     document.getElementById('minipro0').style.height = (maxVar0 / 2) + 'px';
     document.getElementById('minipro1').style.height = (maxVar1 / 2) + 'px';
     document.getElementById('minipro2').style.height = (maxVar2 / 2) + 'px';
@@ -190,27 +196,110 @@ function getresult() {
     document.getElementById('minipro8').style.height = (maxVar8 / 2) + 'px';
 }
 
-function getper(num){
+function getper(num) {
     let getpoint = parseInt((num / 3960) * 100);
     document.getElementById("totaltxt").innerHTML = getpoint + ' %';
-    if(getpoint == 100){
+    if (getpoint == 100) {
         document.getElementById("resultxt").innerHTML = 'You are the best!';
         document.getElementById('result').style.left = '300px';
     }
-    else if(getpoint <= 99 & getpoint >= 61){
+    else if (getpoint <= 99 & getpoint >= 61) {
         document.getElementById("resultxt").innerHTML = 'Awesome!';
         document.getElementById('result').style.left = '400px';
     }
-    else if(getpoint <= 60 & getpoint >= 41){
+    else if (getpoint <= 60 & getpoint >= 41) {
         document.getElementById("resultxt").innerHTML = 'Nice!';
         document.getElementById('result').style.left = '480px';
     }
-    else if(getpoint <= 40 & getpoint >= 21){
+    else if (getpoint <= 40 & getpoint >= 21) {
         document.getElementById("resultxt").innerHTML = 'Not bad!';
         document.getElementById('result').style.left = '420px';
     }
-    else if(getpoint <= 20){
+    else if (getpoint <= 20) {
         document.getElementById("resultxt").innerHTML = 'Can you try. Would you kindly?';
         document.getElementById('result').style.left = '150px';
+    }
+}
+
+function changeBg(a, b) {
+    switch (a) {
+        case 4:
+            if (b == 1) {
+                document.getElementById('page4').style.backgroundImage = "url('../image/Forgame/Rockman.jpg')";
+            }
+            else if (b == 2) {
+                document.getElementById('page4').style.backgroundImage = "url('../image/Forgame/Sonic.jpg')";
+            }
+            else if (b == 3) {
+                document.getElementById('page4').style.backgroundImage = "url('../image/Forgame/metal-slug.jpg')";
+            }
+            else if (b == 4) {
+                document.getElementById('page4').style.backgroundImage = "";
+                document.getElementById('page4').style.backgroundColor = "#3500D3";
+            }
+            break;
+        case 5:
+            if (b == 1) {
+                document.getElementById('page5').style.backgroundImage = "url('../image/Forgame/re1.jpg')";
+            }
+            else if (b == 2) {
+                document.getElementById('page5').style.backgroundImage = "url('../image/Forgame/mario64.jpg')";
+            }
+            else if (b == 3) {
+                document.getElementById('page5').style.backgroundImage = "url('../image/Forgame/3do.jpg')";
+            }
+            else if (b == 4) {
+                document.getElementById('page5').style.backgroundImage = "";
+                document.getElementById('page5').style.backgroundColor = "#3500D3";
+            }
+            break;
+        case 6:
+            if (b == 1) {
+                document.getElementById('page6').style.backgroundImage = "url('../image/Forgame/play2.jpg')";
+            }
+            else if (b == 2) {
+                document.getElementById('page6').style.backgroundImage = "url('../image/Forgame/xbox\ 2001.jpg')";
+            }
+            else if (b == 3) {
+                document.getElementById('page6').style.backgroundImage = "url('../image/Forgame/Dreamcast\ SEGA.jpg')";
+            }
+            else if (b == 4) {
+                document.getElementById('page6').style.backgroundImage = "url('../image/Forgame/gamecube.jpg')";
+            }
+            else if (b == 5) {
+                document.getElementById('page6').style.backgroundImage = "";
+                document.getElementById('page6').style.backgroundColor = "#3500D3";
+            }
+            break;
+        case 7:
+            if (b == 1) {
+                document.getElementById('page7').style.backgroundImage = "url('../image/Forgame/wii.png')";
+            }
+            else if (b == 2) {
+                document.getElementById('page7').style.backgroundImage = "url('../image/Forgame/PS3.jpg')";
+            }
+            else if (b == 3) {
+                document.getElementById('page7').style.backgroundImage = "url('../image/Forgame/xbox\ 360.jpg')";
+            }
+            else if (b == 4) {
+                document.getElementById('page7').style.backgroundImage = "";
+                document.getElementById('page7').style.backgroundColor = "#3500D3";
+            }
+            break;
+        case 8:
+            if (b == 1) {
+                document.getElementById('page8').style.backgroundImage = "url('../image/Forgame/PS4.jpg')";
+            }
+            else if (b == 2) {
+                document.getElementById('page8').style.backgroundImage = "url('../image/Forgame/xbox\ one.jpg')";
+            }
+            else if (b == 3) {
+                document.getElementById('page8').style.backgroundImage = "url('../image/Forgame/ninswish.png')";
+            }
+            else if (b == 4) {
+                document.getElementById('page8').style.backgroundImage = "";
+                document.getElementById('page8').style.backgroundColor = "#3500D3";
+            }
+            break;
     }
 }

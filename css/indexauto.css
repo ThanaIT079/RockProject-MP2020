@@ -21,6 +21,7 @@ body, html {
     width: 100%;
     height: 100vh;
 }
+
 .abc{
     position: absolute;
 }
@@ -50,7 +51,7 @@ body, html {
 .CW{
     color: white;
 }
-.morebtn{
+.morebtn3{
     position: absolute;
     cursor: pointer;
     width: 100px;
@@ -107,9 +108,10 @@ body, html {
     top: 600px;
 } 
 
+
 /* Home Page */
 .home{
-    background-image: url('../image/console/imagefor1024/homepage1.png');
+    background-image: url('../image/console/imagefor1024/homepage2.png');
     background-size:100% 100%;
 }
 #hometxt1{
@@ -144,6 +146,10 @@ body, html {
     width: 220px;
     height: 60px;
     animation: homebtn 2s infinite;
+    transition: .3s;
+}
+#homebtn:hover{
+   transform: scale(1.1); 
 }
 @keyframes homebtn {
     0%   {background-image: url('../image/console/imagefor1024/homepagev2-4.png');}
@@ -152,7 +158,50 @@ body, html {
     75%  {background-image: url('../image/console/imagefor1024/homepagev2-7.png');}
     100%  {background-image: url('../image/console/imagefor1024/homepagev2-4.png');}
 }
-
+#hpimg1{
+    background-image: url('../image/console/imagefor1024/imghp1.png');
+    background-size:100% 100%;
+    position: absolute;
+    width: 220px;
+    height: 275px;
+    left: 2%;
+    transform: translateY(-150px);
+    transition: 1s;
+}
+#hpimg2{
+    background-image: url('../image/console/imagefor1024/imghp2.png');
+    background-size:100% 100%;
+    position: absolute;
+    width: 245px;
+    height: 304px;
+    /* left: 250px; */
+    left: 26%;
+    transform: translateY(100px);
+    transition: 1s;
+}
+#hpimg3{
+    background-image: url('../image/console/imagefor1024/imghp3.png');
+    background-size:100% 100%;
+    position: absolute;
+    width: 238px;
+    height: 255px;
+    /* left: 505px; */
+    top: 10px;
+    left: 51%;
+    transform: translateY(-150px);
+    transition: 1s;
+}
+#hpimg4{
+    background-image: url('../image/console/imagefor1024/imghp4.png');
+    background-size:100% 100%;
+    position: absolute;
+    width: 233px;
+    height: 300px;
+    /* left: 765px; */
+    left: 76%;
+    transform: translateY(100px);
+    transition: 1s;
+}
 /* Gen text*/
 #gentxt1, #gentxt2, #gentxt3, #gentxt4, #gentxt5, #gentxt6, #gentxt7, #gentxt8{
     left: 0px;
@@ -530,6 +579,11 @@ body, html {
     cursor: pointer;
 }
 
+#pop01, #pop02, #pop11, #pop21, #pop31, #pop41, #pop42, #pop43, #pop51, #pop52, #pop53,
+ #pop61, #pop62, #pop63, #pop64, #pop71, #pop72, #pop73, #pop81, #pop82, #pop83, #pop9{
+    visibility: hidden;
+}
+
 .detailP{
     position: absolute;
     width: 860px;
@@ -537,7 +591,7 @@ body, html {
     top: 50px;
     left: 110px;
     background-color: yellowgreen;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 .detailG{
     position: absolute;
@@ -546,7 +600,7 @@ body, html {
     top: 80px;
     left: 110px;
     background-color: yellowgreen;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .detailG81{
@@ -555,8 +609,8 @@ body, html {
     height: 290px;
     top: 170px;
     left: 150px;
-    background-color: yellowgreen;
-    border-radius: 5px;
+    background-color: #282828;
+    border-radius: 15px;
 }
 
 .detailG82{
@@ -565,12 +619,96 @@ body, html {
     height: 269px;
     top: 180px;
     left: 300px;
-    background-color: yellowgreen;
-    border-radius: 5px;
+    background-color: #282828;
+    border-radius: 15px;
 }
 
-#pop01, #pop02, #pop11, #pop21, #pop31, #pop41, #pop42, #pop43, #pop51, #pop52, #pop53,
- #pop61, #pop62, #pop63, #pop64, #pop71, #pop72, #pop73, #pop81, #pop82, #pop83, #pop9{
-    visibility: hidden;
+.detailG1{
+    position: absolute;
+    width: 860px;
+    height: 450px;
+    top: 80px;
+    left: 110px;
+    background-color: #30984b;
+    border-radius: 15px;
 }
+
+.detailG2{
+    position: absolute;
+    width: 860px;
+    height: 450px;
+    top: 80px;
+    left: 110px;
+    background-color: black;
+    border-radius: 15px;
+}
+.detailG3{
+    position: absolute;
+    width: 860px;
+    height: 450px;
+    top: 80px;
+    left: 110px;
+    background-color: #571c02;
+    border-radius: 15px;
+}
+.detailG4{
+    position: absolute;
+    width: 860px;
+    height: 450px;
+    top: 80px;
+    left: 110px;
+    background-color: #282828;
+    border-radius: 15px;
+}
+.detailG5, .detailG7{
+    position: absolute;
+    width: 860px;
+    height: 450px;
+    top: 80px;
+    left: 110px;
+    background-color: #0C0032;
+    border-radius: 15px;
+}
+.detailG6{
+    position: absolute;
+    width: 860px;
+    height: 450px;
+    top: 80px;
+    left: 110px;
+    background-color: #282828;
+    border-radius: 15px;
+}
+
+
+.p1{
+    background-color: black;
+}
+.p2{
+    background-color: #001c88;
+}
+.p3{
+    background-image: url('../image/Forgame/Gen\ 3.jpg');
+    background-size:100% 100%;
+}
+#page4{
+    background-color: #3500D3;
+    background-size:100% 100%;
+}
+#page5{
+    background-color: #3500D3;
+    background-size:100% 100%;
+}
+#page6{
+    background-color: #3500D3;
+    background-size:100% 100%;
+}
+#page7{
+    background-color: #3500D3;
+    background-size:100% 100%;
+}
+#page8{
+    background-color: #3500D3;
+    background-size:100% 100%;
+}
+
 
