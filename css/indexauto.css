@@ -66,6 +66,9 @@ body, html {
 .SR{
     text-shadow: 2px 2px maroon;  
 }
+.SD{
+    text-shadow: 2px 2px darkorange;
+}
 /* Navigator bar */
 #navigator{
     z-index: 1;
