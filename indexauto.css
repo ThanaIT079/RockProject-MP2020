@@ -6,12 +6,6 @@ body, html {
     scroll-behavior:smooth;
     font-family: 'Mitr', sans-serif;
     background-color: #8080FF;
-    
-    /* css-tricks.com author by Chris Coyier */
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none;          /* Likely future */   
 }
 
 /* Page Size */
