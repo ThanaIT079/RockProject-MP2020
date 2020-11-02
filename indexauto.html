@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="image/rp-icon.png"/>
+
+        <link rel="stylesheet" href="css/indexauto.css">
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/more.css">
+
+        <!-- CSS For Game -->
+        <link rel="stylesheet" href="css/gameshow1.css">
+
+        <!-- Script For Game -->
+        <script src="javascript/scriptGame1.js"></script>
+
+
+        <script src="javascript/popup.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+
+        <title>Consoles's Travel</title>
+
+    </head>
+    <body onload="location.href='#home'; navigatorOff();">
+        <!-- Navigatorbar -->
+        <div id="navigator">
+            <div class="pagebtn" onclick="location.href='#home'; navigatorOff(); resett()">
+                <p class="font SS CW">Home</p>
+            </div>
+            <div id="link0" class="pagebtn" onclick="location.href='#page0'; imHere(0)">
+                <p class="font SS CW">Console</p>
+            </div>
+            <div id="link1" class="pagebtn" onclick="location.href='#page1'; imHere(1)">
+                <p class="font SS CW">I</p>
+            </div>
+            <div id="link2" class="pagebtn" onclick="location.href='#page2'; imHere(2)">
+                <p class="font SS CW">II</p>
+            </div>
+            <div id="link3" class="pagebtn" onclick="location.href='#page3'; imHere(3)">
+                <p class="font SS CW">III</p>
+            </div>
+            <div id="link4" class="pagebtn" onclick="location.href='#page4'; imHere(4)">
+                <p class="font SS CW">IV</p>
+            </div>
+            <div id="link5" class="pagebtn" onclick="location.href='#page5'; imHere(5)">
+                <p class="font SS CW">V</p>
+            </div>
+            <div id="link6" class="pagebtn" onclick="location.href='#page6'; imHere(6)">
+                <p class="font SS CW">VI</p>
+            </div>
+            <div id="link7" class="pagebtn" onclick="location.href='#page7'; imHere(7)">
+                <p class="font SS CW">VII</p>
+            </div>
+            <div id="link8" class="pagebtn" onclick="location.href='#page8'; imHere(8)">
+                <p class="font SS CW">VIII</p>
+            </div>
+            <div id="link9" class="pagebtn" onclick="location.href='#page9'; getresult(); imHere(9); ">
+                <p class="font SS CW">Trophy</p>
+            </div>
+            <div class="pagebtn" onclick="location.reload();">
+                <p class="font SS CW">Reset</p>
+            </div>
+        </div>
+
+        <!-- Home Page -->
+        <div id="home" class="home">
+                <div id="homebtn" onclick="location.href='#page0'; navigatorOn(); imHere(0)"></div>
+        </div>
+        
+        <!-- Console & Handhel -->
+        <div id="page0" class="p0">
+            
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="text0_1" class="abc font LL CW">Console</p>
+                <p id="text0_2" class="abc font LL CW">Handheld</p>
+                <div id="img0_1" class="abc" onclick="openPopUp(0, 0); navigatorOff(); getprogress(0, 1)"></div>
+                <div id="img0_2" class="abc" onclick="openPopUp(1, 0); navigatorOff(); getprogress(0, 2)"></div>
+                
+                <!-- Popup -->
+                <div id="back0" class="backP" onclick="closePopUp(); navigatorOn();"></div>
+                <div id="pop01" class="detailP" onclick="closePopUp(); navigatorOn();">
+                    <div id="imgp01"></div>
+                    <p id="txtp01" class="abc font LL CW">Console</p>
+                    <div id="txtpbox01">
+                        <p class="abc font Mm CW">
+                            อุปกรณ์สำหรับอ่านค่าและส่งภาพ และเสียงจากสื่อบันทึก เช่นแผ่นซีดี, ดีวีดี, ตลับ 
+                            &emsp;ไปยังหน้าจอ โดยผู้เล่นสามารถบังคับ แสงหรือเสียงนั้น ๆ ได้ผ่านตัวควบคุม(คอลโทรลเลอร์)หรือ จอย
+                        </p>
+                    </div>
+                </div>
+                <div id="pop02" class="detailP" onclick="closePopUp(); navigatorOn();">
+                    <div id="imgp02"></div>
+                    <p id="txtp02" class="abc font LL CW">Handheld</p>
+                    <div id="txtpbox02">
+                        <p class="abc font Mm CW">
+                            เครื่องพกพา จะมีขนาดเล็กประกอบไปด้วย หน้าจอ ลำโพง และส่วนควบคุมโดยผู้ใช้งานจะสามารถพกพา และเล่นได้ทุกที่ทีต้องการ
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress0"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Generation 1 -->
+        <div id="page1" class="p1">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt1" class="abc font Ll CW">1st Generation 1972 - 1976</p>
+                <div id="img1_1" class="abc" onclick="openPopUp(2, 1); navigatorOff(); btnOff(1); getprogress(1, 1)"></div>
+
+                <!-- Popup -->
+                <div id="back1" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(1)"></div>
+                <div id="pop11" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(1)">
+                    <div id="imgp11"></div>
+                    <div id="txtpbox11">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Magnavox Odyssey <br>
+                            <b>ผู้ผลิต</b> MAGNAVOX (America 1917)<br>
+                            <b>วันวางจำหน่าย</b> สิงหาคม 1972<br>
+                            <b>ยอดขาย</b> 350,000 เครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox12">
+                        <p class="abc font SS CW">
+                            เกมคอนโซลเครื่องแรกของโลกที่ว่าจำหน่ายครั้งแรกที่ อเมริกา ในปี 1972 
+                            ถูกออกแบบและสร้างโดยทีมเล็ก ๆ ที่นำโดยคุณ Ralph H. Baer 
+                            นักประดิษฐ์นักพัฒนาเกมและวิศวกรชาวอเมริกันเชื้อสายเยอรมันเชื้อสายยิว
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress1"></div>
+                </div>
+                <div id="morebtn1" class="morebtn" onclick="showMore(1); location.href='#more1';">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- More 1 -->
+        <div id="more1" class="m01">
+            <div id="cmbtn1" class="cmbtn" onclick="closeMore(1); location.href='#page1';">
+                <p class="font MM CW">Back</p>
+            </div>
+        </div>
+
+        <!-- Generation 2 -->
+        <div id="page2" class="p2">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt2" class="abc font Ll CW">2nd generation 1977 - 1982</p>
+                <div id="img2_1" class="abc" onclick="openPopUp(3, 2); navigatorOff(); btnOff(2); getprogress(2, 1)"></div>
+
+                <!-- Popup -->
+                <div id="back2" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(2)"></div>
+                <div id="pop21" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(2)">
+                    <div id="txtpbox21">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Atari 2600 <br>
+                            <b>ผู้ผลิต</b> Atari (America 1972)<br>
+                            <b>วันวางจำหน่าย</b> 11 สิงหาคม 1977<br>
+                            <b>ยอดขาย</b> 30 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox22">
+                        <p class="abc font SS CW">
+                            เครื่องเล่นเกมคอนโซลยุคแรกที่สามารถพบเห็นได้ในประเทศไทยในอดีต 
+                            และยังสามารถหาซื้อได้อยู่ในปัจจุบัน โดยเกมที่ปรากฏจะเป็นเกมที่นำมาจากตู้เกมอาเขตในยุคนั้น ๆ 
+                            เช่น battle city, space invader หรือเกมยอดฮิตอย่าง Pac – man  
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress2"></div>
+                </div>
+                <div id="morebtn2" class="morebtn" onclick="showMore(2); location.href='#more2';">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- More 2 -->
+         <div id="more2" class="m02">
+            <div id="cmbtn2" class="cmbtn" onclick="closeMore(2); location.href='#page2';">
+                <p class="font MM CW">Back</p>
+            </div>
+        </div>
+
+
+        <!-- Generation 3 -->
+        <div id="page3" class="p3">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt3" class="abc font Ll CW">3rd generation 1983 - 1989</p>
+                <div id="img3_1" class="abc"onclick="openPopUp(4, 3); navigatorOff(); btnOff(3); getprogress(3, 1)"></div>
+
+                <!-- Popup -->
+                <div id="back3" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(3)"></div>
+                <div id="pop31" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(3)">
+                    <div id="txtpbox31">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Nintendo Entertainment System หรือ NES หรือ Famicom <br>
+                            <b>ผู้ผลิต</b> Nintendo (Japan 1977)<br>
+                            <b>วันวางจำหน่าย</b> (JP) 15 กรกฎาคม 1983 / (NA) 18 ตุลาคม 1985<br>
+                            <b>ยอดขาย</b> 61.91 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox32">
+                        <p class="abc font SS CW">
+                            Nintendo ได้เปิดตัว Famicom (Family Computer) ครั้งแรกที่ประเทศญี่ปุ่นในปี 1983 
+                            พร้อมกับการแจ้งเกิดของเกม platform ระดับตำนานอย่าง Super Mario Brother 
+                            หรือเรียกกันสั้น ๆ ว่า mario จนกลายมาเป็นสัญลักษณ์ของบริษัทในปัจจุบัน และในปี 1985 
+                            Nintendo เปิดขายเครื่อง famicom ในประเทศอเมริกา ในชื่อ NES และยังเป็นการทำให้เกิดปรากฎการณ์เกมคอนโซล 
+                            ที่ทำให้คนทั่วโลกได้รู้จักวิดิโอเกม และเกมคอนโซล  
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress3"></div>
+                </div>
+                <div id="morebtn3" class="morebtn" onclick="showMore(3); location.href='#more3'; firstViewSFX()">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- More 3 -->
+         <div id="more3" class="m03">
+            <div id="cmbtn3" class="cmbtn" onclick="closeMore(3); location.href='#page3';">
+                <p class="font MM CW">Back</p>
+            </div>
+            <div id="viewgame1">
+                <div id="menu1">
+                    <img id="bgMenuG1" src="image/Game1/start/START BG.jpg">
+                    <div id="playbtn1" onclick="clickToP()"> <img id="bgMenuG1" src="image/Game1/start/Start BTN.png"> </div>
+                </div>
+                <div id="stageG1"> 
+                    <div id="stG1"></div>
+                    <div id="nextStG1"></div>
+                </div>
+                <div id="areaBird"></div>
+                <div id="groundG1"><img width="800px" src="image/Game1/underduck.png"></div>
+                <div class="game1HUD" id = "timeHUD">Time : 0</div>
+                <div class="game1HUD" id = "scoreHUD">Score : 0</div>
+                <div class="game1HUD" id = "stageHUD">Stage 1</div>
+                
+            </div>
+        </div>
+
+        <!-- Generation 4 -->
+        <div id="page4" class="p4">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt4" class="abc font Ll CW">4th generation 1989 - 1992</p>
+                <div id="img4_1" class="abc"onclick="openPopUp(5, 4); navigatorOff(); btnOff(4); getprogress(4, 1)"></div>
+                <div id="img4_2" class="abc"onclick="openPopUp(6, 4); navigatorOff(); btnOff(4); getprogress(4, 2)"></div>
+                <div id="img4_3" class="abc"onclick="openPopUp(7, 4); navigatorOff(); btnOff(4); getprogress(4, 3)"></div>
+
+                <!-- Popup -->
+                <div id="back4" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(4)"></div>
+                <div id="pop41" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(4)">
+                    <div id="imgp41"></div>
+                    <div id="txtpbox41">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Super Nintendo Entertainment System หรือ SNES หรือ Super Famicom <br>
+                            <b>ผู้ผลิต</b> Nintendo (Japan 1977)<br>
+                            <b>วันวางจำหน่าย</b> (JP) 21 พฤศจิกายน 1990 / (NA) 23 สิงหาคม 1991<br>
+                            <b>ยอดขาย</b> 49.10 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox42">
+                        <p class="abc font SS CW">
+                            ในปี 1990 Nintendo ก็ได้เปิดตัว SNES หรือ Super famicom เครื่องเล่นเกม 16 บิตของตัวเองโดยในนำภาคต่อของเกมดัง ๆ 
+                            ของตัวเองมาลงให้กับเครื่อง เช่น Fanal Fantasy IV, Dargon Quest V Rockman X ทั้งยังนำเกมต่อสู่ที่ดังมาก ๆ 
+                            ในยุคนั้นอย่าง Street Fighter II มาในขณะที่เครื่องเกมอื่นทำไม่ได้อีกด้วย
+                        </p>
+                    </div>
+                </div>
+                <div id="pop42" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(4)">
+                    <div id="imgp42"></div>
+                    <div id="txtpbox43">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Mega Drive (jp) หรือ Sega Genesis(us) <br>
+                            <b>ผู้ผลิต</b> SEGA (Japanese multinational 1982)<br>
+                            <b>วันวางจำหน่าย</b> (JP) 29 ตุลาคม 1988 / (NA) 14 สิงหาคม 1989<br>
+                            <b>ยอดขาย</b> 30.75 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox44">
+                        <p class="abc font SS CW">
+                            เริ่มเข้าสู่ยุค 16 บิต ทำให้เกมคอนโซลมีพัฒนาการด้านภาพและเสียงที่ดีขึ้นอย่างเห็นได้ชัดเจน และในยุคนี้ SEGA 
+                            ก็เป็นเจ้าแรกที่เปิดตัวด้วยเครื่องเกมใหม่อย่าง genesis และเกมชูโรงใหม่อย่าง sonic the hedgehog หรือเรียกกันติดปากว่า โซนิคเจ้าเม่นสายฟ้า
+                        </p>
+                    </div>
+                </div>
+                <div id="pop43" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(4)">
+                    <div id="imgp43"></div>
+                    <div id="txtpbox45">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> NEO GEO <br>
+                            <b>ผู้ผลิต</b> SNK Corporation (Japan 1978) <br>
+                            <b>วันวางจำหน่าย</b> (JP) 26 เมษายน 1990 / (NA) 22 สิงหาคม 1990 <br>
+                            <b>ยอดขาย</b> 1 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox46">
+                        <p class="abc font SS CW">
+                            เครื่องที่นำเกมอาเขตยอดนิยมของค่าย SNK มาลงในเครื่องเกมคอนโซล อย่าง (1991) 
+                            FATAL FURY, (1992) ART OF FIGHTING, (1993) SAMURAI SHOWDOWN, 
+                            (1994) KING OF FIGHTER ในประเทศไทยสามารถพบให้ได้บ่อยในยุคนั้นตามร้านเกมเนื่องจากทั้งตัวเครื่องเกม 
+                            และตลับมาราคาที่สูงมากเมื่อเทียบกับเครื่องอื่น ๆ
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress4"></div>
+                </div>
+                <div id="morebtn4" class="morebtn" onclick="showMore(4); location.href='#more4';">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- More 4 -->
+         <div id="more4" class="m04">
+            <div id="cmbtn4" class="cmbtn" onclick="closeMore(4); location.href='#page4';">
+                <p class="font MM CW">Back</p>
+            </div>
+        </div>
+
+        <!-- Generation 5 -->
+        <div id="page5" class="p5">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt5" class="abc font Ll CW">5th generation 1993 - 1996</p>
+                <div id="img5_1" class="abc"onclick="openPopUp(8, 5); navigatorOff(); btnOff(5); getprogress(5, 1)"></div>
+                <div id="img5_2" class="abc"onclick="openPopUp(9, 5); navigatorOff(); btnOff(5); getprogress(5, 2)"></div>
+                <div id="img5_3" class="abc"onclick="openPopUp(10, 5); navigatorOff(); btnOff(5); getprogress(5, 3)"></div>
+
+                <!-- Popup -->
+                <div id="back5" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(5)"></div>
+                <div id="pop51" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(5)">
+                    <div id="txtpbox51">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> PlayStation <br>
+                            <b>ผู้ผลิต</b> Sony (JP multinational 1946) <br>
+                            <b>วันวางจำหน่าย</b> (JP) 3 สิงหาคม 1994 / (NA) 9 กันยายน 1995 <br>
+                            <b>ยอดขาย</b> 102.49 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox52">
+                        <p class="abc font SS CW">
+                            จุดเริ่มต้นของคลื่นลูกใหญ่ที่ทำให้วงการเกมคอนโซลต้องสั่นสะเทือนจากอดีตจนถึงปัจจุบัน เมื่อ Sony 
+                            มาเข้าร่วมวงการเกมคอนโซล หลังจากโปรเจคการร่วมมือระหว่าง Sony และ Nintendo ที่ถูกยกเลิกไป Sony 
+                            จึงได้เปิดตัวเครื่องเกมคอนโซลของตัวเองที่มีการนำเสนอเกมด้วย โมเดลโพลิกอน 3 มิติเต็มรูปแบบ
+                            ทำให้เกิดการเปลี่ยนแปลงครั้งสำคัญของวงการเกมอย่างมากจากภาพเกม 2 มิติ สู่ 3 มิติ
+                            เเละมีเปิดตัวเกมใหม่ Resident Evil, Silent Hill, Tekken
+                        </p>
+                    </div>
+                </div>
+                <div id="pop52" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(5)">
+                    <div id="txtpbox53">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Nintendo 64 <br>
+                            <b>ผู้ผลิต</b> Nintendo (Japan 1977) <br>
+                            <b>วันวางจำหน่าย</b> (JP) 23 มิถุนายน 1996 / (NA)29 กันยายน 1996 <br>
+                            <b>ยอดขาย</b> 32.93 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox54">
+                        <p class="abc font SS CW">
+                            การกลับมาของ Nintendo โดนยังคงยึดเอกลักษณ์เดิมของตัวเองในการใช้สื่อบันทึกข้อมูลอย่างตลับ โดยให้เหตุผลว่า 
+                            ซีดีนั้นบันทึกข้อมูลได้มากกว่าก็จริง แต่จะมีหน้าโหลดเวลาเข้าฉากต่าง ๆ ซึ่งทาง Nintendo 
+                            มองว่ามันไม่ดีต่อประสบการณ์ในการเล่น โดย Nintendo ยังได้เปิดตัวจอยตัวใหม่ที่แปลกตามากในยุคนั้น 
+                            เพราะมันมีถึง 3 ก้าน และมาพร้อมกับแกนนาลอค ก่อนที่มันจะกลายเป็นต้นแบบให้กับ การออกแบบจอยในยุคปัจจุบันที่จะต้องมีแกนอนาล๊อคด้วย
+                        </p>
+                    </div>
+                </div>
+                <div id="pop53" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(5)">
+                    <div id="txtpbox55">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> 3DO REAL <br>
+                            <b>ผู้ผลิต</b> Matsushita Electric หรือ Panasonic(1918 Japan) <br>
+                            <b>วันวางจำหน่าย</b> (NA) 4 ตุลาคม 1993 / (JP) 20 มีนาคม 1994 <br>
+                            <b>ยอดขาย</b> 2 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox56">
+                        <p class="abc font SS CW">
+                            3DO REAL สร้างความตื่นตาตื่นใจให้กับวงการเกมคอนโซลในยุคนั้นมากเพราะเป็น
+                            เครื่องเล่นเกมแรกที่สามารถนำสื่อบันทึกข้อมูลสมัยใหม่อย่าง ซีดีมาใช้ ทำให้ทั้งภาพ 
+                            เสียง สี ความสวยงาม มากขึ้นจากยุค 16 บิตมาก
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress5"></div>
+                </div>
+                <div id="morebtn5" class="morebtn" onclick="showMore(5); location.href='#more5';">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- More 5 -->
+         <div id="more5" class="m05">
+            <div id="cmbtn5" class="cmbtn" onclick="closeMore(5); location.href='#page5';">
+                <p class="font MM CW">Back</p>
+            </div>
+        </div>
+
+        <!-- Generation 6 -->
+        <div id="page6" class="p6">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt6" class="abc font Ll CW">6th generation 1999 - 2001</p>
+                <div id="img6_1" class="abc"onclick="openPopUp(11, 6); navigatorOff(); btnOff(6); getprogress(6, 1)"></div>
+                <div id="img6_2" class="abc"onclick="openPopUp(12, 6); navigatorOff(); btnOff(6); getprogress(6, 2)"></div>
+                <div id="img6_3" class="abc"onclick="openPopUp(13, 6); navigatorOff(); btnOff(6); getprogress(6, 3)"></div>
+                <div id="img6_4" class="abc"onclick="openPopUp(14, 6); navigatorOff(); btnOff(6); getprogress(6, 4)"></div>
+
+                <!-- Popup -->
+                <div id="back6" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(6)"></div>
+                <div id="pop61" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)">
+                    <div id="txtpbox61">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Playstation2 <br>
+                            <b>ผู้ผลิต</b> Sony (JP multinational 1946) <br>
+                            <b>วันวางจำหน่าย</b> (JP) 4 มีนาคม 2000 / (NA) 26 ตุลาคม 2000 <br>
+                            <b>ยอดขาย</b> 155 ล้านเครื่อง
+                        </p> 
+                    </div>
+                    <div id="txtpbox62">
+                        <p class="abc font SS CW">
+                            Sony ได้สานต่อความสำเร็จด้วยการเปิดตัวของ Playstation2 ที่ทำให้ยอดขายของ Dream Cast 
+                            หยุดชงักลงไปและในครั้งนี้ Sony ได้เปิดตัวเกมภาคต่อชื่อดังอีกมากมายทั้ง Final Fantasy X, 
+                            Metal Gear Solid 2, Dragon Quest VIII และมีการเปิดตัวเกมใหม่อย่าง Devil May Cry, 
+                            Onimusha, God of War โดยส่วนหนึ่งจากความสำเร็จของ Sony ก็มาจากการเลือกใช้สื่อบันทึกข้อมูลอย่าง 
+                            ดีวีดี ที่สามารถบันทึกข้อมูลได้มากกว่า ซีดีถึง 7 เท่า
+                        </p>
+                    </div>
+                </div>
+                <div id="pop62" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)">
+                    <div id="txtpbox63">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Xbox <br>
+                            <b>ผู้ผลิต</b> Microsoft (American multinational 1975) <br>
+                            <b>วันวางจำหน่าย</b> (NA) 15 พฤศจิกายน 2001 / (JP) 22 กุมภาพันธ์ 2002 <br>
+                            <b>ยอดขาย</b> 24 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox64">
+                        <p class="abc font SS CW">
+                            ปลายปี 2001 Microsoft ในเปิดตัวเครื่องเกมคอนโซลเครื่องแรกของตัวเอง 
+                            และประกาศเข้าร่วมสงครามการค้าด้วยการเปิดตัว Xbox เครื่องเกมที่แรงที่สุดในยุคนั้น 
+                            และมาพร้อมกับฮาร์ดไดร์ในตัวสำหรับบันทึกเกม ทั้งยังเพิ่มบริการออนไลน์อย่าง Xbox Live
+                        </p>
+                    </div>
+                </div>
+                <div id="pop63" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)">
+                    <div id="txtpbox65">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Dream Cast <br>
+                            <b>ผู้ผลิต</b> SEGA (Japanese multinational 1982) <br>
+                            <b>วันวางจำหน่าย</b> (JP) 27 พฤศจิกายน 1998 / (NA) 9 กันยายน 1999 <br>
+                            <b>ยอดขาย</b> 9.13 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox66">
+                        <p class="abc font SS CW">
+                            เครื่องเกมแรกที่เปิดตัวก่อนใครในยุคนั้นของ SEGA สร้างความฮือฮาให้วงการเกมอย่างมากด้วยการพัฒนาจาก 64 บิต สู่ 128 บิต
+                            ทำให้ภาพของเกมมีความสวยงาม ลบเหลี่ยมและมุมของโมเดลสิ่งต่าง ๆ ในเกมได้อย่างมาก
+                        </p>
+                    </div>
+                </div>
+                <div id="pop64" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(6)">
+                    <div id="txtpbox67">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> GameCube <br>
+                            <b>ผู้ผลิต</b> Nintendo (Japan 1977) <br>
+                            <b>วันวางจำหน่าย</b> (JP) 14 กันยายน 2001 / (NA) 18 พฤศจิกายน 2001 <br>
+                            <b>ยอดขาย</b> 21.7 ล้านเครื่อง
+                        </p> 
+                    </div>
+                    <div id="txtpbox68">
+                        <p class="abc font SS CW">
+                            การกลับมาของ Nintendo หลังจากปล่อยให้ Sony ได้ครองตลาดถึง 1 ปีเต็มและเป็นครั้งแรกที่ 
+                            Nintendo ยอมเปลี่ยนมาใช้สื่อบันทึกสมัยใหม่อย่างมินิดีวีดี โดยมาพร้อมกับเกมยอดนิยมของตัวเองอย่าง mario และ Zelda
+                            และมีการนำเกม Resident evil remake มาลงพิเศษเป็น Excusive ให้กับเครื่อง Gamecube อีกด้วย
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress6"></div>
+                </div>
+                <div id="morebtn6" class="morebtn" onclick="showMore(6); location.href='#more6';">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- More 2 -->
+         <div id="more6" class="m06">
+            <div id="cmbtn6" class="cmbtn" onclick="closeMore(6); location.href='#page6';">
+                <p class="font MM CW">Back</p>
+            </div>
+        </div>
+
+        <!-- Generation 7 -->
+        <div id="page7" class="p7">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt7" class="abc font Ll CW">7th generation 2004- 2006</p>
+                <div id="img7_1" class="abc"onclick="openPopUp(15, 7); navigatorOff(); btnOff(7); getprogress(7, 1)"></div>
+                <div id="img7_2" class="abc"onclick="openPopUp(16, 7); navigatorOff(); btnOff(7); getprogress(7, 2)"></div>
+                <div id="img7_3" class="abc"onclick="openPopUp(17, 7); navigatorOff(); btnOff(7); getprogress(7, 3)"></div>
+
+                <!-- Popup -->
+                <div id="back7" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(7)"></div>
+                <div id="pop71" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(7)">
+                    <div id="txtpbox71">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Wii <br>
+                            <b>ผู้ผลิต</b> Nintendo (Foxconn 1974) <br>
+                            <b>วันวางจำหน่าย</b> (JP) 14 กันยายน 2001 / (NA) 18 พฤศจิกายน 2001 <br>
+                            <b>ยอดขาย</b> 101.63 ล้านเครื่อง
+                        </p> 
+                    </div>
+                    <div id="txtpbox72">
+                        <p class="abc font SS CW">
+                            เรียบง่าย แต่แฝงด้วยความหน้าค้นหา นิยามสั้น ๆ สำหรับเครื่อง Wii โดยมีอุปกรณ์เสริมคือ Wiimote 
+                            ที่ทำให้การเล่นเกมไม่ใช้แค่การกดปุ่มเพียงอย่างเดียวอีกต่อไป ผู้เล่นสามารถออกท่าทางเพื่อควบคุมการเล่นเกม 
+                            ทำให้ Nintendo สามารถขยายตลาดไปสู่กลุ่มลูกค้าไม่มากกว่าทุกเครื่องเกมในตอนนั้น 
+                            มาพร้อมเกมที่เน้นไปในการใช้ความสามารถของ Wiimote เช่น Wiisports, Wiiplay หรือแม้กระทั่ง Mario
+                        </p>
+                    </div>
+                </div>
+                <div id="pop72" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(7)">
+                    <div id="txtpbox73">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Playstation 3 <br>
+                            <b>ผู้ผลิต</b> Sony (JP multinational 1946) <br>
+                            <b>วันวางจำหน่าย</b> (JP) 11 พฤศจิกายน 2006 / (NA) 17 พฤศจิกายน 2006 <br>
+                            <b>ยอดขาย</b> 85.9 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox74">
+                        <p class="abc font SS CW">
+                            Playstation 3 ได้เปลี่ยนไปใช้สื่อบันทึกข้อมูลอย่างแผ่น blue - ray และยังคงความสามารถในการเล่นแผ่นหนัง blue – ray 
+                            ผ่านตัวเครื่องในส่วนของเกมได้มีการทำภาคต่อของเกมดังอย่าง God of war 3 และเปิดตัวเองใหม่อย่าง Uncharted
+                        </p>
+                    </div>
+                </div>
+                <div id="pop73" class="detailG" onclick="closePopUp(); navigatorOn(); btnOn(7)">
+                    <div id="txtpbox75">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Xbox 360 <br>
+                            <b>ผู้ผลิต</b> Microsoft (American multinational 1975) <br>
+                            <b>วันวางจำหน่าย</b> 15 พฤศจิกายน 2005 <br>
+                            <b>ยอดขาย</b> 84.7 ล้านเครื่อง
+                        </p>
+                    </div>
+                    <div id="txtpbox76">
+                        <p class="abc font SS CW">
+                            เจ้าแรกที่เปิดตัวในยุคนี้ พร้อมด้วยจุดเด่นด้านการบริการออนไลน์ที่พัฒนาต่อยอดจากเจนที่แล้ว และการมาของระบบ Achievement 
+                            ที่จะผู้กับบัญชีผู้ใช้นั้น ๆ แม้จะเป็นยุคของแผ่น blue-ray ที่มีความจุมากกว่าแต่ Xbox เองก็เลือกที่จะใช้ DVD 
+                            เป็นส่วนใหญ่เรื่องจากขนาดเกมในตอนนั้นยังสามารถเก็บได้เพียงพอในแผ่น DVD
+                        </p>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress7"></div>
+                </div>
+                <div id="morebtn7" class="morebtn" onclick="showMore(7); location.href='#more7';">
+                    <p class="font MM CW">More!</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- More 7 -->
+         <div id="more7" class="m07">
+            <div id="cmbtn7" class="cmbtn" onclick="closeMore(7); location.href='#page7';">
+                <p class="font MM CW">Back</p>
+            </div>
+        </div>
+
+        <!-- Generation 8 -->
+        <div id="page8" class="p8">
+            <div class="layout top"></div>
+            <div class="layout mid">
+                <p id="gentxt8" class="abc font Ll CW">8th generation 2011 - 2017</p>
+                <div id="img8_1" class="abc"onclick="openPopUp(18, 8); navigatorOff(); btnOff(8); getprogress(8, 1)"></div>
+                <div id="img8_2" class="abc"onclick="openPopUp(19, 8); navigatorOff(); btnOff(8); getprogress(8, 2)"></div>
+                <div id="img8_3" class="abc"onclick="openPopUp(20, 8); navigatorOff(); btnOff(8); getprogress(8, 3)"></div>
+
+                <!-- Popup -->
+                <div id="back8" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(8)"></div>
+                <div id="pop81" class="detailG81" onclick="closePopUp(); navigatorOn(); btnOn(8)">
+                    <div id="txtpbox81">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Playstation 4 <br>
+                            <b>ผู้ผลิต</b> Sony (JP multinational 1946) <br>
+                            <b>วันวางจำหน่าย</b> (NA) 15 พฤศจิกายน 2013 / (JP) 22 กุมภาพันธ์ 2014 <br>
+                            <b>ยอดขาย</b> 106 ล้านเครื่อง
+                        </p>
+                    </div>
+                </div>
+                <div id="pop82" class="detailG81" onclick="closePopUp(); navigatorOn(); btnOn(8)">
+                    <div id="txtpbox82">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Xbox one <br>
+                            <b>ผู้ผลิต</b> Microsoft (Foxconn 1974) <br>
+                            <b>วันวางจำหน่าย</b> (NA) 22 พฤศจิกายน 2013 / (JP) 4 กันยายน 2014 <br>
+                            <b>ยอดขาย</b> 46.9 ล้านเครื่อง
+                        </p>
+                    </div>
+                </div>
+                <div id="pop83" class="detailG82" onclick="closePopUp(); navigatorOn(); btnOn(8)">
+                    <div id="txtpbox83">
+                        <p class="abc font SS CW">
+                            <b>เครื่อง</b> Nintendo Switch <br>
+                            <b>ผู้ผลิต</b> Nintendo (Foxconn 1974) <br>
+                            <b>วันวางจำหน่าย</b> 3 มีนาคม 2017 <br>
+                            <b>ยอดขาย</b> 61.44 ล้านเครื่อง
+                        </p>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div class="layout bot">
+                <div class="progressbar">
+                    <div id="progress8"></div>
+                </div>
+                <!-- <div id="morebtn8" class="morebtn" onclick="">
+                    <p class="font MM CW">Fin !</p>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Result -->
+        <div id="page9" class="p9">
+            <div id="result"><p id="resultxt" class="abs font Ll CW">Can you find some of them?</p></div>
+            
+            <div id="total"><p id="totaltxt" class="abs font Ll CW">0 %</p></div>
+            <div class="progressbar-result">
+                <div id="progress9"></div>
+            </div>
+            <div id="img9" class="abc" onclick="openPopUp(21, 9); navigatorOff(); btnOff(9)"> </div>
+
+            <!-- Mini Progerss -->
+            <div class="mn pro0"><div id="minipro0"></div></div>
+            <div class="mn pro1"><div id="minipro1"></div></div>
+            <div class="mn pro2"><div id="minipro2"></div></div>
+            <div class="mn pro3"><div id="minipro3"></div></div>
+            <div class="mn pro4"><div id="minipro4"></div></div>
+            <div class="mn pro5"><div id="minipro5"></div></div>
+            <div class="mn pro6"><div id="minipro6"></div></div>
+            <div class="mn pro7"><div id="minipro7"></div></div>
+            <div class="mn pro8"><div id="minipro8"></div></div>
+
+            <p class="abc font SS CW mitxt0">Console</p>
+            <p class="abc font SS CW mitxt1">Gen I</p>
+            <p class="abc font SS CW mitxt2">Gen II</p>
+            <p class="abc font SS CW mitxt3">Gen III</p>
+            <p class="abc font SS CW mitxt4">Gen IV</p>
+            <p class="abc font SS CW mitxt5">Gen V</p>
+            <p class="abc font SS CW mitxt6">Gen VI</p>
+            <p class="abc font SS CW mitxt7">Gen VII</p>
+            <p class="abc font SS CW mitxt8">Gen VIII</p>
+
+            <!-- Popup -->
+            <div id="back9" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(9)"></div>
+            <div id="pop9" class="detailG82" onclick="closePopUp(); navigatorOn(); btnOn(9)">
+                <div id="txtpbox91">
+                    <p class="abc font SS CW">
+                        &nbsp;0 - 20 % Can you try. Would you kindly? <br>
+                        21 - 40 % Not bad! <br>
+                        41 - 60 % Nice! <br>
+                        61 - 99 % Awesome! <br>
+                        &emsp;&nbsp;&nbsp;100 % You are the best! <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        // alert('Iner Width'+ window.innerWidth);
+        // alert('Iner Height'+ window.innerHeight);
+
+        function navigatorOff(){
+            document.getElementById('navigator').style.visibility = 'hidden';     
+        }
+        
+        function navigatorOn(){
+            setTimeout(function(){ 
+                document.getElementById('navigator').style.visibility = 'visible';
+            }, 300);
+        }
+
+        function btnOff(x){
+            switch(x){
+                case 1:
+                    document.getElementById('morebtn1').style.visibility = 'hidden';
+                    break;
+                case 2:
+                    document.getElementById('morebtn2').style.visibility = 'hidden';
+                    break;
+                case 3:
+                    document.getElementById('morebtn3').style.visibility = 'hidden';
+                    break;
+                case 4:
+                    document.getElementById('morebtn4').style.visibility = 'hidden';
+                    break;
+                case 5:
+                    document.getElementById('morebtn5').style.visibility = 'hidden';
+                    break;
+                case 6:
+                    document.getElementById('morebtn6').style.visibility = 'hidden';
+                    break;
+                case 7:
+                    document.getElementById('morebtn7').style.visibility = 'hidden';
+                    break;
+                // case 8:
+                //     document.getElementById('morebtn8').style.visibility = 'hidden';
+                //     break;
+            }       
+        }
+        
+        function btnOn(x){
+            switch(x){
+                case 1:
+                    document.getElementById('morebtn1').style.visibility = 'visible';
+                    break;
+                case 2:
+                    document.getElementById('morebtn2').style.visibility = 'visible';
+                    break;
+                case 3:
+                    document.getElementById('morebtn3').style.visibility = 'visible';
+                    break;
+                case 4:
+                    document.getElementById('morebtn4').style.visibility = 'visible';
+                    break;
+                case 5:
+                    document.getElementById('morebtn5').style.visibility = 'visible';
+                    break;
+                case 6:
+                    document.getElementById('morebtn6').style.visibility = 'visible';
+                    break;
+                case 7:
+                    document.getElementById('morebtn7').style.visibility = 'visible';
+                    break;
+                // case 8:
+                //     document.getElementById('morebtn8').style.visibility = 'visible';
+                //     break;
+            }
+        }
+
+        function imHere(z){
+            for (let i = 0; i < 10; i++){
+                if (i != z){
+                    document.getElementById('link' + i).style.opacity = 0.5;
+                    document.getElementById('link' + i).style.transform = 'scale(1)';
+                }
+                document.getElementById('link' + z).style.opacity = 1;
+                document.getElementById('link' + z).style.transform = 'scale(1.2)';
+            }
+        }
+        
+        function resett(){
+            for (let i = 0; i < 10; i++){
+                document.getElementById('link' + i).style.opacity = 0.5;
+                document.getElementById('link' + i).style.transform = 'scale(1)';
+            }
+        }
+
+        function showMore(y){
+            document.getElementById('more' + y + '').style.display = 'block';
+
+            setTimeout(function(){ 
+                document.getElementById('navigator').style.visibility = 'hidden';
+            }, 100);
+        }
+        
+        function closeMore(w){
+            setTimeout(function(){ 
+              document.getElementById('more' + w + '').style.display = 'none';
+              document.getElementById('navigator').style.visibility = 'visible';
+            }, 500);
+        }    
+
+    </script>
+</html>

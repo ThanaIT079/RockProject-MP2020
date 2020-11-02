@@ -1,0 +1,20 @@
+.cmbtn{
+    position: absolute;
+    cursor: pointer;
+    width: 100px;
+    height: 47px;
+    background-color: tomato;
+    right: 30px;
+    top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    /* display: none; */
+}
+
+#more1, #more2, #more3, #more4, #more5, #more6, #more7{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
