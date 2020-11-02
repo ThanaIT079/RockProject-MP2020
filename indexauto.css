@@ -56,9 +56,10 @@ body, html {
     height: 47px;
     background-color: tomato;
     left: 700px;
-    bottom: 32px;
+    bottom: 40px;
     text-align: center;
     border-radius: 10px;
+    /* display: none; */
 }
 
 /* Navigator bar */
@@ -165,7 +166,7 @@ body, html {
     width: 440px;
     height: 40px;
     border-radius: 10px;
-    bottom: 50px;
+    bottom: 10px;
 }
 .progressbar-result{
     position: absolute;
@@ -542,7 +543,7 @@ body, html {
     height: 450px;
     top: 80px;
     left: 110px;
-    background-color: red;
+    background-color: yellowgreen;
     border-radius: 5px;
 }
 
@@ -552,7 +553,7 @@ body, html {
     height: 290px;
     top: 170px;
     left: 150px;
-    background-color: red;
+    background-color: yellowgreen;
     border-radius: 5px;
 }
 
@@ -562,7 +563,7 @@ body, html {
     height: 269px;
     top: 180px;
     left: 300px;
-    background-color: red;
+    background-color: yellowgreen;
     border-radius: 5px;
 }
 

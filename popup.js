@@ -23,7 +23,10 @@ function closePopUp(){
 
 var maxVar0 = 0;
 let var01 = 220;
-let var02 = 220;s
+let var02 = 220;
+
+var maxVar1 = 0;
+let var11 = 440;
 
 
 function getprogress(a, b){
