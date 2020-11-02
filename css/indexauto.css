@@ -57,7 +57,7 @@ body, html {
     height: 47px;
     background-color: tomato;
     left: 700px;
-    bottom: 40px;
+    top: -14px;
     text-align: center;
     border-radius: 10px;
     /* display: none; */
@@ -90,21 +90,22 @@ body, html {
 }
 
 /* Page layout */
-.layout{
+/* .layout{
     position: relative;
     width: 100%;
-}
-.top{
+} */
+
+/* .top{
     height: 5%;
-    /* background-color: blueviolet; */
 }
 .mid{
     height: 85%;
-}
+}*/
 .bot{
-    height: 10%;
-    /* background-color: blueviolet; */
-}
+    position: absolute;
+    width: 100%;
+    top: 600px;
+} 
 
 /* Home Page */
 .home{
