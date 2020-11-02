@@ -235,7 +235,8 @@ function changeBg(a, b) {
             }
             else if (b == 4) {
                 document.getElementById('page4').style.backgroundImage = "";
-                document.getElementById('page4').style.backgroundColor = "#3500D3";
+                document.getElementById('page4').style.backgroundColor = "#E69CBB";
+                document.getElementById('gentxt4').style.textShadow = "";
             }
             break;
         case 5:
@@ -250,7 +251,7 @@ function changeBg(a, b) {
             }
             else if (b == 4) {
                 document.getElementById('page5').style.backgroundImage = "";
-                document.getElementById('page5').style.backgroundColor = "#3500D3";
+                document.getElementById('page5').style.backgroundColor = "#B5E3EB";
             }
             break;
         case 6:
@@ -268,7 +269,7 @@ function changeBg(a, b) {
             }
             else if (b == 5) {
                 document.getElementById('page6').style.backgroundImage = "";
-                document.getElementById('page6').style.backgroundColor = "#3500D3";
+                document.getElementById('page6').style.backgroundColor = "#B5E3EB";
             }
             break;
         case 7:
@@ -283,7 +284,7 @@ function changeBg(a, b) {
             }
             else if (b == 4) {
                 document.getElementById('page7').style.backgroundImage = "";
-                document.getElementById('page7').style.backgroundColor = "#3500D3";
+                document.getElementById('page7').style.backgroundColor = "#A691E6";
             }
             break;
         case 8:
@@ -298,7 +299,7 @@ function changeBg(a, b) {
             }
             else if (b == 4) {
                 document.getElementById('page8').style.backgroundImage = "";
-                document.getElementById('page8').style.backgroundColor = "#3500D3";
+                document.getElementById('page8').style.backgroundColor = "#A691E6";
             }
             break;
     }

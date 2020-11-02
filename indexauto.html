@@ -27,40 +27,40 @@
         <!-- Navigatorbar -->
         <div id="navigator">
             <div class="pagebtn" onclick="location.href='#home'; navigatorOff(); resett(); homeOn()">
-                <p class="font SS CW">Home</p>
+                <p class="font SS CW SR">Home</p>
             </div>
             <div id="link0" class="pagebtn" onclick="location.href='#page0'; imHere(0);">
-                <p class="font SS CW">Console</p>
+                <p class="font SS CW SR">Console</p>
             </div>
             <div id="link1" class="pagebtn" onclick="location.href='#page1'; imHere(1);">
-                <p class="font SS CW">I</p>
+                <p class="font SS CW SR">I</p>
             </div>
             <div id="link2" class="pagebtn" onclick="location.href='#page2'; imHere(2);">
-                <p class="font SS CW">II</p>
+                <p class="font SS CW SR">II</p>
             </div>
             <div id="link3" class="pagebtn" onclick="location.href='#page3'; imHere(3);">
-                <p class="font SS CW">III</p>
+                <p class="font SS CW SR">III</p>
             </div>
             <div id="link4" class="pagebtn" onclick="location.href='#page4'; imHere(4);">
-                <p class="font SS CW">IV</p>
+                <p class="font SS CW SR">IV</p>
             </div>
             <div id="link5" class="pagebtn" onclick="location.href='#page5'; imHere(5);">
-                <p class="font SS CW">V</p>
+                <p class="font SS CW SR">V</p>
             </div>
             <div id="link6" class="pagebtn" onclick="location.href='#page6'; imHere(6);">
-                <p class="font SS CW">VI</p>
+                <p class="font SS CW SR">VI</p>
             </div>
             <div id="link7" class="pagebtn" onclick="location.href='#page7'; imHere(7);">
-                <p class="font SS CW">VII</p>
+                <p class="font SS CW SR">VII</p>
             </div>
             <div id="link8" class="pagebtn" onclick="location.href='#page8'; imHere(8);">
-                <p class="font SS CW">VIII</p>
+                <p class="font SS CW SR">VIII</p>
             </div>
             <div id="link9" class="pagebtn" onclick="location.href='#page9'; getresult(); imHere(9);">
-                <p class="font SS CW">Trophy</p>
+                <p class="font SS CW SR">Trophy</p>
             </div>
             <div class="pagebtn" onclick="location.reload();">
-                <p class="font SS CW">Reset</p>
+                <p class="font SS CW SR">Reset</p>
             </div>
         </div>
 
@@ -116,7 +116,7 @@
         <div id="page1" class="p1">
             <div class="layout top"></div>
             <div class="layout mid">
-                <p id="gentxt1" class="abc font Ll CW">1st Generation 1972 - 1976</p>
+                <p id="gentxt1" class="abc font Ll CW SD">1st Generation 1972 - 1976</p>
                 <div id="img1_1" class="abc" onclick="openPopUp(2, 1); navigatorOff(); getprogress(1, 1);"></div>
 
                 <!-- Popup -->
@@ -538,7 +538,7 @@
         <div id="page7" class="p7">
             <div class="layout top"></div>
             <div class="layout mid">
-                <p id="gentxt7" class="abc font Ll CW">7th generation 2004- 2006</p>
+                <p id="gentxt7" class="abc font Ll CW">7th generation 2004 - 2006</p>
                 <div id="img7_1" class="abc"onclick="openPopUp(15, 7); navigatorOff(); getprogress(7, 1); changeBg(7,1)"></div>
                 <div id="img7_2" class="abc"onclick="openPopUp(16, 7); navigatorOff(); getprogress(7, 2); changeBg(7,2)"></div>
                 <div id="img7_3" class="abc"onclick="openPopUp(17, 7); navigatorOff(); getprogress(7, 3); changeBg(7,3)"></div>
@@ -703,7 +703,7 @@
 
             <!-- Popup -->
             <div id="back9" class="backP" onclick="closePopUp(); navigatorOn(); btnOn(9)"></div>
-            <div id="pop9" class="detailG82" onclick="closePopUp(); navigatorOn(); btnOn(9)">
+            <div id="pop9" class="detailG9" onclick="closePopUp(); navigatorOn(); btnOn(9)">
                 <div id="txtpbox91">
                     <p class="abc font SS CW">
                         &nbsp;0 - 20 % Can you try. Would you kindly? <br>
@@ -805,7 +805,7 @@
         function imHere(z){
             for (let i = 0; i < 10; i++){
                 if (i != z){
-                    document.getElementById('link' + i).style.opacity = 0.5;
+                    document.getElementById('link' + i).style.opacity = 1;
                     document.getElementById('link' + i).style.transform = 'scale(1)';
                 }
                 document.getElementById('link' + z).style.opacity = 1;

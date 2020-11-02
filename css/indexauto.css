@@ -57,13 +57,15 @@ body, html {
     width: 100px;
     height: 47px;
     background-color: tomato;
-    left: 700px;
+    left: 800px;
     top: -14px;
     text-align: center;
     border-radius: 10px;
     /* display: none; */
 }
-
+.SR{
+    text-shadow: 2px 2px maroon;  
+}
 /* Navigator bar */
 #navigator{
     z-index: 1;
@@ -206,13 +208,14 @@ body, html {
 #gentxt1, #gentxt2, #gentxt3, #gentxt4, #gentxt5, #gentxt6, #gentxt7, #gentxt8{
     left: 0px;
     transform: translateX(150px);
+    text-shadow: 2px 2px black; 
 }
 
 /* Progressbar */
 .progressbar{
     position: relative;
     background-color: white;
-    left: 100px;
+    left: 200px;
     /* top: 15px; */
     width: 440px;
     height: 40px;
@@ -590,7 +593,7 @@ body, html {
     height: 474px;
     top: 50px;
     left: 110px;
-    background-color: yellowgreen;
+    background-color: #B36A3B;
     border-radius: 15px;
 }
 .detailG{
@@ -603,33 +606,13 @@ body, html {
     border-radius: 15px;
 }
 
-.detailG81{
-    position: absolute;
-    width: 764px;
-    height: 290px;
-    top: 170px;
-    left: 150px;
-    background-color: #282828;
-    border-radius: 15px;
-}
-
-.detailG82{
-    position: absolute;
-    width: 487px;
-    height: 269px;
-    top: 180px;
-    left: 300px;
-    background-color: #282828;
-    border-radius: 15px;
-}
-
 .detailG1{
     position: absolute;
     width: 860px;
     height: 450px;
     top: 80px;
     left: 110px;
-    background-color: #30984b;
+    background-color: #B39A3B;
     border-radius: 15px;
 }
 
@@ -639,7 +622,7 @@ body, html {
     height: 450px;
     top: 80px;
     left: 110px;
-    background-color: black;
+    background-color:#B39A3B;
     border-radius: 15px;
 }
 .detailG3{
@@ -648,7 +631,7 @@ body, html {
     height: 450px;
     top: 80px;
     left: 110px;
-    background-color: #571c02;
+    background-color: #E84FA4;
     border-radius: 15px;
 }
 .detailG4{
@@ -657,58 +640,92 @@ body, html {
     height: 450px;
     top: 80px;
     left: 110px;
-    background-color: #282828;
+    background-color: #E84FA4;
     border-radius: 15px;
 }
-.detailG5, .detailG7{
+.detailG5, .detailG6{
     position: absolute;
     width: 860px;
     height: 450px;
     top: 80px;
     left: 110px;
-    background-color: #0C0032;
+    background-color: #4FC9D5;
     border-radius: 15px;
 }
-.detailG6{
+.detailG7{
     position: absolute;
     width: 860px;
     height: 450px;
     top: 80px;
     left: 110px;
-    background-color: #282828;
+    background-color: #B074D6;
+    border-radius: 15px;
+}
+.detailG81{
+    position: absolute;
+    width: 764px;
+    height: 290px;
+    top: 170px;
+    left: 150px;
+    background-color: #B074D6;
     border-radius: 15px;
 }
 
+.detailG82{
+    position: absolute;
+    width: 487px;
+    height: 269px;
+    top: 180px;
+    left: 300px;
+    background-color: #B074D6;
+    border-radius: 15px;
+}
 
+.detailG9{
+    position: absolute;
+    width: 487px;
+    height: 269px;
+    top: 180px;
+    left: 300px;
+    background-color: #59995D;
+    border-radius: 15px;
+}
+
+.p0{
+    background-color: #E8CCB5;
+}
 .p1{
-    background-color: black;
+    background-color:#E6E1B3;
 }
 .p2{
-    background-color: #001c88;
+    background-color: #E6E1B3;
 }
 .p3{
-    background-image: url('../image/Forgame/Gen\ 3.jpg');
+    background-color: #E69CBB;
     background-size:100% 100%;
 }
 #page4{
-    background-color: #3500D3;
+    background-color: #E69CBB;
     background-size:100% 100%;
 }
 #page5{
-    background-color: #3500D3;
+    background-color: #B5E3EB;
     background-size:100% 100%;
 }
 #page6{
-    background-color: #3500D3;
+    background-color: #B5E3EB;
     background-size:100% 100%;
 }
 #page7{
-    background-color: #3500D3;
+    background-color: #A691E6;
     background-size:100% 100%;
 }
 #page8{
-    background-color: #3500D3;
+    background-color: #A691E6;
     background-size:100% 100%;
+}
+.p9{
+    background-color: #7AE681;
 }
 
 
