@@ -1,0 +1,1236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="image/rp-icon.png" />
+
+    <!-- Preload -->
+    <link rel="preload" href="css/indexauto.css" as="style">
+    <link rel="preload" href="css/popup.css" as="style">
+    <link rel="preload" href="css/more.css" as="style">
+    <link rel="preload" href="css/gameshow1.css" as="style">
+    <link rel="preload" href="javascript/popup.js" as="script">
+    <link rel="preload" href="javascript/scriptGame1.js" as="script">
+    <link rel="preload" href="javascript/forgame.js" as="script">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/indexauto.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/more.css">
+
+    <!-- JS -->
+    <script src="javascript/forgame.js"></script>
+
+    <!-- CSS For Game -->
+    <link rel="stylesheet" href="css/gameshow1.css">
+
+    <!-- Script For Game -->
+    <script src="javascript/scriptGame1.js"></script>
+
+
+    <script src="javascript/popup.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+
+    <title>Consoles's Travel</title>
+
+</head>
+
+<body onload="location.href='#home'; navigatorOff(); homeOn()">
+    <!-- Navigatorbar -->
+    <div id="navigator">
+        <div class="pagebtn" onclick="location.href='#home'; navigatorOff(); homeOn()">
+            <p class="font SSs CW SR">Home</p>
+        </div>
+        <div id="link0" class="pagebtn" onclick="location.href='#page0'; imHere(0);">
+            <p class="font SSs CW SR">Console</p>
+        </div>
+        <div id="link1" class="pagebtn" onclick="location.href='#page1'; imHere(1);">
+            <p class="font SSs CW SR">I</p>
+        </div>
+        <div id="link2" class="pagebtn" onclick="location.href='#page2'; imHere(2);">
+            <p class="font SSs CW SR">II</p>
+        </div>
+        <div id="link3" class="pagebtn" onclick="location.href='#page3'; imHere(3);">
+            <p class="font SSs CW SR">III</p>
+        </div>
+        <div id="link4" class="pagebtn" onclick="location.href='#page4'; imHere(4);">
+            <p class="font SSs CW SR">IV</p>
+        </div>
+        <div id="link5" class="pagebtn" onclick="location.href='#page5'; imHere(5);">
+            <p class="font SSs CW SR">V</p>
+        </div>
+        <div id="link6" class="pagebtn" onclick="location.href='#page6'; imHere(6);">
+            <p class="font SSs CW SR">VI</p>
+        </div>
+        <div id="link7" class="pagebtn" onclick="location.href='#page7'; imHere(7);">
+            <p class="font SSs CW SR">VII</p>
+        </div>
+        <div id="link8" class="pagebtn" onclick="location.href='#page8'; imHere(8);">
+            <p class="font SSs CW SR">VIII</p>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home" class="home">
+        <div id="hpimg1"></div>
+        <div id="hpimg2"></div>
+        <div id="hpimg3"></div>
+        <div id="hpimg4"></div>
+        <div id="hpimg5"></div>
+        <div id="hpimg6"></div>
+        <div id="hpimg7"></div>
+        <div id="hpimg8"></div>
+        <div id="hpimg9"></div>
+        <div id="homebtn" onclick="location.href='#page0'; navigatorOn(); imHere(0); homeOff()"></div>
+    </div>
+
+    <!-- Console & Handhel -->
+    <div id="page0" class="p0">
+        <div class="layout">
+            <div id="img0_1" class="abc" onclick="openPopUp(0, 0, 0); navigatorOff(); changeBg(0,1);"></div>
+            <p id="text0_1" class="abc font LL CW SD">Console</p>
+            <div id="img0_2" class="abc" onclick="openPopUp(1, 0, 0); navigatorOff(); changeBg(0,2);"></div>
+            <p id="text0_2" class="abc font LL CW SD">Handheld</p>
+
+            <!-- Popup -->
+            <!-- onclick="closePopUp(0); navigatorOn(); changeBg(0,3);" -->
+            <div id="back0" class="backP"></div>
+            <div id="pop01" class="detailP0">
+                <div class="closepop" onclick="closePopUp(0); navigatorOn(); changeBg(0,3);"></div>
+                <div id="imgp01"></div>
+                <p id="txtp01" class="abc font LL CB">Console</p>
+                <div id="txtpbox01">
+                    <p class="abc font Mm CB">
+                        อุปกรณ์สำหรับอ่านค่าและส่งภาพ และเสียงจากสื่อบันทึก เช่นแผ่นซีดี, ดีวีดี, ตลับ
+                        &emsp;ไปยังหน้าจอ โดยผู้เล่นสามารถบังคับแสงได้ผ่านตัวควบคุม(คอลโทรลเลอร์)หรือ
+                        จอย
+                    </p>
+                </div>
+            </div>
+            <div id="pop02" class="detailP0">
+                <div class="closepop" onclick="closePopUp(0); navigatorOn();"></div>
+                <div id="imgp02"></div>
+                <p id="txtp02" class="abc font LL CB">Handheld</p>
+                <div id="txtpbox02">
+                    <p class="abc font Mm CB">
+                        เครื่องพกพา จะมีขนาดเล็กประกอบไปด้วย หน้าจอ ลำโพง และส่วนควบคุมโดยผู้ใช้งานจะสามารถพกพา
+                        และเล่นได้ทุกที่ทีต้องการ
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Generation 1 -->
+    <div id="page1" class="p1">
+        <div class="layout">
+            <p id="gentxt1" class="abc font Lls CW SD">1st Generation 1972 - 1976</p>
+            <div id="img1_1" class="abc" onclick="openPopUp(2, 1, 1); navigatorOff(); changeBg(1,1);"></div>
+
+            <!-- Popup -->
+            <!-- onclick="closePopUp(1); navigatorOn(); changeBg(1,2);" -->
+            <div id="back1" class="backP"></div>
+            <div id="pop11" class="detailP1">
+                <div class="closepop" onclick="closePopUp(1); navigatorOn(); changeBg(1,2);"></div>
+                <div id="imgp11"></div>
+                <div id="txtpbox11">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Magnavox Odyssey <br>
+                        <b>ผู้ผลิต</b> MAGNAVOX (America 1917)<br>
+                        <b>วันวางจำหน่าย</b> สิงหาคม 1972<br>
+                        <b>ยอดขาย</b> 350,000 เครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox12">
+                    <p class="abc font SS CB">
+                        เกมคอนโซลเครื่องแรกของโลกที่ว่าจำหน่ายครั้งแรกที่ อเมริกา ในปี 1972
+                        ถูกออกแบบและสร้างโดยทีมเล็ก ๆ ที่นำโดยคุณ Ralph H. Baer
+                        นักประดิษฐ์นักพัฒนาเกมและวิศวกรชาวอเมริกันเชื้อสายเยอรมันเชื้อสายยิว
+                    </p>
+                </div>
+                <div id="morebtn1" class="morebtn"
+                    onclick="showMore(1); location.href='#more1'; closePopUp(1); changeBg(1,2);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- More 1 -->
+    <div id="more1" class="m01">
+        <div id="cmbtn1" class="cmbtn" onclick="closeMore(1); location.href='#page1';">
+            <p class="font MM CW">Back</p>
+        </div>
+        <!-- <div id="moreimg11" onclick="openMPop(0, 1); changeMBg(1, 1);"></div> -->
+        <div id="moreimg12" onclick="openMPop(1, 1); changeMBg(1, 2);"></div>
+        <div id="moreimg13" onclick="openMPop(2, 1); changeMBg(1, 3);"></div>
+        <div id="moreimg14" onclick="openMPop(3, 1); changeMBg(1, 4);"></div>
+        <div id="moreimg15" onclick="openMPop(4, 1); changeMBg(1, 5);"></div>
+        <!-- Popup -->
+        <div id="backM1" class="backP" onclick="closeMPop();  changeMBg(1, 6);"></div>
+        <!-- <div id="popM11" class="detailMP1">
+            <div class="closepop" onclick="closeMPop();  changeMBg(1, 6);"></div>
+            <div id="txtpM11">
+            </div>
+        </div> -->
+        <div id="popM12" class="detailMP1">
+            <div class="closepop" onclick="closeMPop();  changeMBg(1, 6);"></div>
+            <div id="txtpM12">
+            </div>
+        </div>
+        <div id="popM13" class="detailMP1">
+            <div class="closepop" onclick="closeMPop();  changeMBg(1, 6);"></div>
+            <div id="txtpM13">
+            </div>
+        </div>
+        <div id="popM14" class="detailMP1">
+            <div class="closepop" onclick="closeMPop();  changeMBg(1, 6);"></div>
+            <div id="txtpM14">
+            </div>
+        </div>
+        <div id="popM15" class="detailMP1">
+            <div class="closepop" onclick="closeMPop();  changeMBg(1, 6);"></div>
+            <div id="txtpM15">
+            </div>
+        </div>
+    </div>
+
+    <!-- Generation 2 -->
+    <div id="page2" class="p2">
+        <div class="layout">
+            <p id="gentxt2" class="abc font Lls CW">2nd generation 1977 - 1982</p>
+            <div id="img2_1" class="abc" onclick="openPopUp(3, 2, 2); navigatorOff(); changeBg(2,1);"></div>
+
+            <!-- Popup -->
+            <!-- onclick="closePopUp(2); navigatorOn(); changeBg(2,2);" -->
+            <div id="back2" class="backP"></div>
+            <div id="pop21" class="detailP2">
+                <div class="closepop" onclick="closePopUp(2); navigatorOn(); changeBg(2,2);"></div>
+                <div id="imgp21"></div>
+                <div id="imgp22"></div>
+                <div id="txtpbox21">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Atari 2600 <br>
+                        <b>ผู้ผลิต</b> Atari (America 1972)<br>
+                        <b>วันวางจำหน่าย</b> 11 สิงหาคม 1977<br>
+                        <b>ยอดขาย</b> 30 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox22">
+                    <p class="abc font SS CB">
+                        เครื่องเล่นเกมคอนโซลยุคแรกที่สามารถพบเห็นได้ในประเทศไทยในอดีต
+                        และยังสามารถหาซื้อได้อยู่ในปัจจุบัน โดยเกมที่ปรากฏจะเป็นเกมที่นำมาจากตู้เกมอาเขตในยุคนั้น ๆ
+                        เช่น battle city, space invader หรือเกมยอดฮิตอย่าง Pac – man
+                    </p>
+                </div>
+                <div id="morebtn2" class="morebtn"
+                    onclick="showMore(2); location.href='#more2'; closePopUp(2); changeBg(2,2);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More 2 -->
+    <div id="more2" class="m02">
+        <div id="cmbtn2" class="cmbtn" onclick="closeMore(2); location.href='#page2';">
+            <p class="font MM CW">Back</p>
+        </div>
+        <div id="moreimg21" onclick="openMPop(5, 2); changeMBg(2, 1);"></div>
+        <div id="moreimg22" onclick="openMPop(6, 2); changeMBg(2, 2);"></div>
+        <div id="moreimg23" onclick="openMPop(7, 2); changeMBg(2, 3);"></div>
+        <div id="moreimg24" onclick="openMPop(8, 2); changeMBg(2, 4);"></div>
+        <div id="moreimg25" onclick="openMPop(9, 2); changeMBg(2, 5);"></div>
+        <!-- Popup -->
+        <div id="backM2" class="backP" onclick="closeMPop(); changeMBg(2, 6);"></div>
+        <div id="popM21" class="detailMP21">
+            <div class="closepop" onclick="closeMPop();  changeMBg(2, 6);"></div>
+            <div id="txtpM21">
+                <p class="font MM CB"><b>Pac - man</b></p>
+                <p class="font SS CB">เกมกินจุดในอดีตที่ยังโด่งดังมาจนถึงปัจจุบันที่สร้างมาเพื่อให้โลกรู้ว่า
+                    เกมไม่จำเป็นจะต้องนำเสนอแต่ความรุนแรง นอกจากนั้นยังเพื่อเจาะกลุ่มลูกค้าที่เป็นผู้หญิง</p>
+                <br><br>
+                <p class="font MM CB"><b>รู้หรือไม่ ?</b></p>
+                <p class="font SS CB">การต่อสู้ที่เป็นการกินของ Pacman
+                    นั้นมีแรงบันดาลใจมาจากความชื่นชอบการกินของคุณภรรยาของผู้สร้างเกม</p>
+            </div>
+        </div>
+        <div id="popM22" class="detailMP22">
+            <div class="closepop" onclick="closeMPop();  changeMBg(2, 6);"></div>
+            <div id="txtpM22">
+                <p class="font MM CB"><b>ต้นแบบของผีในเกม Pacman</b></p>
+                <p class="font SS CB">ผีในเกมเเพคเเมนมีต้นแบบมาจากการ์ตูน</p>
+                <p class="font SS CB">ผีน้อยคิวทาโร่</p>
+            </div>
+            <div class="qtaro"></div>
+        </div>
+        <div id="popM23" class="detailMP23">
+            <div class="closepop" onclick="closeMPop();  changeMBg(2, 6);"></div>
+            <div id="txtpM23">
+                <p class="font MM CB"><b>Ms. Pac - man</b></p>
+                <p class="font SS CB">แพคแมน
+                    แต่เป็นผู้หญิงที่พัฒนาเกมการเล่นจากเดิมโดยได้รับการยอมรับจากผู้สร้างเกมต้นฉบับและยกให้เป็นเกมออริจินอลของทีมสร้าง
+                    มิสแพคแมนเอง</p>
+            </div>
+        </div>
+        <div id="popM24" class="detailMP24">
+            <div class="closepop" onclick="closeMPop();  changeMBg(2, 6);"></div>
+            <div id="txtpM24">
+                <p class="font MM CB"><b>Popeye</b></p>
+                <p class="font SS CB">เกมที่สร้างจากการ์ตูน popeye จากปี 1919 โดยจะมีทั้งหมด 3 ด่าน
+                    สามารถซ้ำหลังจากการเคลียร์เกมครั้งแรกได้โดยจะมีความยากและท้าทายที่มากขึ้น</p>
+            </div>
+        </div>
+        <div id="popM25" class="detailMP25">
+            <div class="closepop" onclick="closeMPop();  changeMBg(2, 6);"></div>
+            <div id="txtpM25">
+                <p class="font MM CB"><b>Space Invader</b></p>
+                <p class="font SS CB">เกมยิง 2 มิติจากตู้อาเขตที่ได้รับความนิยมมากในยุคนั้น
+                    และมีเกมเลียนแบบออกมามากมายหลายยุคหลายสมัย</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generation 3 -->
+    <div id="page3" class="p3">
+        <div class="layout">
+            <p id="gentxt3" class="abc font Lls CW">3rd generation 1983 - 1989</p>
+            <div id="img3_1" class="abc" onclick="openPopUp(4, 3, 3); navigatorOff(); changeBg(3,1);"></div>
+
+            <!-- Popup -->
+            <!-- onclick="closePopUp(3); navigatorOn(); changeBg(3,2);" -->
+            <div id="back3" class="backP"></div>
+            <div id="pop31" class="detailP3">
+                <div class="closepop" onclick="closePopUp(3); navigatorOn(); changeBg(3,2);"></div>
+                <div id="txtpbox31">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Nintendo Entertainment System หรือ NES หรือ Famicom <br>
+                        <b>ผู้ผลิต</b> Nintendo (Japan 1977)<br>
+                        <b>วันวางจำหน่าย</b> (JP) 15 กรกฎาคม 1983 / (NA) 18 ตุลาคม 1985<br>
+                        <b>ยอดขาย</b> 61.91 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox32">
+                    <p class="abc font SS CB">
+                        Nintendo ได้เปิดตัว Famicom (Family Computer) ครั้งแรกที่ประเทศญี่ปุ่นในปี 1983
+                        พร้อมกับการแจ้งเกิดของเกม platform ระดับตำนานอย่าง Super Mario Brother
+                        หรือเรียกกันสั้น ๆ ว่า mario จนกลายมาเป็นสัญลักษณ์ของบริษัทในปัจจุบัน และในปี 1985
+                        Nintendo เปิดขายเครื่อง famicom ในประเทศอเมริกา ในชื่อ NES
+                        และยังเป็นการทำให้เกิดปรากฎการณ์เกมคอนโซล
+                        &emsp;ที่ทำให้คนทั่วโลกได้รู้จักวิดิโอเกม และเกมคอนโซล
+                    </p>
+                </div>
+                <div id="morebtn3" class="morebtn"
+                    onclick="showMore(3); location.href='#more3'; firstViewSFX(); closePopUp(3); changeBg(3,2);">
+                    <p class="font MM CW">Play!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More 3 -->
+    <div id="more3" class="m03">
+        <div id="cmbtn3" class="cmbtn" onclick="closeMore(3); location.href='#page3'; closeGame();">
+            <p class="font MM CW">Back</p>
+        </div>
+        <div id="viewgame1">
+            <div id="menu1">
+                <img id="bgMenuG1" src="image/Game1/start/START BG.jpg">
+                <div id="playbtn1" onclick="clickToP()"> <img id="bgMenuG1" src="image/Game1/start/Start BTN.png">
+                </div>
+            </div>
+            <div id="stageG1">
+                <div id="stG1"></div>
+                <div id="nextStG1"></div>
+            </div>
+            <div id="areaBird"></div>
+            <div id="groundG1"><img width="800px" src="image/Game1/underduck.png"></div>
+            <div class="game1HUD" id="timeHUD">Time : 0</div>
+            <div class="game1HUD" id="scoreHUD">Score : 0</div>
+            <div class="game1HUD" id="stageHUD">Stage 1</div>
+
+        </div>
+    </div>
+
+    <!-- Generation 4 -->
+    <div id="page4" class="p4">
+        <div class="layout">
+            <p id="gentxt4" class="abc font Lls CW">4th generation 1989 - 1992</p>
+            <div id="img4_1" class="abc" onclick="openPopUp(5, 4, 4); navigatorOff(); changeBg(4,1);"></div>
+            <div id="img4_2" class="abc" onclick="openPopUp(6, 4, 5); navigatorOff(); changeBg(4,2);"></div>
+            <div id="img4_3" class="abc" onclick="openPopUp(7, 4, 6); navigatorOff(); changeBg(4,3);"></div>
+
+            <!-- Popup -->
+            <!-- onclick="closePopUp(4); navigatorOn(); changeBg(4,4);" -->
+            <div id="back4" class="backP"></div>
+            <div id="pop41" class="detailP4">
+                <div class="closepop" onclick="closePopUp(4); navigatorOn(); changeBg(4,4);"></div>
+                <div id="imgp41"></div>
+                <div id="txtpbox41">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Super Nintendo Entertainment System หรือ SNES หรือ Super Famicom <br>
+                        <b>ผู้ผลิต</b> Nintendo (Japan 1977)<br>
+                        <b>วันวางจำหน่าย</b> (JP) 21 พฤศจิกายน 1990 / (NA) 23 สิงหาคม 1991<br>
+                        <b>ยอดขาย</b> 49.10 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox42">
+                    <p class="abc font SS CB">
+                        ในปี 1990 Nintendo ก็ได้เปิดตัว SNES หรือ Super famicom เครื่องเล่นเกม 16
+                        บิตของตัวเองโดยในนำภาคต่อของเกมดัง ๆ
+                        ของตัวเองมาลงให้กับเครื่อง เช่น Fanal Fantasy IV, Dargon Quest V Rockman X
+                        ทั้งยังนำเกมต่อสู่ที่ดังมาก ๆ
+                        ในยุคนั้นอย่าง Street Fighter II มาในขณะที่เครื่องเกมอื่นทำไม่ได้อีกด้วย
+                    </p>
+                </div>
+                <div id="morebtn41" class="morebtn"
+                    onclick="showMore(4); location.href='#more4'; closePopUp(4); changeBg(4,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop42" class="detailP4">
+                <div class="closepop" onclick="closePopUp(5); navigatorOn(); changeBg(4,4);"></div>
+                <div id="imgp42"></div>
+                <div id="txtpbox43">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Mega Drive (jp) หรือ Sega Genesis(us) <br>
+                        <b>ผู้ผลิต</b> SEGA (Japanese multinational 1982)<br>
+                        <b>วันวางจำหน่าย</b> (JP) 29 ตุลาคม 1988 / (NA) 14 สิงหาคม 1989<br>
+                        <b>ยอดขาย</b> 30.75 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox44">
+                    <p class="abc font SS CB">
+                        เริ่มเข้าสู่ยุค 16 บิต ทำให้เกมคอนโซลมีพัฒนาการด้านภาพและเสียงที่ดีขึ้นอย่างเห็นได้ชัดเจน
+                        และในยุคนี้ SEGA
+                        ก็เป็นเจ้าแรกที่เปิดตัวด้วยเครื่องเกมใหม่อย่าง genesis และเกมชูโรงใหม่อย่าง sonic the hedgehog
+                        หรือเรียกกันติดปากว่า โซนิคเจ้าเม่นสายฟ้า
+                    </p>
+                </div>
+                <div id="morebtn42" class="morebtn"
+                    onclick="showMore(4); location.href='#more4'; closePopUp(5); changeBg(4,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop43" class="detailP4">
+                <div class="closepop" onclick="closePopUp(6); navigatorOn(); changeBg(4,4);"></div>
+                <div id="imgp43"></div>
+                <div id="txtpbox45">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> NEO GEO <br>
+                        <b>ผู้ผลิต</b> SNK Corporation (Japan 1978) <br>
+                        <b>วันวางจำหน่าย</b> (JP) 26 เมษายน 1990 / (NA) 22 สิงหาคม 1990 <br>
+                        <b>ยอดขาย</b> 1 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox46">
+                    <p class="abc font SS CB">
+                        เครื่องที่นำเกมอาเขตยอดนิยมของค่าย SNK มาลงในเครื่องเกมคอนโซล อย่าง (1991)
+                        FATAL FURY, (1992) ART OF FIGHTING, (1993) SAMURAI SHOWDOWN,
+                        (1994) KING OF FIGHTER
+                        ในประเทศไทยสามารถพบให้ได้บ่อยในยุคนั้นตามร้านเกมเนื่องจากทั้งตัวเครื่องเกม
+                        และตลับมาราคาที่สูงมากเมื่อเทียบกับเครื่องอื่น ๆ
+                    </p>
+                </div>
+                <div id="morebtn43" class="morebtn" onclick="showMore(4); location.href='#more4'; closePopUp(6); ">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More 4 -->
+    <div id="more4" class="m04">
+        <div id="cmbtn4" class="cmbtn" onclick="closeMore(4); location.href='#page4';">
+            <p class="font MM CW">Back</p>
+        </div>
+        <audio id="metalok">
+            <source src="sfx/moregame/metalslugok.mp3" type="audio/mpeg"></audio>
+        <audio id="heavy">
+            <source src="sfx/moregame/hmgun.mp3" type="audio/mpeg"></audio>
+        <audio id="frame">
+            <source src="sfx/moregame/frameshot.mp3" type="audio/mpeg"></audio>
+        <audio id="rocket">
+            <source src="sfx/moregame/rocket.mp3" type="audio/mpeg"></audio>
+        <audio id="shotgun">
+            <source src="sfx/moregame/shotgun.mp3" type="audio/mpeg"></audio>
+
+        <div id="moreimg41" onclick="openMPop(10, 4); changeMBg(4, 1);"></div>
+        <div id="moreimg42" onclick="openMPop(11, 4); changeMBg(4, 2);"></div>
+        <div id="moreimg43" onclick="openMPop(12, 4); changeMBg(4, 3);"></div>
+        <div id="moreimg44" onclick="openMPop(13, 4); changeMBg(4, 4);"></div>
+        <div id="moreimg45" onclick="openMPop(14, 4); changeMBg(4, 5); playSound(0);"></div>
+        <!-- Popup -->
+        <div id="backM4" class="backP" onclick="closeMPop(); changeMBg(4, 6);"></div>
+        <div id="popM41" class="detailMP41">
+            <div class="closepop" onclick="closeMPop();  changeMBg(4, 6);"></div>
+            <div id="txtpM41">
+                <p class="font MM CB"><b>The Legend of Zelda</b></p>
+                <p class="font SS CB">เกมผจญภัยโลกแฟนตาซีธีมผู้กล้าปราบจอมมารช่วยเจ้าหญิง
+                    ของพระเอกเอลฟ์หนุ่มผู้โชคร้ายที่ผู้เล่นหลาย ๆ คนคิดว่าชื่อ
+                    เซลด้า แต่ที่จริงแล้วเขามีชื่อว่า ลิงค์ โดยผู้สร้างได้ออกมาให้
+                    ความหมายว่า ต้องการให้ผู้เล่นรู้สึกได้ ลิงค์ เชื่อมต่อกับโลกของเกม</p>
+            </div>
+            <div class="imglink1"></div>
+            <div class="imglink2"></div>
+        </div>
+        <div id="popM42" class="detailMP42">
+            <div class="closepop" onclick="closeMPop();  changeMBg(4, 6);"></div>
+            <div id="txtpM42">
+                <p class="font MM CB"><b>Megaman</b></p>
+                <p class="font SS CB">เกมยิงแพลตฟอร์มที่เป็นมาสคอสหลักของบริษัท Capcom โดย Megaman
+                    ที่มีเอกลักษณะโดดเด่นที่ปืนยิงพลังงานอย่าง Megabuster ที่มือข้างซ้าย</p>
+            </div>
+            <div class="imgrock"></div>
+        </div>
+        <div id="popM43" class="detailMP43">
+            <div class="closepop" onclick="closeMPop();  changeMBg(4, 6);"></div>
+            <div id="txtpM43">
+                <p class="font MM CB"><b>Sonic the hedgehog</b></p>
+                <p class="font SS CB">เกมแพลตฟอร์ม 2 มิติ ที่ว่าด้วยการตู่สู้ของเจ้าเม่นสีฟ้าชื่อ โซนิค
+                    กับนักวิทยาศาสตร์ผู้ชั่วร้าย เอ๊กแมน</p>
+            </div>
+            <div class="imgsonic"></div>
+        </div>
+        <div id="popM44" class="detailMP44">
+            <div class="closepop" onclick="closeMPop();  changeMBg(4, 6);"></div>
+            <div id="txtpM44">
+                <p class="font MM CB"><b>Super Mario Kart</b></p>
+                <p class="font SS CB">เกมมาริโอในรูปแบบการแข่งรถโกคาร์ท โดยจะมีตัวละครจากซีรีย์เกมมาริโอให้เลือกเล่น
+                    ตั้งแต่มาริโอ ลุยจิ เจ้าหญิงพีช และแม้กระทั่งบอสที่ทุกคนคุ้นชินอย่าง บาวเซอร์</p>
+            </div>
+            <div class="imgkart1"></div>
+            <div class="imgkart2"></div>
+            <div class="imgkart3"></div>
+        </div>
+        <div id="popM45" class="detailMP45">
+            <div class="closepop" onclick="closeMPop();  changeMBg(4, 6);"></div>
+            <div id="txtpM45">
+                <p class="font MM CB"><b>Metal Slug</b></p>
+                <p class="font SS CB">หนึ่งเกมยิงแพลตฟอร์มยอดนิยม คุณอาจได้ยินอีกชื่อหนึ่งก็คือ ทหารจิ๋ว
+                    ในเกมคุณจะเหล่าทหารเดินเท้า จักรกลสงคราม ผีดิบซอมบี้ ไปจนถึงเอเลียน โดยเกมยังมาพร้อมกับเหล่า
+                    พาวเวอร์อัพที่มาพร้อมกับเสียงที่ติดหู
+                </p>
+            </div>
+            <div id="imgpu1" onclick="playSound(1);"></div>
+            <div id="imgpu2" onclick="playSound(2);"></div>
+            <div id="imgpu3" onclick="playSound(3);"></div>
+            <div id="imgpu4" onclick="playSound(4);"></div>
+        </div>
+    </div>
+
+    <!-- Generation 5 -->
+    <div id="page5" class="p5">
+        <div class="layout">
+            <p id="gentxt5" class="abc font Lls CW">5th generation 1993 - 1996</p>
+            <div id="img5_1" class="abc" onclick="openPopUp(8, 5, 7); navigatorOff(); changeBg(5,1);"></div>
+            <div id="img5_2" class="abc" onclick="openPopUp(9, 5, 8); navigatorOff(); changeBg(5,2);"></div>
+            <div id="img5_3" class="abc" onclick="openPopUp(10, 5, 9); navigatorOff(); changeBg(5,3);"></div>
+
+            <!-- Popup -->
+            <!-- onclick="closePopUp(5); navigatorOn(); changeBg(5,4);" -->
+            <div id="back5" class="backP"></div>
+            <div id="pop51" class="detailP5">
+                <div class="closepop" onclick="closePopUp(7); navigatorOn(); changeBg(5,4);"></div>
+                <div id="txtpbox51">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> PlayStation <br>
+                        <b>ผู้ผลิต</b> Sony (JP multinational 1946) <br>
+                        <b>วันวางจำหน่าย</b> (JP) 3 สิงหาคม 1994 / (NA) 9 กันยายน 1995 <br>
+                        <b>ยอดขาย</b> 102.49 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox52">
+                    <p class="abc font SS CB">
+                        จุดเริ่มต้นของคลื่นลูกใหญ่ที่ทำให้วงการเกมคอนโซลต้องสั่นสะเทือนจากอดีตจนถึงปัจจุบัน เมื่อ Sony
+                        มาเข้าร่วมวงการเกมคอนโซล หลังจากโปรเจคการร่วมมือระหว่าง Sony และ Nintendo ที่ถูกยกเลิกไป Sony
+                        จึงได้เปิดตัวเครื่องเกมคอนโซลของตัวเองที่มีการนำเสนอเกมด้วย โมเดลโพลิกอน 3 มิติเต็มรูปแบบ
+                        ทำให้เกิดการเปลี่ยนแปลงครั้งสำคัญของวงการเกมอย่างมากจากภาพเกม 2 มิติ สู่ 3 มิติ
+                        เเละมีเปิดตัวเกมใหม่ Resident Evil, Silent Hill, Tekken
+                    </p>
+                </div>
+                <div id="morebtn51" class="morebtn"
+                    onclick="showMore(5); location.href='#more5'; closePopUp(7); changeBg(5,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop52" class="detailP5">
+                <div class="closepop" onclick="closePopUp(8); navigatorOn(); changeBg(5,4);"></div>
+                <div id="txtpbox53">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Nintendo 64 <br>
+                        <b>ผู้ผลิต</b> Nintendo (Japan 1977) <br>
+                        <b>วันวางจำหน่าย</b> (JP) 23 มิถุนายน 1996 / (NA)29 กันยายน 1996 <br>
+                        <b>ยอดขาย</b> 32.93 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox54">
+                    <p class="abc font SS CB">
+                        การกลับมาของ Nintendo โดนยังคงยึดเอกลักษณ์เดิมของตัวเองในการใช้สื่อบันทึกข้อมูลอย่างตลับ
+                        โดยให้เหตุผลว่า
+                        ซีดีนั้นบันทึกข้อมูลได้มากกว่าก็จริง แต่จะมีหน้าโหลดเวลาเข้าฉากต่าง ๆ ซึ่งทาง Nintendo
+                        มองว่ามันไม่ดีต่อประสบการณ์ในการเล่น โดย Nintendo ยังได้เปิดตัวจอยตัวใหม่ที่แปลกตามากในยุคนั้น
+                        เพราะมันมีถึง 3 ก้าน และมาพร้อมกับแกนนาลอค ก่อนที่มันจะกลายเป็นต้นแบบให้กับ
+                        การออกแบบจอยในยุคปัจจุบันที่จะต้องมีแกนอนาล๊อคด้วย
+                    </p>
+                </div>
+                <div id="morebtn52" class="morebtn"
+                    onclick="showMore(5); location.href='#more5'; closePopUp(8); changeBg(5,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop53" class="detailP5">
+                <div class="closepop" onclick="closePopUp(9); navigatorOn(); changeBg(5,4);"></div>
+                <div id="txtpbox55">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> 3DO REAL <br>
+                        <b>ผู้ผลิต</b> Matsushita Electric หรือ Panasonic(1918 Japan) <br>
+                        <b>วันวางจำหน่าย</b> (NA) 4 ตุลาคม 1993 / (JP) 20 มีนาคม 1994 <br>
+                        <b>ยอดขาย</b> 2 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox56">
+                    <p class="abc font SS CB">
+                        3DO REAL สร้างความตื่นตาตื่นใจให้กับวงการเกมคอนโซลในยุคนั้นมากเพราะเป็น
+                        เครื่องเล่นเกมแรกที่สามารถนำสื่อบันทึกข้อมูลสมัยใหม่อย่าง ซีดีมาใช้ ทำให้ทั้งภาพ
+                        เสียง สี ความสวยงาม มากขึ้นจากยุค 16 บิตมาก
+                    </p>
+                </div>
+                <div id="morebtn53" class="morebtn"
+                    onclick="showMore(5); location.href='#more5'; closePopUp(9); changeBg(5,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More 5 -->
+    <div id="more5" class="m05">
+        <div id="cmbtn5" class="cmbtn" onclick="closeMore(5); location.href='#page5';">
+            <p class="font MM CW">Back</p>
+        </div>
+        <div id="moreimg51" onclick="openMPop(15, 5); changeMBg(5, 1);"></div>
+        <div id="moreimg52" onclick="openMPop(16, 5); changeMBg(5, 2);"></div>
+        <div id="moreimg53" onclick="openMPop(17, 5); changeMBg(5, 3);"></div>
+        <div id="moreimg54" onclick="openMPop(18, 5); changeMBg(5, 4);"></div>
+        <!-- Popup -->
+        <div id="backM5" class="backP" onclick="closeMPop(); changeMBg(5, 5);"></div>
+        <div id="popM51" class="detailMP51">
+            <div class="closepop" onclick="closeMPop();  changeMBg(5, 5);"></div>
+            <div id="txtpM51">
+                <p class="font MM CB"><b>Doom</b></p>
+                <p class="font SS CB">เกมยิงมุมมองบุคคลที่หนึ่งหรือ FPS เดินหน้ายิงอย่างเต็มตัวที่ผู้เล่นจะ
+                    ได้รับพบเป็นตัวละครยอดมนุษย์ที่ถูกขนานนามว่า Doom slayer ออกบุกเดี๋ยวถล่มปีศาจ
+                    จากนรกที่เกมจะโยนศัตรูมาอย่างมืดฟ้ามัวดิน และระบบเกมก็พลักดันให้ผู้เล่นพุ่งเข้าใส่ศัตรู
+                    และทำลายทุกอย่างที่ขวางหน้า นอกจากเกมการเล่นที่ดุดันตัวเกมยังมีการทำเพลงประกอบ
+                    ที่ให้ผู้เล่นรู้สึกเหมือนกำลังอยู่ใน MV เพลงเมทัลที่มีผู้เล่นเป็นพระเอก </p>
+            </div>
+        </div>
+        <div id="popM52" class="detailMP52">
+            <div class="closepop" onclick="closeMPop();  changeMBg(5, 5);"></div>
+            <div id="txtpM52">
+                <p class="font MM CB"><b>Castlevania : Symphony of the Night</b></p>
+                <p class="font SS CB">เกมแพลตฟอร์มที่ถูกเรียกติดปากว่าเกมฟาดแส้ มาจากอาวุธหลักที่ตัวละครของผู้เล่นใช้
+                    และยังเป็นเกมแรก ๆ ที่ผู้เล่นสามารถโจมตีได้อย่างอิสระทั้ง 8 ทิศทาง</p>
+            </div>
+        </div>
+        <div id="popM53" class="detailMP53">
+            <div class="closepop" onclick="closeMPop();  changeMBg(5, 5);"></div>
+            <div id="txtpM53">
+                <p class="font MM CB"><b>Harvest Moon: Back to Nature </b></p>
+                <p class="font SS CB">เกมทำฟาร์ม จีบสาวที่น่าจดจำขวัญใจผู้เล่นเกมตั้งแต่ยุค 90
+                    นอกจากการทำฟาร์มเเละกิจกรรมเสริมต่าง ๆ เเล้วเกมยังมีความลับหลายอย่างซ่อนเอาไว้เช่น</p>
+                <br>
+                <p class="font SS CB"><b>Power Berry</b> ผลไม้เพิ่มพลังที่จะทำให้เราสามารถทำงานได้อย่างต่อเนื่อง</p>
+                <p class="font SS CB"><b>Kappa</b> ตัวกัปปะที่จะโผล่มาในฤดูใบไม้ผลิ หลังเวลา 11 โมง ถ้าเราโยนแตงกวาให้ 3
+                    ลูก กัปปะจะให้ผลไม้วิเศษกับเรา</p>
+                <p class="font SS CB"><b>Spa boiled eggs</b> จากการทำไข่ไปต้มในบ่อน้ำพุร้อน</p>
+            </div>
+            <div class="imghvm1"></div>
+            <div class="imghvm2"></div>
+            <div class="imghvm3"></div>
+        </div>
+        <div id="popM54" class="detailMP54">
+            <div class="closepop" onclick="closeMPop();  changeMBg(5, 5);"></div>
+            <div id="txtpM54">
+                <p class="font MM CB"><b>Resident Evil</b></p>
+                <p class="font SS CB">เกมยิงซอมบี้มุมกล้องล็อคตามฉากที่ได้แรกบันดาลใจมาจากเกม Alone in the dark
+                    ที่นำเสนอความน่ากลัวได้อย่างมีเสน่ห์ทั้งเสียงต่าง ๆ และจังหวะการเปิดตัวศัตรูในเกม</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generation 6 -->
+    <div id="page6" class="p6">
+        <div class="layout">
+            <p id="gentxt6" class="abc font Lls CW">6th generation 1999 - 2001</p>
+            <div id="img6_1" class="abc" onclick="openPopUp(11, 6, 10); navigatorOff(); changeBg(6,1);"></div>
+            <div id="img6_2" class="abc" onclick="openPopUp(12, 6, 11); navigatorOff(); changeBg(6,2);"></div>
+            <div id="img6_3" class="abc" onclick="openPopUp(13, 6, 12); navigatorOff(); changeBg(6,3);"></div>
+            <div id="img6_4" class="abc" onclick="openPopUp(14, 6, 13); navigatorOff(); changeBg(6,4);"></div>
+
+            <!-- Popup -->
+            <!-- onclick="closePopUp(6); navigatorOn(); changeBg(6,5);" -->
+            <div id="back6" class="backP"></div>
+            <div id="pop61" class="detailP6">
+                <div class="closepop" onclick="closePopUp(10); navigatorOn(); changeBg(6,5);"></div>
+                <div id="txtpbox61">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Playstation2 <br>
+                        <b>ผู้ผลิต</b> Sony (JP multinational 1946) <br>
+                        <b>วันวางจำหน่าย</b> (JP) 4 มีนาคม 2000 / (NA) 26 ตุลาคม 2000 <br>
+                        <b>ยอดขาย</b> 155 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox62">
+                    <p class="abc font SS CB">
+                        Sony ได้สานต่อความสำเร็จด้วยการเปิดตัวของ Playstation2 ที่ทำให้ยอดขายของ Dream Cast
+                        หยุดชงักลงไปและในครั้งนี้ Sony ได้เปิดตัวเกมภาคต่อชื่อดังอีกมากมายทั้ง Final Fantasy X,
+                        Metal Gear Solid 2, Dragon Quest VIII และมีการเปิดตัวเกมใหม่อย่าง Devil May Cry,
+                        Onimusha, God of War โดยส่วนหนึ่งจากความสำเร็จของ Sony ก็มาจากการเลือกใช้สื่อบันทึกข้อมูลอย่าง
+                        ดีวีดี ที่สามารถบันทึกข้อมูลได้มากกว่า ซีดีถึง 7 เท่า
+                    </p>
+                </div>
+                <div id="morebtn61" class="morebtn"
+                    onclick="showMore(6); location.href='#more6'; closePopUp(10); changeBg(6,5);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop62" class="detailP6">
+                <div class="closepop" onclick="closePopUp(11); navigatorOn(); changeBg(6,5);"></div>
+                <div id="txtpbox63">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Xbox <br>
+                        <b>ผู้ผลิต</b> Microsoft (American multinational 1975) <br>
+                        <b>วันวางจำหน่าย</b> (NA) 15 พฤศจิกายน 2001 / (JP) 22 กุมภาพันธ์ 2002 <br>
+                        <b>ยอดขาย</b> 24 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox64">
+                    <p class="abc font SS CB">
+                        ปลายปี 2001 Microsoft ในเปิดตัวเครื่องเกมคอนโซลเครื่องแรกของตัวเอง
+                        และประกาศเข้าร่วมสงครามการค้าด้วยการเปิดตัว Xbox เครื่องเกมที่แรงที่สุดในยุคนั้น
+                        และมาพร้อมกับฮาร์ดไดร์ในตัวสำหรับบันทึกเกม ทั้งยังเพิ่มบริการออนไลน์อย่าง Xbox Live
+                    </p>
+                </div>
+                <div id="morebtn62" class="morebtn"
+                    onclick="showMore(6); location.href='#more6'; closePopUp(11); changeBg(6,5);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop63" class="detailP6">
+                <div class="closepop" onclick="closePopUp(12); navigatorOn(); changeBg(6,5);"></div>
+                <div id="txtpbox65">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Dream Cast <br>
+                        <b>ผู้ผลิต</b> SEGA (Japanese multinational 1982) <br>
+                        <b>วันวางจำหน่าย</b> (JP) 27 พฤศจิกายน 1998 / (NA) 9 กันยายน 1999 <br>
+                        <b>ยอดขาย</b> 9.13 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox66">
+                    <p class="abc font SS CB">
+                        เครื่องเกมแรกที่เปิดตัวก่อนใครในยุคนั้นของ SEGA สร้างความฮือฮาให้วงการเกมอย่างมากด้วยการพัฒนาจาก
+                        64 บิต สู่ 128 บิต
+                        ทำให้ภาพของเกมมีความสวยงาม ลบเหลี่ยมและมุมของโมเดลสิ่งต่าง ๆ ในเกมได้อย่างมาก
+                    </p>
+                </div>
+                <div id="morebtn63" class="morebtn"
+                    onclick="showMore(6); location.href='#more6'; closePopUp(12); changeBg(6,5);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop64" class="detailP6">
+                <div class="closepop" onclick="closePopUp(13); navigatorOn(); changeBg(6,5);"></div>
+                <div id="txtpbox67">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> GameCube <br>
+                        <b>ผู้ผลิต</b> Nintendo (Japan 1977) <br>
+                        <b>วันวางจำหน่าย</b> (JP) 14 กันยายน 2001 / (NA) 18 พฤศจิกายน 2001 <br>
+                        <b>ยอดขาย</b> 21.7 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox68">
+                    <p class="abc font SS CB">
+                        การกลับมาของ Nintendo หลังจากปล่อยให้ Sony ได้ครองตลาดถึง 1 ปีเต็มและเป็นครั้งแรกที่
+                        Nintendo ยอมเปลี่ยนมาใช้สื่อบันทึกสมัยใหม่อย่างมินิดีวีดี โดยมาพร้อมกับเกมยอดนิยมของตัวเองอย่าง
+                        mario และ Zelda
+                        และมีการนำเกม Resident evil remake มาลงพิเศษเป็น Excusive ให้กับเครื่อง Gamecube อีกด้วย
+                    </p>
+                </div>
+                <div id="morebtn64" class="morebtn"
+                    onclick="showMore(6); location.href='#more6'; closePopUp(13); changeBg(6,5);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More 6 -->
+    <div id="more6" class="m06">
+        <div id="cmbtn6" class="cmbtn" onclick="closeMore(6); location.href='#page6';">
+            <p class="font MM CW">Back</p>
+        </div>
+        <div id="moreimg61" onclick="openMPop(19, 6); changeMBg(6, 1);"></div>
+        <div id="moreimg62" onclick="openMPop(20, 6); changeMBg(6, 2);"></div>
+        <div id="moreimg63" onclick="openMPop(21, 6); changeMBg(6, 3);"></div>
+        <div id="moreimg64" onclick="openMPop(22, 6); changeMBg(6, 4);"></div>
+        <div id="moreimg65" onclick="openMPop(23, 6); changeMBg(6, 5);"></div>
+        <div id="moreimg66" onclick="openMPop(24, 6); changeMBg(6, 6);"></div>
+        <!-- Popup -->
+        <div id="backM6" class="backP" onclick="closeMPop(); changeMBg(6, 7);"></div>
+        <div id="popM61" class="detailMP61">
+            <div class="closepop" onclick="closeMPop();  changeMBg(6, 7);"></div>
+            <div id="txtpM61">
+                <p class="font MM CB"><b>Devil May Cry</b></p>
+                <p class="font SS CB">เกมที่เกือบจะได้เป็น RE4 แต่ด้วยเกมการเล่นและเนื้อเรื่องจึงทำให้ Devil May Cry
+                    กลายเป็นเกมซีรีย์ใหม่ของตัวเองที่เน้นการแอคชัน และความเท่ และเมื่อไม่ต้องผูกมัดกับโลกของ RE
+                    ซีรีย์ทำให้ผู้สร้างสามารถใส่จินตนาการพัฒนาและปรังปรุงจนโลกของ Devil May Cry
+                    สมบูรณ์และได้กำเนิดตัวละครเอกขวัญใจผู้เล่นอย่าง ดันเต้ และเวอร์จิล บุตรแห่งจอมปีศาจสปาดา </p>
+            </div>
+        </div>
+        <div id="popM62" class="detailMP62">
+            <div class="closepop" onclick="closeMPop();  changeMBg(6, 7);"></div>
+            <div id="txtpM62">
+                <p class="font MM CB"><b>God of War</b></p>
+                <p class="font SS CB">โล้นซ่าฆ่าเทพล้างสวรรค์
+                    เกมหน้าใหม่ที่เอาใจผู้เล่นสายแอคชันและได้รับผมตอบรับด้านบวกอย่างล้นลาม
+                    กับการต่อสู้ที่ถึงใจ การใส่ Quick time event
+                    ที่ใส่มาอย่างลงตัวและการต่อสู้กับบอสที่ยิ่งใหญ่แบบไม่เคยมีเกมไหนทำมาก่อน
+                    โดยเกมนี้นั้นจะทำให้การโหลดฉากแบบเดิมที่ต้องรอเปลี่ยนไปด้วยการทำเสนอเนื้อเรื่องที่ร้อยเรียงเรื่องราวให้ความรู้สึกเหมือนกำลังอยู่ในภาพยนตร์ฟอร์มยักษ์เลยทีเดียว
+                </p>
+            </div>
+        </div>
+        <div id="popM63" class="detailMP63">
+            <div class="closepop" onclick="closeMPop();  changeMBg(6, 7);"></div>
+            <div id="txtpM63">
+                <p class="font MM CB"><b>Halo: Combat Evolved</b></p>
+                <p class="font SS CB">เกมยิงมุมมองบุคคลที่ 1 (First Person
+                    Shooting)ที่ทำให้โลกได้รู้ว่าเกมยิงที่ดีสำหรับเครื่องคอนโซลควรเป็นอย่างไร</p>
+            </div>
+        </div>
+        <div id="popM64" class="detailMP64">
+            <div class="closepop" onclick="closeMPop();  changeMBg(6, 7);"></div>
+            <div id="txtpM64">
+                <p class="font MM CB"><b>Ōkami</b></p>
+                <p class="font SS CB">เกมผจญภัยที่นำเสนอเนื้อเรื่อง ภาพและวิธีการเล่นของเกมที่แตกต่างจากเกมในยุคนั้น
+                    แม้ทางผู้พัฒนาจะเคยออกมาบอกว่าสาเหตุที่ภาพของเกมเป็นแบบนี้เพราะข้อจำกัดของเทคโนโลยี
+                    แต่มันกับกลายเป็นเสน่ห์สุดพิเศษของ Ōkami ไปทันที โดยเกมนี้ นำเสนอพลังพิเศษใน
+                    การใช้แปรงพู่กันและน้ำหมึกในการวาดเพื่อใช้พลังพิเศษต่าง ๆ ทั้งการสร้างลม การคืนชีวิตให้เหล่าต้นไม้
+                    เป็นท่าพิเศษในการโมตี การแก้ไขปริศนา</p>
+            </div>
+        </div>
+        <div id="popM65" class="detailMP65">
+            <div class="closepop" onclick="closeMPop();  changeMBg(6, 7);"></div>
+            <div id="txtpM65">
+                <p class="font MM CB"><b>Resident Evil 4</b></p>
+                <p class="font SS CB">สานต่อตำนานเกมยิงซอมบี้ RE4
+                    นั้นได้พลิกโฉมตัวเองจากมุมกล้องล็อคตามฉากมาเป็นมุมกล้องมุมมองบุคคลที่ 3
+                    หรือ Third Person และสำเสนอสิ่งใหม่อย่างการยิงผ่านหัวไหล่ตัวละคร
+                    ซึ่งในครั้งนี้ก็มีได้การกล่าวถึงศัตรูแบบไหนที่ไม่ใช้เชื้อไวรัส
+                    แต่เป็นปรสิตยึดร่าง และมีการเพิ่มการกด Quick time event
+                    หรือการกดปุ่มในเวลาจำกัดซึ่งทำให้เกมไม่ปลอดภัยแม้กระทั่งระหว่างช่วงการเล่าเนื้อเรื่อง(Cut scene)</p>
+            </div>
+        </div>
+        <div id="popM66" class="detailMP66">
+            <div class="closepop" onclick="closeMPop();  changeMBg(6, 7);"></div>
+            <div id="txtpM66">
+                <p class="font MM CB"><b>Shenmue</b></p>
+                <p class="font SS CB">เกมโลกเปิด(Open world)ที่เป็นต้นแบบให้เกมโลกเปิดอื่น ๆ ในการพัฒนาต่อยอด โดย
+                    Shenmue
+                    นั้นมีเนื้อเรื่องที่ว่าด้วยการแก้แค้น ของเด็กหนุ่มนาม Ryo Hazuki
+                    ที่เชี่ยวชาญศิลปะการต่อสู้อย่างจูจุสึ
+                    ได้กลับไปสู่สำนักของพ่อเขาเพื่อหาสิ่งที่จะนำไปสู่การล้างแค้นคนที่สังหารพ่อของเขาซึ่งคน ๆ นั้นคือ Lan
+                    Di โดย Lan Di
+                    ได้ขโมยวัตถุลึกลับที่รู้จักกันในชื่อ Dragon Mirror ซึ่ง Ryo
+                    ได้ประกาศไว้ว่าจะล้างแค้นให้กับพ่อเขาและจะหยุดยั้ง Lan Di ไว้ให้ได้ </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generation 7 -->
+    <div id="page7" class="p7">
+        <div class="layout">
+            <p id="gentxt7" class="abc font Lls CW">7th generation 2004 - 2006</p>
+            <div id="img7_1" class="abc" onclick="openPopUp(15, 7, 14); navigatorOff(); changeBg(7,1);"></div>
+            <div id="img7_2" class="abc" onclick="openPopUp(16, 7, 15); navigatorOff(); changeBg(7,2);"></div>
+            <div id="img7_3" class="abc" onclick="openPopUp(17, 7, 16); navigatorOff(); changeBg(7,3);"></div>
+
+            <!-- Popup -->
+            <!-- onclick="closePopUp(7); navigatorOn(); changeBg(7,4);" -->
+            <div id="back7" class="backP"></div>
+            <div id="pop71" class="detailP7">
+                <div class="closepop" onclick="closePopUp(14); navigatorOn(); changeBg(7,4);"></div>
+                <div id="txtpbox71">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Wii <br>
+                        <b>ผู้ผลิต</b> Nintendo (Foxconn 1974) <br>
+                        <b>วันวางจำหน่าย</b> (JP) 14 กันยายน 2001 / (NA) 18 พฤศจิกายน 2001 <br>
+                        <b>ยอดขาย</b> 101.63 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox72">
+                    <p class="abc font SS CB">
+                        เรียบง่าย แต่แฝงด้วยความหน้าค้นหา นิยามสั้น ๆ สำหรับเครื่อง Wii โดยมีอุปกรณ์เสริมคือ Wiimote
+                        ที่ทำให้การเล่นเกมไม่ใช้แค่การกดปุ่มเพียงอย่างเดียวอีกต่อไป
+                        ผู้เล่นสามารถออกท่าทางเพื่อควบคุมการเล่นเกม
+                        ทำให้ Nintendo สามารถขยายตลาดไปสู่กลุ่มลูกค้าไม่มากกว่าทุกเครื่องเกมในตอนนั้น
+                        มาพร้อมเกมที่เน้นไปในการใช้ความสามารถของ Wiimote เช่น Wiisports, Wiiplay หรือแม้กระทั่ง Mario
+                    </p>
+                </div>
+                <div id="morebtn71" class="morebtn"
+                    onclick="showMore(7); location.href='#more7'; closePopUp(14); changeBg(7,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop72" class="detailP7">
+                <div class="closepop" onclick="closePopUp(15); navigatorOn(); changeBg(7,4);"></div>
+                <div id="txtpbox73">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Playstation 3 <br>
+                        <b>ผู้ผลิต</b> Sony (JP multinational 1946) <br>
+                        <b>วันวางจำหน่าย</b> (JP) 11 พฤศจิกายน 2006 / (NA) 17 พฤศจิกายน 2006 <br>
+                        <b>ยอดขาย</b> 85.9 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox74">
+                    <p class="abc font SS CB">
+                        Playstation 3 ได้เปลี่ยนไปใช้สื่อบันทึกข้อมูลอย่างแผ่น blue - ray
+                        และยังคงความสามารถในการเล่นแผ่นหนัง blue – ray
+                        ผ่านตัวเครื่องในส่วนของเกมได้มีการทำภาคต่อของเกมดังอย่าง God of war 3 และเปิดตัวเองใหม่อย่าง
+                        Uncharted
+                    </p>
+                </div>
+                <div id="morebtn72" class="morebtn"
+                    onclick="showMore(7); location.href='#more7'; closePopUp(15); changeBg(7,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop73" class="detailP7">
+                <div class="closepop" onclick="closePopUp(16); navigatorOn(); changeBg(7,4);"></div>
+                <div id="txtpbox75">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Xbox 360 <br>
+                        <b>ผู้ผลิต</b> Microsoft (American multinational 1975) <br>
+                        <b>วันวางจำหน่าย</b> 15 พฤศจิกายน 2005 <br>
+                        <b>ยอดขาย</b> 84.7 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="txtpbox76">
+                    <p class="abc font SS CB">
+                        เจ้าแรกที่เปิดตัวในยุคนี้ พร้อมด้วยจุดเด่นด้านการบริการออนไลน์ที่พัฒนาต่อยอดจากเจนที่แล้ว
+                        และการมาของระบบ Achievement
+                        ที่จะผู้กับบัญชีผู้ใช้นั้น ๆ แม้จะเป็นยุคของแผ่น blue-ray ที่มีความจุมากกว่าแต่ Xbox
+                        เองก็เลือกที่จะใช้ DVD
+                        เป็นส่วนใหญ่เรื่องจากขนาดเกมในตอนนั้นยังสามารถเก็บได้เพียงพอในแผ่น DVD
+                    </p>
+                </div>
+                <div id="morebtn73" class="morebtn"
+                    onclick="showMore(7); location.href='#more7'; closePopUp(16); changeBg(7,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More 7 -->
+    <div id="more7" class="m07">
+        <div id="cmbtn7" class="cmbtn" onclick="closeMore(7); location.href='#page7';">
+            <p class="font MM CW">Back</p>
+        </div>
+        <div id="moreimg71" onclick="openMPop(25, 7); changeMBg(7, 1);"></div>
+        <div id="moreimg72" onclick="openMPop(26, 7); changeMBg(7, 2);"></div>
+        <div id="moreimg73" onclick="openMPop(27, 7); changeMBg(7, 3);"></div>
+        <div id="moreimg74" onclick="openMPop(28, 7); changeMBg(7, 4);"></div>
+        <!-- Popup -->
+        <div id="backM7" class="backP" onclick="closeMPop(); changeMBg(7, 5);"></div>
+        <div id="popM71" class="detailMP71">
+            <div class="closepop" onclick="closeMPop();  changeMBg(7, 5);"></div>
+            <div id="txtpM71">
+                <p class="font MM CB"><b>Wii sport</b></p>
+                <p class="font SS CB">เกมที่รวมเอาเกมกีฬามาประยุกต์กับการใช้งานคอนโทรเลอร์อย่าง Wiimote
+                    ได้อย่างลงตัวโดยมีให้เลือกเล่นตั้งแต่ เทนนิส เบสบอล โบว์ลิ่ง กอล์ฟ และ การชกมวย</p>
+            </div>
+        </div>
+        <div id="popM72" class="detailMP72">
+            <div class="closepop" onclick="closeMPop();  changeMBg(7, 5);"></div>
+            <div id="txtpM72">
+                <p class="font MM CB"><b>Red Dead Redemption </b></p>
+                <p class="font SS CB">เกมโลกเปิดธีมโลกตะวันตกยุคแดนคาวบอยไร้กฎหมาย ที่กวาดเอาตำแหน่ง Game of the year
+                    ในยุคนั้นไปจากหลาย ๆ สำนักรีวิว เกมการเล่น มินิเกม การนำเสนอเนื้อเรี่องดีที่สุดในเกมโลกคาวบอยส์</p>
+            </div>
+        </div>
+        <div id="popM73" class="detailMP73">
+            <div class="closepop" onclick="closeMPop();  changeMBg(7, 5);"></div>
+            <div id="txtpM73">
+                <p class="font MM CB"><b>Uncharted</b></p>
+                <p class="font SS CB">การเดินทางของตัวเอกมากเสน่ห์นาม นาธาน เดรก ผู้ที่เชื่อว่าเป็นทายาทของนักสำรวจเซอร์
+                    ฟรานซิส เดรก
+                    ขณะที่เขาตามหาสมบัติของเมืองเอลโดราโดที่หายไป โดยได้ความช่วยเหลือจากนักข่าว เอเลนา ฟิชเชอร์
+                    และที่ปรึกษา วิกเตอร์ ซัลลิแวน</p>
+            </div>
+        </div>
+        <div id="popM74" class="detailMP74">
+            <div class="closepop" onclick="closeMPop();  changeMBg(7, 5);"></div>
+            <div id="txtpM74">
+                <p class="font MM CB"><b>The Last of Us</b></p>
+                <p class="font SS CB">
+                    เกมแอคชันสอยงขวัญเอาชีวิตรอดในโลกที่ล่มสลายจากการแพร่ระบาดของเชื้อเห็ดราสายพันธุ์คอร์ดิเซปส์
+                    โดยทุกองค์ประกอบของเกมจะทำให้ผู้เล่นรู้สึกผูกพันธ์กับตัวละครทั้งโจ และ เอลลี่ ตลอดการเดินทาง The
+                    Last of Us
+                    เป็นเกมที่ตัวละครสามารถถ่ายถอดความเป็นมนุษย์ในอย่างสมจริงจนทำให้ผู้เล่นรู้สึกได้ว่าทั้งสองมีชีวิตมีความนึกคิดเป็นของตัวเองจริง
+                    ๆ</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generation 8 -->
+    <div id="page8" class="p8">
+        <div class="layout">
+            <p id="gentxt8" class="abc font Lls CW">8th generation 2011 - 2017</p>
+            <div id="img8_1" class="abc" onclick="openPopUp(18, 8, 17); navigatorOff(); changeBg(8,1);"></div>
+            <div id="img8_2" class="abc" onclick="openPopUp(19, 8, 18); navigatorOff(); changeBg(8,2);"></div>
+            <div id="img8_3" class="abc" onclick="openPopUp(20, 8, 19); navigatorOff(); changeBg(8,3);"></div>
+
+            <!-- Popup -->
+            <!-- onclick="closePopUp(8); navigatorOn(); changeBg(8,4);" -->
+            <div id="back8" class="backP"></div>
+            <div id="pop81" class="detailP81">
+                <div class="closepop" onclick="closePopUp(17); navigatorOn(); changeBg(8,4);"></div>
+                <div id="txtpbox81">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Playstation 4 <br>
+                        <b>ผู้ผลิต</b> Sony (JP multinational 1946) <br>
+                        <b>วันวางจำหน่าย</b> (NA) 15 พฤศจิกายน 2013 / (JP) 22 กุมภาพันธ์ 2014 <br>
+                        <b>ยอดขาย</b> 106 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="morebtn81" class="morebtn"
+                    onclick="showMore(8); location.href='#more8'; closePopUp(17); changeBg(8,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop82" class="detailP81">
+                <div class="closepop" onclick="closePopUp(18); navigatorOn(); changeBg(8,4);"></div>
+                <div id="txtpbox82">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Xbox one <br>
+                        <b>ผู้ผลิต</b> Microsoft (Foxconn 1974) <br>
+                        <b>วันวางจำหน่าย</b> (NA) 22 พฤศจิกายน 2013 / (JP) 4 กันยายน 2014 <br>
+                        <b>ยอดขาย</b> 46.9 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="morebtn82" class="morebtn"
+                    onclick="showMore(8); location.href='#more8'; closePopUp(18); changeBg(8,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+            <div id="pop83" class="detailP82">
+                <div class="closepop" onclick="closePopUp(19); navigatorOn(); changeBg(8,4);"></div>
+                <div id="txtpbox83">
+                    <p class="abc font SS CB">
+                        <b>เครื่อง</b> Nintendo Switch <br>
+                        <b>ผู้ผลิต</b> Nintendo (Foxconn 1974) <br>
+                        <b>วันวางจำหน่าย</b> 3 มีนาคม 2017 <br>
+                        <b>ยอดขาย</b> 61.44 ล้านเครื่อง
+                    </p>
+                </div>
+                <div id="morebtn83" class="morebtn"
+                    onclick="showMore(8); location.href='#more8'; closePopUp(19); changeBg(8,4);">
+                    <p class="font MM CW">Explore</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More 8 -->
+    <div id="more8" class="m08">
+        <div id="cmbtn8" class="cmbtn" onclick="closeMore(8); location.href='#page8';">
+            <p class="font MM CW">Back</p>
+        </div>
+        <div id="moreimg81" onclick="openMPop(29, 8); changeMBg(8, 1);"></div>
+        <div id="moreimg82" onclick="openMPop(30, 8); changeMBg(8, 2);"></div>
+        <div id="moreimg83" onclick="openMPop(31, 8); changeMBg(8, 3);"></div>
+        <div id="moreimg84" onclick="openMPop(32, 8); changeMBg(8, 4);"></div>
+        <div id="moreimg85" onclick="openMPop(33, 8); changeMBg(8, 5);"></div>
+        <div id="moreimg86" onclick="openMPop(34, 8); changeMBg(8, 6);"></div>
+        <!-- Popup -->
+        <div id="backM8" class="backP" onclick="closeMPop(); changeMBg(8, 7);"></div>
+        <div id="popM81" class="detailMP81">
+            <div class="closepop" onclick="closeMPop();  changeMBg(8, 7);"></div>
+            <div id="txtpM81">
+                <p class="font MM CB"><b>The Legend of Zelda: Breath of the Wild</b></p>
+                <p class="font SS CB">เกมที่ให้ผู้เล่นได้มากกว่าคำว่า คุ้มค่ากว่าทำรอคอย เพราะภาคล่าสุดที่คือทีสุดของ
+                    Zelda
+                    ทุกภาค ทั้งระบบการต่อสู้ แผนที่ และรายละเอียดเล็ก ๆ น้อย ๆ
+                    และการนำเสนอของเกมจะเปลี่ยนไปจากเดิมที่จะต้อง
+                    ทำภารกิจเพื่อปลดพื้นที่และเนื้อเรื่องตามลำดับ แต่ในภาคนี้เกมได้ให้อิสระ
+                    แลพลักดันผู้เล่นให้ออกสำรวจโลกแห่งไฮรูน
+                    จนลืมไปเลยว่าต้องไปช่วยเจ้าหญิง</p>
+            </div>
+        </div>
+        <div id="popM82" class="detailMP82">
+            <div class="closepop" onclick="closeMPop();  changeMBg(8, 7);"></div>
+            <div id="txtpM82">
+                <p class="font MM CB"><b>Animal Crossing : New Horizons</b></p>
+                <p class="font SS CB">อีกหนึ่งภาคของเกมดูดวิญญาณกับภาพสุดน่ารักที่จะให้คุณหนีความวุ่นวานในชีวิตจริงไปสู่
+                    เกาะแสนสุขที่เปรียบดั่งโลกอีกใบแม้จะอิสระแต่ก็ยังหนีไม่พ้นระบบทุนนิยม
+                    ที่อาจจะทำให้เกมในช่วงแรกดูมีข้อจำกัดอยู่บ้าง
+                    และเมื่อเวลาพร้อนไปความหลากหลายของเกมก็จะมีมากขึ้นไปด้วย</p>
+            </div>
+        </div>
+        <div id="popM83" class="detailMP83">
+            <div class="closepop" onclick="closeMPop();  changeMBg(8, 7);"></div>
+            <div id="txtpM83">
+                <p class="font MM CB"><b>Marvel's spider-man</b></p>
+                <p class="font SS CB">การกลับมาของฮีโร่เพื่อนบ้านที่แสนดีอย่าง
+                    สไปเดอร์แมนโดยเป็นการเปิดจักรวาลใหม่อีกครั้งของ ปีเตอร์ ปาร์คเกอร์
+                    โดยเป็นการชุบชีวิตให้โลกของสไปเดอร์แมนอีกครั้ง
+                    ด้วยเทคโลยีในยุคปัจจุบันที่ก้าวหน้าทำให้การนำเสนอของเกมนี้ออกมาได้อย่างสมจริงทั้งการต่อสู้
+                    และการเดินทางในแบบของไอ้แมงมุม นั้นก็คือการโหนใยไปทั่วเมืองนั่นเอง
+                    ทั้งนี้ผู้เล่นสามารถมีปฏิสัมพันธ์กับประชากรชาวเมืองได้อย่างมีชีวิตชีวา
+                    ทั้งการทักทางไปจนถึงการของถ่ายรูปคู่เช่นกัน</p>
+            </div>
+        </div>
+        <div id="popM84" class="detailMP84">
+            <div class="closepop" onclick="closeMPop();  changeMBg(8, 7);"></div>
+            <div id="txtpM84">
+                <p class="font MM CB"><b>God of War</b></p>
+                <p class="font SS CB">5
+                    ปีแห่งการรอคอยและในที่สุดแฟนเกมก็จะได้สานต่อเรื่องเราของนักรบแห่งสปาตาผู้ฆ่าล้างเทพ
+                    และเป็นที่ตื่นตาอย่างมากกับมุมใหม่ของ เครโทส
+                    ที่ทุกคนจะคุ้นชินกับลุคนักรบเลือดร้อนที่ดุดันมาเป็นพ่อคนที่ใช้ชีวิตอย่างสงบสุข
+                    กับครอบครัว โดยเรื่องราวเริ่มต้นที่การจากไปของภรรยาของ เครโทส
+                    โดยคำขอสุดท้ายของนางคือการทำขี้เถ้าไปโปรยบนยอดเข้า
+                    ที่สูงที่สุดของแดนเหนือนี้ และในการเดินทางนี้ เครโทสต้องเดินทางไปพร้อมกับลูกชายของเขา เอเทรียส
+                    โดยตัวเองยังคงรักษา
+                    คุณภาพการต่อสู้ที่ดุดันไว้และเพิ่มระบบการต่อสู้แบบและความสามารถแบบใหม่เข้าไป</p>
+            </div>
+        </div>
+        <div id="popM85" class="detailMP85">
+            <div class="closepop" onclick="closeMPop();  changeMBg(8, 7);"></div>
+            <div id="txtpM85">
+                <p class="font MM CB"><b>Ghost of Tsushima</b></p>
+                <p class="font SS CB">อีกหนึ่งผลงานชั้นยอด
+                    ที่ยกเอาตำนานของญี่ปุนอย่างซามูไรมานำเสนอจนคนญี่ปุ่นเองออกมาชื่นชม
+                    ว่ามีความเป็นญี่ปุ่นมากกว่าเกมที่ทำโดยคนญี่ปุ่นเองอีก
+                    ทั้งยังเกมยังใช้ความเป็นศิลปะผสมผสานกับการเล่นได้อย่างลงตัวและไม่เหมือนใคร
+                    ที่โดดเด่นที่สุดคือการให้สายลมนำทางแทนการมี มินิแมพ ให้รกจอ
+                    และสายลมยังส่งผลต่อฉากของเกมในขณะนั้นถึงขนาดที่ว่าทุก ๆ
+                    ฉากของเกมสามารถเป็นภาพถ่ายที่สวยงามได้เลย</p>
+            </div>
+        </div>
+        <div id="popM86" class="detailMP86">
+            <div class="closepop" onclick="closeMPop();  changeMBg(8, 7);"></div>
+            <div id="txtpM86">
+                <p class="font MM CB"><b>Pokémon Sword and Shield</b></p>
+                <p class="font SS CB">เกมโปเกม่อน เจน 8 ที่มีการพัฒนาจากภาคเก่า ๆ อย่างเห็นได้ชัดในการตัดข้อเสียต่าง ๆ
+                    ในเกมเก่าออกไปทำให้การนำเสนอของเกมตรงประเด็น
+                    และกระชัดสามารถข้ามส่วนที่น่าเบื่อของเกมไปได้
+                    และภาคนี้ยังเพิ่มความหลากหลายของโปเกม่อนที่พบเจอในแต่ละอื่นที่ตามวันเวลา
+                    และสถาพอากาศด้วย ทำให้ผู้เล่นสามารถเจอโปเกม่อนใหม่ ๆ ได้แม้จะเดินผ่านเส้นทางเดิม
+                    และตัดระบบการสุ่มเจอโปเกม่อนในพุ่มหญ้าออกไป
+                    โดยผู้เล่นจะสักเหตุเห็นตัวอย่างชัดเจน และที่โดดเด่นที่สุดคือ ระบบ Dynamax
+                    ในการต่อสู้ที่จะเป็นการขยายขนาดและพลัง
+                    และเปลี่ยนแปลงรูปร่างบางส่วนช่วยเพิ่มสีสันและความตื่นตาในการต่อสู้เป็นอย่างมาก</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    // alert('Iner Width'+ window.innerWidth);
+    // alert('Iner Height'+ window.innerHeight);
+
+    function homeOn() {
+        document.getElementById('hpimg1').style.transform = 'translateY(0px)';
+        document.getElementById('hpimg2').style.transform = 'translateY(0px)';
+        document.getElementById('hpimg3').style.transform = 'translateY(0px)';
+        document.getElementById('hpimg4').style.transform = 'translateY(0px)';
+    }
+
+    function homeOff() {
+        document.getElementById('hpimg1').style.transform = 'translateY(-150px)';
+        document.getElementById('hpimg2').style.transform = 'translateY(100px)';
+        document.getElementById('hpimg3').style.transform = 'translateY(-150px)';
+        document.getElementById('hpimg4').style.transform = 'translateY(100px)';
+    }
+
+    function navigatorOff() {
+        document.getElementById('navigator').style.visibility = 'hidden';
+    }
+
+    function navigatorOn() {
+        setTimeout(function () {
+            document.getElementById('navigator').style.visibility = 'visible';
+        }, 300);
+    }
+
+    let a;
+    function imHere(z) {
+        if (a != z) {
+            navigatorOff();
+            setTimeout(function () {
+                navigatorOn();
+            }, 400);
+        }
+        for (let i = 0; i < 9; i++) {
+            if (i != z) {
+                document.getElementById('link' + i).style.opacity = 0.5;
+                document.getElementById('link' + i).style.transform = 'scale(1)';
+                document.getElementById('page' + i).style.opacity = 0;
+            }
+        }
+        document.getElementById('link' + z).style.opacity = 1;
+        document.getElementById('link' + z).style.transform = 'scale(1.2)';
+        document.getElementById('page' + z).style.opacity = 1;
+        a = z;
+        homeOff();
+    }
+
+    function showMore(y) {
+        document.getElementById('more' + y + '').style.display = 'block';
+
+        setTimeout(function () {
+            document.getElementById('navigator').style.visibility = 'hidden';
+        }, 100);
+    }
+
+    function closeMore(w) {
+        setTimeout(function () {
+            document.getElementById('more' + w + '').style.display = 'none';
+            document.getElementById('navigator').style.visibility = 'visible';
+        }, 500);
+    }
+
+    let z;
+    function playSound(x) {
+        switch (x) {
+            case 0:
+                z = document.getElementById('metalok');
+                break;
+            case 1:
+                z = document.getElementById('heavy');
+                break;
+            case 2:
+                z = document.getElementById('frame');
+                break;
+            case 3:
+                z = document.getElementById('rocket');
+                break;
+            case 4:
+                z = document.getElementById('shotgun');
+                break;
+        }
+        z.volume = 0.5;
+        z.play();
+
+    }
+</script>
+
+</html>

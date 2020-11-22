@@ -1,0 +1,475 @@
+/* Animation */
+@keyframes opElAni{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes clElAni{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+#pop01, #pop02, #pop11, #pop21, #pop31, #pop41, #pop42, #pop43, #pop51, #pop52, #pop53, 
+#pop61, #pop62, #pop63, #pop64, #pop71, #pop72, #pop73, #pop81, #pop82, #pop83{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 35%);
+    visibility: hidden;
+}
+
+/* Popup detail */
+.detailP0, .detailP1, .detailP2, .detailP3, .detailP4, .detailP5, .detailP6, .detailP7, .detailP81, .detailP82{
+    position: absolute;
+    width: 860px;
+    height: 475px;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%); */
+    border-radius: 15px;
+}
+.detailP0{
+    background: rgba(255,255,255,0.8);
+}
+.detailP1{
+    background: rgba(255,255,255,0.9);
+}
+.detailP2{
+    background: rgba(255,255,255,0.7);
+}
+.detailP3{
+    background: rgba(255,255,255,0.8);
+}
+.detailP4{
+    background: rgba(255,255,255,0.8);
+}
+.detailP5{
+    background: rgba(255,255,255,0.7);
+}
+.detailP6{
+    background: rgba(255,255,255,0.7);
+}
+.detailP7{
+    background: rgba(255,255,255,0.7);
+}
+.detailP81{
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    width: 700px;
+    height: 300px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.detailP82{
+    background: rgba(255,255,255,0.8);
+    width: 600px;
+    height: 300px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.closepop{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../image/cancel1.png');
+    background-size:100% 100%;
+}
+.closepop:hover{
+    background-image: url('../image/cancel2.png');
+    cursor: pointer;
+}
+
+
+/* Page 0 */
+#imgp01{
+    position: absolute;
+    background-image: url('../image/console/imagefor1024/001_452-362.png');
+    background-size:100% 100%;
+    width: 319px;
+    height: 255px;
+    top: 110px;
+    left: 45px;
+}
+#txtp01{
+    top: 59px;
+    left: 467px;
+}
+#txtpbox01{
+    position: absolute;
+    width: 436px;
+    height: 202px;
+    top: 194px;
+    left: 397px;
+}
+
+#imgp02{
+    position: absolute;
+    background-image: url('../image/console/imagefor1024/002_407-325.png');
+    background-size:100% 100%;
+    width: 388px;
+    height: 310px;
+    top: 65px;
+    left: 35px;
+}
+#txtp02{
+    top: 59px;
+    left: 482px;
+}
+#txtpbox02{
+    position: absolute;
+    width: 366px;
+    height: 172px;
+    top: 213px;
+    left: 460px;
+}
+
+/* Page 1 */
+#imgp11{
+    position: absolute;
+    background-image: url('../image/console/imagefor1024/imgp11.jpg');
+    background-size:100% 100%;
+    width: 284px;
+    height: 204px;
+    top: 115px;
+    left: 530px;
+    border-radius: 2px;
+    /* border:  0.5px solid black; */
+}
+#txtpbox11{
+    position: absolute;
+    width: 350px;
+    height: 138px;
+    top: 65px;
+    left: 45px;
+}
+#txtpbox12{
+    position: absolute;
+    width: 444px;
+    height: 139px;
+    bottom: 65px;
+    left: 45px;
+}
+
+/* Page 2 */
+#imgp21{
+    position: absolute;
+    background-image: url('../image/console/imagefor1024/imgp21.gif');
+    background-size:100% 100%;
+    width: 137px;
+    height: 137px;
+    top: 170px;
+    left: 100px;
+    animation: eatthemall 6s infinite;
+}
+@keyframes eatthemall {
+    0%  {left: 50px;transform: scaleX(1);}
+    50% {left: 650px;transform: scaleX(1);}
+    51% {transform: scaleX(-1);}
+    100% {transform: scaleX(-1); left: 50px; }
+  }
+#imgp22{
+    position: absolute;
+    background-image: url('../image/console/imagefor1024/imgp22.png');
+    background-size:100% 100%;
+    width: 300px;
+    height: 90px;
+    top: 80px;
+    left: 450px;
+}
+#txtpbox21{
+    position: absolute;
+    width: 350px;
+    height: 138px;
+    top: 65px;
+    left: 80px;
+}
+#txtpbox22{
+    position: absolute;
+    width: 620px;
+    height: 139px;
+    bottom: 55px;
+    left: 80px;
+}
+
+/* Page 3 */
+#txtpbox31{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 65px;
+    left: 57px;
+}
+#txtpbox32{
+    position: absolute;
+    width: 650px;
+    height: 160px;
+    bottom: 90px;
+    left: 57px;
+}
+/* Page 4 1 SNES */
+#imgp41{
+    position: absolute;
+    background-image: url('../image/console/imagefor1024/imgp41.gif');
+    background-size:100% 100%;
+    width: 137px;
+    height: 137px;
+    top: 254px;
+    left: 46px;
+}
+#txtpbox41{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 50px;
+    left: 115px;
+}
+#txtpbox42{
+    position: absolute;
+    width: 580px;
+    height: 150px;
+    top: 240px;
+    left: 217px;
+}
+
+/* Page 4 2 Genesis */
+#imgp42{
+    position: absolute;
+    background-image: url('../image/console/imagefor1024/imgp42.gif');
+    background-size:100% 100%;
+    width: 144px;
+    height: 186px;
+    top: 150px;
+    left: 675px;
+}
+#txtpbox43{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 65px;
+    left: 57px;
+}
+#txtpbox44{
+    position: absolute;
+    width: 555px;
+    height: 140px;
+    bottom: 65px;
+    left: 57px;
+}
+
+/* Page 4 3 NEO GEO */
+#imgp43{
+    position: absolute;
+    background-image: url('../image/console/imagefor1024/imgp43.gif');
+    background-size:100% 100%;
+    width: 144px;
+    height: 186px;
+    top: 50px;
+    left: 650px;
+}
+#txtpbox45{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 65px;
+    left: 57px;
+}
+#txtpbox46{
+    position: absolute;
+    width: 738px;
+    height: 160px;
+    bottom: 65px;
+    left: 57px;
+}
+
+/* Page 5 1 Playstation */
+#txtpbox51{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 65px;
+    left: 87px;
+}
+#txtpbox52{
+    position: absolute;
+    width: 684px;
+    height: 190px;
+    bottom: 65px;
+    left: 87px;
+}
+
+/* Page 5 2 Nintendo 64 */
+#txtpbox53{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 65px;
+    left: 87px;
+}
+#txtpbox54{
+    position: absolute;
+    width: 684px;
+    height: 190px;
+    bottom: 65px;
+    left: 87px;
+}
+
+/* Page 5 3 3DO */
+#txtpbox55{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 80px;
+    left: 57px;
+}
+#txtpbox56{
+    position: absolute;
+    width: 738px;
+    height: 160px;
+    bottom: 50px;
+    left: 57px;
+}
+
+/* Page 6 1 Playstation2 */
+#txtpbox61{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 65px;
+    left: 87px;
+}
+#txtpbox62{
+    position: absolute;
+    width: 684px;
+    height: 190px;
+    bottom: 65px;
+    left: 87px;
+}
+
+/* Page 6 2 Xbox */
+#txtpbox63{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 65px;
+    left: 87px;
+}
+#txtpbox64{
+    position: absolute;
+    width: 684px;
+    height: 190px;
+    bottom: 40px;
+    left: 87px;
+}
+
+/* Page 6 3 Dream Cast */
+#txtpbox65{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 65px;
+    left: 87px;
+}
+#txtpbox66{
+    position: absolute;
+    width: 684px;
+    height: 190px;
+    bottom: 20px;
+    left: 87px;
+}
+
+/* Page 6 4 GameCube */
+#txtpbox67{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 75px;
+    left: 87px;
+}
+#txtpbox68{
+    position: absolute;
+    width: 700px;
+    height: 190px;
+    top: 245px;
+    left: 87px;
+}
+
+/* Page 7 1 Wii */
+#txtpbox71{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 50px;
+    left: 87px;
+}
+#txtpbox72{
+    position: absolute;
+    width: 684px;
+    height: 190px;
+    top: 215px;
+    left: 87px;
+}
+
+/* Page 7 2 Playstation3 */
+#txtpbox73{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 65px;
+    left: 87px;
+}
+#txtpbox74{
+    position: absolute;
+    width: 684px;
+    height: 190px;
+    top: 245px;
+    left: 87px;
+}
+
+/* Page 7 3 Xbox 360 */
+#txtpbox75{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 70px;
+    left: 87px;
+}
+#txtpbox76{
+    position: absolute;
+    width: 684px;
+    height: 190px;
+    top: 240px;
+    left: 87px;
+}
+
+/* Page 8 1 Playstation 4 */
+#txtpbox81, #txtpbox82{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 60px;
+    left: 40px;
+}
+#txtpbox83{
+    position: absolute;
+    width: 620px;
+    height: 130px;
+    top: 60px;
+    left: 40px;
+}
+
+/* Back Popup */
+#back0, #back1, #back2, #back3, #back4, #back5, #back6, #back7, #back8{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    background-size:100% 100%;
+    /* opacity: 0.5;
+    background-color: black; */
+}
+
+

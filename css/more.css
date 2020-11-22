@@ -1,0 +1,1079 @@
+.cmbtn{
+    position: absolute;
+    cursor: pointer;
+    width: 100px;
+    height: 47px;
+    background-color: tomato;
+    right: 30px;
+    top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    /* display: none; */
+}
+
+#more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: none;
+}
+
+#popM11, #popM12, #popM13, #popM14, #popM15, #popM21, #popM22, #popM23, #popM24, #popM25, #popM41, #popM42, #popM43, #popM44, #popM45, 
+#popM51, #popM52, #popM53, #popM54, #popM61, #popM62, #popM63, #popM64, #popM65, #popM66, #popM71, #popM72, #popM73, #popM74, 
+#popM81, #popM82, #popM83, #popM84, #popM85, #popM86{
+    visibility: hidden;
+}
+
+/* Popup detail */
+.detailMP0, .detailMP1, .detailMP21, .detailMP22, .detailMP23, .detailMP24, .detailMP25, .detailMP3,
+.detailMP41, .detailMP42, .detailMP43, .detailMP44, .detailMP45, .detailMP51, .detailMP52, .detailMP53, .detailMP54,
+.detailMP61, .detailMP62, .detailMP63, .detailMP64, .detailMP65, .detailMP66, .detailMP71, .detailMP72, .detailMP73, .detailMP74,
+.detailMP81, .detailMP82, .detailMP83, .detailMP84, .detailMP85, .detailMP86{
+    position: absolute;
+    width: 860px;
+    height: 475px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    border: solid 2px black;
+}
+.detailMP0{
+    background: rgba(255,255,255,0.7);
+}
+.detailMP1{
+    background: rgba(255,255,255,0.7);
+}
+.detailMP21, .detailMP22, .detailMP23, .detailMP24, .detailMP25{
+    background: rgba(255,255,255,0.9);
+}
+.detailMP3{
+    background: rgba(255,255,255,0.7);
+}
+.detailMP41, .detailMP42, .detailMP43, .detailMP44, .detailMP45{
+    background: rgba(255,255,255,0.7);
+}
+.detailMP51, .detailMP52, .detailMP53, .detailMP54{
+    background: rgba(255,255,255,0.7);
+}
+.detailMP61, .detailMP62, .detailMP63, .detailMP64, .detailMP65, .detailMP66{
+    background: rgba(255,255,255,0.8);
+}
+.detailMP71, .detailMP72, .detailMP73, .detailMP74{
+    background: rgba(255,255,255,0.7);
+}
+.detailMP81, .detailMP82, .detailMP83, .detailMP84, .detailMP85, .detailMP86{
+    background: rgba(255,255,255,0.8);
+}
+
+
+#backM0, #backM1, #backM2, #backM3, #backM4, #backM5, #backM6, #backM7, #backM8{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    background-size:100% 100%;
+    /* opacity: 0.5;
+    background-color: black; */
+}
+
+
+
+/* #moreimg11{
+    position: absolute;
+    background-image: url('../image/Forgame/gen1/gen1_001Cartridges250_150.png');
+    background-size:100% 100%;
+    width: 250px;
+    height: 150px;
+    top: 75px;
+    left: 10%;
+    transition: 1s;
+} */
+#moreimg12{
+    position: absolute;
+    background-image: url('../image/Forgame/gen1/gen1_002catandmouse.png');
+    background-size:100% 100%;
+    width: 250px;
+    height: 150px;
+    top: 175px;
+    left: 10%;
+    transition: 1s;
+}
+#moreimg13{
+    position: absolute;
+    background-image: url('../image/Forgame/gen1/gen1_003roulette.png');
+    background-size:100% 100%;
+    width: 250px;
+    height: 150px;
+    top: 275px;
+    left: 10%;
+    transition: 1s;
+}
+#moreimg14{
+    position: absolute;
+    background-image: url('../image/Forgame/gen1//gen1_004tennis.png');
+    background-size:100% 100%;
+    width: 250px;
+    height: 150px;
+    top: 375px;
+    left: 10%;
+    transition: 1s;
+}
+#moreimg15{
+    position: absolute;
+    background-image: url('../image/Forgame/gen1/gen1_005wipeout.png');
+    background-size:100% 100%;
+    width: 250px;
+    height: 150px;
+    top: 475px;
+    left: 10%;
+    transition: 1s;
+}
+#moreimg11:hover, #moreimg12:hover, #moreimg13:hover, #moreimg14:hover, #moreimg15:hover{
+    z-index: 2;
+    transform: translateX(100px);
+    cursor: pointer;
+}
+
+#moreimg21{
+    position: absolute;
+    background-image: url('../image/Forgame/gen2/gen2_001pac.png');
+    background-size:100% 100%;
+    width: 250px;
+    height: 250px;
+    top: 150px;
+    left: 10%;
+    transition: 1s;
+}
+#moreimg22{
+    position: absolute;
+    background-image: url('../image/Forgame/gen2/gen2_005ghost.gif');
+    background-size:100% 100%;
+    width: 230px;
+    height: 230px;
+    top: 150px;
+    left: 40%;
+    transition: 1s;
+}
+#moreimg23{
+    position: absolute;
+    background-image: url('../image/Forgame/gen2/gen2_002mspac.png');
+    background-size:100% 100%;
+    width: 250px;
+    height: 250px;
+    top: 150px;
+    left: 65%;
+    transition: 1s;
+}
+#moreimg24{
+    position: absolute;
+    background-image: url('../image/Forgame/gen2/gen2_003popeye_spinach.png');
+    background-size:100% 100%;
+    width: 150px;
+    height: 200px;
+    top: 475px;
+    left: 20%;
+    transition: 1s;
+}
+#moreimg25{
+    position: absolute;
+    background-image: url('../image/Forgame/gen2/gen2_004space.gif');
+    background-size:100% 100%;
+    width: 250px;
+    height: 250px;
+    top: 475px;
+    left: 50%;
+    transition: 1s;
+}
+
+#moreimg21:hover, #moreimg22:hover, #moreimg23:hover, #moreimg24:hover, #moreimg25:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#moreimg41{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_001linklogo300_260.png');
+    background-size:100% 100%;
+    width: 300px;
+    height: 260px;
+    top: 200px;
+    left: 10%;
+    transition: 1s;
+}
+#moreimg42{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_002magamanlogo295_135.png');
+    background-size:100% 100%;
+    width: 295px;
+    height: 135px;
+    top: 125px;
+    left: 40%;
+    transition: 1s;
+}
+#moreimg43{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_003soniclogo280_230.png');
+    background-size:100% 100%;
+    width: 280px;
+    height: 230px;
+    top: 200px;
+    left: 70%;
+    transition: 1s;
+}
+#moreimg44{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_004mariokartlogo285_110.png');
+    background-size:100% 100%;
+    width: 285px;
+    height: 110px;
+    top: 490px;
+    left: 20%;
+    transition: 1s;
+}
+#moreimg45{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_005metalsluglogo290_170.png');
+    background-size:100% 100%;
+    width: 290px;
+    height: 170px;
+    top: 470px;
+    left: 60%;
+    transition: 1s;
+}
+
+#moreimg41:hover, #moreimg42:hover, #moreimg43:hover, #moreimg44:hover, #moreimg45:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#moreimg51{
+    position: absolute;
+    background-image: url('../image/Forgame/gen5/gen5_001doomlogo305_145.png');
+    background-size:100% 100%;
+    width: 305px;
+    height: 145px;
+    top: 150px;
+    left: 20%;
+    transition: 1s;
+}
+#moreimg52{
+    position: absolute;
+    background-image: url('../image/Forgame/gen5/gen5_002cvnlogo350_195.png');
+    background-size:100% 100%;
+    width: 350px;
+    height: 195px;
+    top: 420px;
+    left: 55%;
+    transition: 1s;
+}
+#moreimg53{
+    position: absolute;
+    background-image: url('../image/Forgame/gen5/gen5_003hvmlogo340_180.png');
+    background-size:100% 100%;
+    width: 340px;
+    height: 180px;
+    top: 150px;
+    left: 55%;
+    transition: 1s;
+}
+#moreimg54{
+    position: absolute;
+    background-image: url('../image/Forgame/gen5/gen5_004relogo360_115.png');
+    background-size:100% 100%;
+    width: 360px;
+    height: 115px;
+    top: 455px;
+    left: 18%;
+    transition: 1s;
+}
+
+#moreimg51:hover, #moreimg52:hover, #moreimg53:hover, #moreimg54:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#moreimg61{
+    position: absolute;
+    background-image: url('../image/Forgame/gen6/gen6_001dmclogo380_165.png');
+    background-size:100% 100%;
+    width: 380px;
+    height: 165px;
+    top: 70px;
+    left: 15%;
+    transition: 1s;
+}
+#moreimg62{
+    position: absolute;
+    background-image: url('../image/Forgame/gen6/gen6_003gowlogo320_100.png');
+    background-size:100% 100%;
+    width: 320px;
+    height: 100px;
+    top: 500px;
+    left: 15%;
+    transition: 1s;
+}
+#moreimg63{
+    position: absolute;
+    background-image: url('../image/Forgame/gen6/gen6_002halologo300_130.png');
+    background-size:100% 100%;
+    width: 300px;
+    height: 130px;
+    top: 100px;
+    left: 55%;
+    transition: 1s;
+}
+#moreimg64{
+    position: absolute;
+    background-image: url('../image/Forgame/gen6/gen6_006okamilogo235_200.png');
+    background-size:100% 100%;
+    width: 235px;
+    height: 200px;
+    top: 455px;
+    left: 55%;
+    transition: 1s;
+}
+#moreimg65{
+    position: absolute;
+    background-image: url('../image/Forgame/gen6/gen6_008re4logo330_190.png');
+    background-size:100% 100%;
+    width: 330px;
+    height: 190px;
+    top: 280px;
+    left: 15%;
+    transition: 1s;
+}
+#moreimg66{
+    position: absolute;
+    background-image: url('../image/Forgame/gen6/gen6_005shenlogo300_115.png');
+    background-size:100% 100%;
+    width: 300px;
+    height: 115px;
+    top: 300px;
+    left: 55%;
+    transition: 1s;
+}
+
+#moreimg61:hover, #moreimg62:hover, #moreimg63:hover, #moreimg64:hover, #moreimg65:hover, #moreimg66:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#moreimg71{
+    position: absolute;
+    background-image: url('../image/Forgame/gen7/gen7_003wiilogo300_120.png');
+    background-size:100% 100%;
+    width: 300px;
+    height: 120px;
+    top: 160px;
+    left: 20%;
+    transition: 1s;
+}
+#moreimg72{
+    position: absolute;
+    background-image: url('../image/Forgame/gen7/gen7_001rdlogo355_150.png');
+    background-size:100% 100%;
+    width: 355px;
+    height: 150px;
+    top: 150px;
+    left: 55%;
+    transition: 1s;
+}
+#moreimg73{
+    position: absolute;
+    background-image: url('../image/Forgame/gen7/gen7_005unchartedlogo390_100.png');
+    background-size:100% 100%;
+    width: 390px;
+    height: 100px;
+    top: 480px;
+    left: 17%;
+    transition: 1s;
+}
+#moreimg74{
+    position: absolute;
+    background-image: url('../image/Forgame/gen7/001.jpg');
+    background-size:100% 100%;
+    width: 250px;
+    height: 250px;
+    top: 400px;
+    left: 58%;
+    transition: 1s;
+}
+
+#moreimg71:hover, #moreimg72:hover, #moreimg73:hover, #moreimg74:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#moreimg81{
+    position: absolute;
+    background-image: url('../image/Forgame/gen8/gen8_002lozlogo255_200.png');
+    background-size:100% 100%;
+    width: 255px;
+    height: 200px;
+    top: 70px;
+    left: 12%;
+    transition: 1s;
+}
+#moreimg82{
+    position: absolute;
+    background-image: url('../image/Forgame/gen8/gen8_001aniclogo285_195.png');
+    background-size:100% 100%;
+    width: 285px;
+    height: 195px;
+    top: 500px;
+    left: 12%;
+    transition: 1s;
+}
+#moreimg83{
+    position: absolute;
+    background-image: url('../image/Forgame/gen8/gen8_005spidermanlogo400_160.png');
+    background-size:100% 100%;
+    width: 400px;
+    height: 160px;
+    top: 280px;
+    left: 12%;
+    transition: 1s;
+}
+#moreimg84{
+    position: absolute;
+    background-image: url('../image/Forgame/gen8/gen8_003gowlogo320_90.png');
+    background-size:100% 100%;
+    width: 400px;
+    height: 110px;
+    top: 200px;
+    left: 42%;
+    transition: 1s;
+}
+#moreimg85{
+    position: absolute;
+    background-image: url('../image/Forgame/gen8/gen8_004gosmlogo300_90.png');
+    background-size:100% 100%;
+    width: 352px;
+    height: 176px;
+    top: 400px;
+    left: 42%;
+    transition: 1s;
+}
+#moreimg86{
+    position: absolute;
+    background-image: url('../image/Forgame/gen8/gen8_006pklogo300_450.png');
+    background-size:100% 100%;
+    width: 300px;
+    height: 450px;
+    top: 175px;
+    left: 69%;
+    transition: 1s;
+}
+
+#moreimg81:hover, #moreimg82:hover, #moreimg83:hover, #moreimg84:hover, #moreimg85:hover, #moreimg86:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* More 2 */
+.detailMP21{
+    position: absolute;
+    width: 787px;
+    height: 340px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM21{
+    position: absolute;
+    width: 730px;
+    height: 265px;
+    top: 30px;
+    left: 30px;
+}
+.qtaro{
+    position: absolute;
+    background-image: url('../image/Forgame/gen2/gen2_ghostQTR.png');
+    background-size:100% 100%;
+    width: 150px;
+    height: 200px;
+    top: 25px;
+    right: 50px;
+}
+.detailMP22{
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM22{
+    position: absolute;
+    width: 400px;
+    height: 110px;
+    top: 60px;
+    left: 30px;
+}
+.detailMP23, .detailMP24, .detailMP25{
+    position: absolute;
+    width: 787px;
+    height: 190px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+ #txtpM23, #txtpM24, #txtpM25{
+    position: absolute;
+    width: 715px;
+    height: 110px;
+    top: 35px;
+    left: 30px;
+}
+
+/* More 4 */
+.imglink1{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_link1300.png');
+    background-size:100% 100%;
+    width: 174px;
+    height: 174px;
+    top: 20px;
+    left: 10px;
+}
+.imglink2{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_link2300_450.png');
+    background-size:100% 100%;
+    width: 165px;
+    height: 247px;
+    bottom: 35px;
+    left: 70px;
+}
+.detailMP41{
+    position: absolute;
+    width: 860px;
+    height: 390px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM41{
+    position: absolute;
+    width: 595px;
+    height: 170px;
+    top: 100px;
+    left: 250px;
+}
+
+.detailMP42{
+    position: absolute;
+    width: 690px;
+    height: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM42{
+    position: absolute;
+    width: 620px;
+    height: 110px;
+    top: 30px;
+    left: 30px;
+}
+.imgrock{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_megamang.gif');
+    background-size:100% 100%;
+    width: 455px;
+    height: 194px;
+    bottom: 0px;
+    right: 10px;
+}
+
+.detailMP43{
+    position: absolute;
+    width: 690px;
+    height: 265px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM43{
+    position: absolute;
+    width:  450px;
+    height: 132px;
+    right: 20px;
+    top: 70px;
+}
+.imgsonic{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_sonic1.gif');
+    background-size:100% 100%;
+    width: 218px;
+    height: 218px;
+    left: 10px;
+    top: 20px;
+}
+
+.detailMP44{
+    position: absolute;
+    width: 860px;
+    height: 475px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM44{
+    position: absolute;
+    width:  692px;
+    height: 110px;
+    top: 30px;
+    left: 100px;
+    top: 70px;
+}
+.imgkart1{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_mario.gif');
+    background-size:100% 100%;
+    width: 206px;
+    height: 206px;
+    left: 75px;
+    bottom: 40px;
+}
+.imgkart2{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_peach.gif');
+    background-size:100% 100%;
+    width: 206px;
+    height: 206px;
+    left: 330px;
+    bottom: 40px;
+}
+.imgkart3{
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_bowser.gif');
+    background-size:100% 100%;
+    width: 270px;
+    height: 221px;
+    right: 55px;
+    bottom: 40px;
+}
+
+.detailMP45{
+    position: absolute;
+    width: 690px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM45{
+    position: absolute;
+    width:  600px;
+    height: 132px;
+    left: 50px;
+    top: 70px;
+}
+#imgpu1{
+    cursor: pointer;
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_h.gif');
+    background-size:100% 100%;
+    width: 135px;
+    height: 135px;
+    bottom: 20px;
+    left: 50px;
+    /* visibility: hidden; */
+}
+#imgpu2{
+    cursor: pointer;
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_f.gif');
+    background-size:100% 100%;
+    width: 127px;
+    height: 127px;
+    bottom: 20px;
+    left: 210px;
+    /* visibility: hidden; */
+}
+#imgpu3{
+    cursor: pointer;
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_r.gif');
+    background-size:100% 100%;
+    width: 130px;
+    height: 130px;
+    bottom: 20px;
+    left: 360px;
+    /* visibility: hidden; */
+}
+#imgpu4{
+    cursor: pointer;
+    position: absolute;
+    background-image: url('../image/Forgame/gen4/gen4_s.gif');
+    background-size:100% 100%;
+    width: 140px;
+    height: 140px;
+    bottom: 15px;
+    left: 520px;
+    /* visibility: hidden; */
+}
+
+/* More 5 */
+.detailMP51{
+    position: absolute;
+    width: 787px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM51{
+    position: absolute;
+    width:  672px;
+    height: 214px;
+    top: 50px;
+    left: 60px;
+}
+
+.detailMP52{
+    position: absolute;
+    width: 787px;
+    height: 203px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM52{
+    position: absolute;
+    width:  703px;
+    height: 117px;
+    top: 45px;
+    left: 45px;
+}
+
+.detailMP53{
+    position: absolute;
+    width: 860px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM53{
+    position: absolute;
+    width:  703px;
+    height: 117px;
+    top: 45px;
+    left: 45px;
+}
+.imghvm1, .imghvm2, .imghvm3{
+    position: absolute;
+    background-size:100% 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+}
+.imghvm1{
+    background-image: url('../image/Forgame/gen5/001powerberry.png');
+    bottom: 20px;
+    left: 120px;
+}
+.imghvm2{
+    background-image: url('../image/Forgame/gen5/002mysticberry.png');
+    bottom: 20px;
+    left: 350px;
+}
+.imghvm3{
+    background-image: url('../image/Forgame/gen5/003sbe.png');
+    bottom: 20px;
+    left: 580px;
+}
+
+.detailMP54{
+    position: absolute;
+    width: 787px;
+    height: 203px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM54{
+    position: absolute;
+    width:  703px;
+    height: 117px;
+    top: 45px;
+    left: 45px;
+}
+
+/* More 6 */
+.detailMP61{
+    position: absolute;
+    width: 787px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM61{
+    position: absolute;
+    width:  672px;
+    height: 214px;
+    top: 50px;
+    left: 60px;
+}
+.detailMP62{
+    position: absolute;
+    width: 860px;
+    height: 275px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM62{
+    position: absolute;
+    width:  780px;
+    height: 210px;
+    top: 30px;
+    left: 40px;
+}
+.detailMP63{
+    position: absolute;
+    width: 735px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM63{
+    position: absolute;
+    width:  665px;
+    height: 115px;
+    top: 30px;
+    left: 40px;
+}
+.detailMP64{
+    position: absolute;
+    width: 860px;
+    height: 275px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM64{
+    position: absolute;
+    width:  780px;
+    height: 210px;
+    top: 30px;
+    left: 40px;
+}
+.detailMP65{
+    position: absolute;
+    width: 755px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM65{
+    position: absolute;
+    width:  680px;
+    height: 210px;
+    top: 40px;
+    left: 40px;
+}
+.detailMP66{
+    position: absolute;
+    width: 755px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM66{
+    position: absolute;
+    width:  680px;
+    height: 210px;
+    top: 40px;
+    left: 40px;
+}
+
+/* More 7 */
+.detailMP71{
+    position: absolute;
+    width: 700px;
+    height: 225px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM71{
+    position: absolute;
+    width:  620px;
+    height: 145px;
+    top: 40px;
+    left: 45px;
+}
+.detailMP72{
+    position: absolute;
+    width: 680px;
+    height: 225px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM72{
+    position: absolute;
+    width:  610px;
+    height: 115px;
+    top: 35px;
+    left: 40px;
+}
+.detailMP73{
+    position: absolute;
+    width: 730px;
+    height: 233px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM73{
+    position: absolute;
+    width:  632px;
+    height: 150px;
+    top: 28px;
+    left: 55px;
+}
+.detailMP74{
+    position: absolute;
+    width: 770px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM74{
+    position: absolute;
+    width:  690px;
+    height: 215px;
+    top: 45px;
+    left: 45px;
+}
+
+/* More 8 */
+.detailMP81{
+    position: absolute;
+    width: 810px;
+    height: 260px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM81{
+    position: absolute;
+    width:  727px;
+    height: 190px;
+    top: 40px;
+    left: 45px;
+}
+.detailMP82{
+    position: absolute;
+    width: 690px;
+    height: 255px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM82{
+    position: absolute;
+    width:  610px;
+    height: 180px;
+    top: 40px;
+    left: 45px;
+}
+.detailMP83{
+    position: absolute;
+    width: 780px;
+    height: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM83{
+    position: absolute;
+    width:  690px;
+    height: 245px;
+    top: 40px;
+    left: 45px;
+}
+.detailMP84{
+    position: absolute;
+    width: 860px;
+    height: 370px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM84{
+    position: absolute;
+    width:  740px;
+    height: 285px;
+    top: 40px;
+    left: 60px;
+}
+.detailMP85{
+    position: absolute;
+    width: 760px;
+    height: 290px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM85{
+    position: absolute;
+    width:  690px;
+    height: 210px;
+    top: 40px;
+    left: 35px;
+}
+.detailMP86{
+    position: absolute;
+    width: 835px;
+    height: 355px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+#txtpM86{
+    position: absolute;
+    width:  730px;
+    height: 315px;
+    top: 40px;
+    left: 50px;
+}
